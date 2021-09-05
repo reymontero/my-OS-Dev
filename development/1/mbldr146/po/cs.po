@@ -1,0 +1,1802 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgid "Empty"
+msgstr "Prázdný"
+
+msgid "DOS 12-bit FAT"
+msgstr "DOS 12-bit FAT"
+
+msgid "XENIX root"
+msgstr "XENIX kořenový oddíl"
+
+msgid "DOS 3.0+ 16-bit FAT (up to 32M)"
+msgstr "DOS 3.0+ 16-bit FAT (do 32M)"
+
+msgid "Extended partition (DOS 3.3+)"
+msgstr "Rozšířený oddíl (DOS 3.3+)"
+
+msgid "DOS 3.31+ 16-bit FAT (over 32M)"
+msgstr "DOS 3.31+ 16-bit FAT (nad 32M)"
+
+msgid "Windows NT NTFS or OS/2 HPFS (IFS)"
+msgstr "Windows NT NTFS nebo OS/2 HPFS (IFS)"
+
+msgid "AIX boot (PS/2 port) or OS/2 (v1.0-1.3) or SplitDrive"
+msgstr "AIX zavaděč (PS/2 port) nebo OS/2 (v1.0-1.3) nebo SplitDrive"
+
+msgid "AIX data or Coherent filesystem or QNX 1.x-2.x"
+msgstr "AIX data nebo souborový systém Coherent nebo QNX 1.x-2.x"
+
+msgid "OS/2 Boot Manager or Coherent swap partition or OPUS"
+msgstr "OS/2 Boot Manager nebo odkládací oddíl Coherent nebo OPUS"
+
+msgid "WIN95_OSR2/Win98 FAT32, LBA-mapped"
+msgstr "WIN95_OSR2/Win98 FAT32, režim LBA"
+
+msgid "Unknown or not recognized"
+msgstr "Neznáme nebo nerozpoznané rozdělení disku"
+
+msgid "WIN95/98: DOS 16-bit FAT, LBA-mapped"
+msgstr "WIN95/98: DOS 16-bit FAT, režim LBA"
+
+msgid "Extended partition, LBA-mapped (WIN95/98)"
+msgstr "Rozšířený oddíl, režim LBA (WIN95/98)"
+
+msgid "Hidden DOS 12-bit FAT or Leading Edge DOS 3.x"
+msgstr "Skrytý DOS 12-bit FAT nebo Leading Edge DOS 3.x"
+
+msgid "Compaq configuration/diagnostics partition"
+msgstr "Konfigurační/diagnostický oddíl Compaq"
+
+msgid "Hidden DOS 16-bit FAT <32M or AST DOS"
+msgstr "Skrytý DOS 16-bit FAT <32M nebo AST DOS"
+
+msgid "Hidden DOS 16-bit FAT >=32M"
+msgstr "Skrytý DOS 16-bit FAT >=32M"
+
+msgid "Hidden NTFS/HPFS(IFS)"
+msgstr "Skrytý NTFS/HPFS(IFS)"
+
+msgid "AST SmartSleep Partition"
+msgstr "Oddíl AST SmartSleep"
+
+msgid "Hidden WIN95_OSR2/98 FAT32"
+msgstr "Skrytý WIN95_OSR2/98 FAT32"
+
+msgid "Hidden WIN95_OSR2/98 FAT32, LBA-mapped"
+msgstr "Skrytý WIN95_OSR2/98 FAT32, režim LBA"
+
+msgid "Hidden WIN95 16-bit FAT, LBA-mapped"
+msgstr "Skrytý WIN95 16-bit FAT, režim LBA"
+
+msgid "AtheOS File System (AFS)"
+msgstr "Souborový systém AtheOS (AFS)"
+
+msgid "JFS on OS/2 or eCS"
+msgstr "JFS na OS/2 nebo eCS"
+
+msgid "THEOS ver 3.2 2gb partition"
+msgstr "2gb oddíl THEOS verze 3.2"
+
+msgid "Plan 9 partition or THEOS ver 4 spanned partition"
+msgstr "Oddíl Plan 9 nebo rozložený oddíl THEOS verze 4"
+
+msgid "THEOS ver 4 4gb partition"
+msgstr "4gb oddíl THEOS verze 4"
+
+msgid "THEOS ver 4 extended partition"
+msgstr "Rozšířený oddíl THEOS еverze 4"
+
+msgid "PartitionMagic recovery partition"
+msgstr "Obnovovací oddíl PartitionMagic"
+
+msgid "Hidden NetWare"
+msgstr "Skrytý oddíl NetWare"
+
+msgid "Linux/MINIX or PPC PReP Boot"
+msgstr "Linux/MINIX nebo PPC PReP Boot"
+
+msgid "Linux swap or SFS or Windows 2000 dynamic ext. partition marker"
+msgstr "Odkládací oddíl Linux nebo SFS nebo příznak dynamického rozšířeného rozdělení Windows 2000"
+
+msgid "Linux native"
+msgstr "Nativní Linux"
+
+msgid "GoBack partition"
+msgstr "Oddíl GoBack"
+
+msgid "Boot-US boot manager or Priam or EUMEL/Elan"
+msgstr "Boot-US zavaděč nebo Priam nebo EUMEL/Elan"
+
+msgid "Oberon partition"
+msgstr "Oddíl Oberon"
+
+msgid "QNX4.x 2nd part"
+msgstr "QNX4.x 2. část"
+
+msgid "QNX4.x 3rd part or Oberon partition"
+msgstr "QNX4.x 3. část nebo oddíl Oberon"
+
+msgid "OnTrack Disk Manager (older versions) RO or Lynx RTOS"
+msgstr "OnTrack Disk Manager (starší verze) RO nebo Lynx RTO"
+
+msgid "OnTrack Disk Manager RW (DM6 Aux1) or Novell"
+msgstr "OnTrack Disk Manager RW (DM6 Aux1) nebo Novell"
+
+msgid "CP/M or Microport SysV/AT"
+msgstr "CP/M nebo Microport SysV/AT"
+
+msgid "DrivePro or VNDI Partition"
+msgstr "Разедл DrivePro nebo VNDI"
+
+msgid "Unix System V/386 (SCO, ISC Unix, UnixWare) or Mach or GNU Hurd"
+msgstr "Unix System V/386 (SCO, ISC Unix, UnixWare) nebo Mach nebo GNU Hurd"
+
+msgid "PC-ARMOUR protected partition or Novell Netware 286, 2.xx"
+msgstr "Chráněný oddíl PC-ARMOUR nebo Novell Netware 286, 2.xx"
+
+msgid "Novell Netware 386, 3.xx or 4.xx"
+msgstr "Novell Netware 386, 3.xx nebo 4.xx"
+
+msgid "Novell Netware SMS Partition"
+msgstr "SMS oddíl Novell Netware"
+
+msgid "Novell Netware 5+, Novell Netware NSS Partition"
+msgstr "Novell Netware 5+, NSS oddíl Novell Netware"
+
+msgid "DiskSecure Multi-Boot"
+msgstr "Vícezaváděcí oddíl DiskSecure"
+
+msgid "Scramdisk partition"
+msgstr "Oddíl Scramdisk"
+
+msgid "M2FS/M2CS partition or VNDI Partition"
+msgstr "Oddíl M2FS/M2CS nebo VNDI"
+
+msgid "XOSL FS"
+msgstr "Souborový systém XOSL"
+
+msgid "Old MINIX (until 1.4a)"
+msgstr "Starší verze MINIX (do 1.4a)"
+
+msgid "MINIX since 1.4b, early Linux or Mitac disk manager"
+msgstr "MINIX od verze 1.4b, dřívější diskový správce Linux nebo Mitac"
+
+msgid "Linux swap or Prime or Solaris x86"
+msgstr "Odkládací oddíl Linux nebo Prime nebo Solaris x86"
+
+msgid "Linux native partition"
+msgstr "Nativní oddíl Linux"
+
+msgid "OS/2 hidden C: drive or Hibernation partition"
+msgstr "OS/2 skrytý disk C: nebo oddíl pro hibernaci"
+
+msgid "Linux extended partition"
+msgstr "Rozšířený oddíl Linux"
+
+msgid "Old Linux RAID partition superblock or FAT16 volume set"
+msgstr "Oddíl superbloku RAID starší verze Linux nebo diskovy svazek FAT16"
+
+msgid "NTFS volume set"
+msgstr "Diskový svazek NTFS"
+
+msgid "Linux plaintext partition table"
+msgstr "Tabulka rozdělení disku Linux (ASCII text)"
+
+msgid "Linux Kernel Partition (used by AiR-BOOT)"
+msgstr "Oddíl jadra Linux (využívaný AiR-BOOT)"
+
+msgid "Legacy Fault Tolerant FAT32 volume"
+msgstr "Zpětně kompatibilní FAT32 svazek odolný k chybám"
+
+msgid "Legacy Fault Tolerant FAT32 volume using BIOS extended INT 13h"
+msgstr "Zpětně kompatibilní FAT32 svazek odolný k chybám (využívající BIOS rozšíření INT 13h)"
+
+msgid "Free FDISK hidden Primary DOS FAT12 partitition"
+msgstr "Skrytý základní oddíl DOS FAT12 (Free FDISK)"
+
+msgid "Linux Logical Volume Manager (LVM) partition"
+msgstr "Oddíl Linux Logical Volume Manager (LVM)"
+
+msgid "Free FDISK hidden Primary DOS FAT16 partitition"
+msgstr "Skrytý základní oddíl DOS FAT16 (Free FDISK)"
+
+msgid "Free FDISK hidden DOS extended partitition"
+msgstr "Skrytý rozšířený oddíl DOS (Free FDISK)"
+
+msgid "Free FDISK hidden Primary DOS large FAT16 partitition"
+msgstr "Skrytý velký základní oddíl DOS FAT16 (Free FDISK)"
+
+msgid "Hidden Linux native partition or Amoeba"
+msgstr "Skrytý nativní oddíl Linux nebo Amoeba"
+
+msgid "MIT EXOPC native partitions"
+msgstr "Nativní oddíly MIT EXOPC"
+
+msgid "Free FDISK hidden Primary DOS FAT32 partitition"
+msgstr "Skrytý základní oddíl DOS FAT32 (Free FDISK)"
+
+msgid "DCE376 logical drive"
+msgstr "Logická jednotka DCE376"
+
+msgid "Free FDISK hidden Primary DOS FAT16 partitition (LBA)"
+msgstr "Skrytý základní oddíl DOS FAT16, režim LBA (Free FDISK)"
+
+msgid "Free FDISK hidden DOS extended partitition (LBA)"
+msgstr "Skrytý rozšířený oddíl DOS, režim LBA (Free FDISK)"
+
+msgid "IBM Thinkpad laptop hibernation partition"
+msgstr "Hibernační oddíl notebooků IBM Thinkpad"
+
+msgid "Laptop hibernation partition or HP Volume Expansion"
+msgstr "Hibernační oddíl notebooku nebo HP Volume Expansion"
+
+msgid "HP Volume Expansion (SpeedStor variant)"
+msgstr "HP Volume Expansion (varianta SpeedStor)"
+
+msgid "OpenBSD or HP Volume Expansion (SpeedStor variant)"
+msgstr "OpenBSD nebo HP Volume Expansion (varianta SpeedStor)"
+
+msgid "Olivetti Fat 12 1.44MB Service Partition"
+msgstr "Servisní oddíl Olivetti Fat 12 1.44MB"
+
+msgid "Mac OS-X (Darwin) Boot partition or GO! partition"
+msgstr "Zaváděcí oddíl Mac OS-X (Darwin) nebo oddíl GO!"
+
+msgid "ShagOS filesystem"
+msgstr "Souborový systém ShagOS"
+
+msgid "ShagOS swap partition"
+msgstr "Odkládací oddíl ShagOS"
+
+msgid "Corrupted Windows NT mirror set (master), FAT16 file system"
+msgstr "Poškozený zrcadlový set (master) Windows NT, souborový systém FAT16"
+
+msgid "BSDI BSD/386 filesystem or Corrupted Win NT mirror set, NTFS"
+msgstr "Souborový systém BSDI BSD/386 nebo poškozený zrcadlový set Win NT, NTFS"
+
+msgid "BSDI BSD/386 swap partition"
+msgstr "Odkládací oddíl BSDI BSD/386"
+
+msgid "Boot Wizard hidden"
+msgstr "Skrytý oddíl Boot Wizard"
+
+msgid "Solaris 8 boot partition"
+msgstr "Zaváděcí oddíl Solaris 8"
+
+msgid "New Solaris x86 partition"
+msgstr "Nový oddíl Solaris x86"
+
+msgid "CTOS or REAL/32 secure small partition or NTFT Partition"
+msgstr "CTOS nebo malý zabezpečený oddíl REAL/32 nebo oddíl NTFT"
+
+msgid "DRDOS/secured (FAT-12)"
+msgstr "DRDOS/zabezpečený (FAT-12)"
+
+msgid "Hidden Linux"
+msgstr "Skrytý oddíl Linux"
+
+msgid "Hidden Linux swap"
+msgstr "Skrytý odkládací oddíl Linux"
+
+msgid "DRDOS/secured (FAT-16, < 32M)"
+msgstr "DRDOS/zabezpečený (FAT-16, < 32M)"
+
+msgid "DRDOS/secured (extended)"
+msgstr "DRDOS/zabezpečený (rozšířený oddíl)"
+
+msgid "DRDOS/secured (FAT-16, >= 32M) or WinNT corrupted FAT16 volume/stripe set"
+msgstr "DRDOS/zabezpečený (FAT-16, >= 32M) nebo poškozený FAT16 svazek/stripe set"
+
+msgid "Windows NT corrupted NTFS volume/stripe set or Syrinx boot"
+msgstr "Poškozený NTFS svazek/stripe set Windows NT nebo zaváděcí oddíl Syrinx"
+
+msgid "Reserved for DR-DOS 8.0+"
+msgstr "Rezervováno pro DR-DOS 8.0+"
+
+msgid "DR-DOS 7.04+ secured FAT32 (CHS)"
+msgstr "DR-DOS 7.04+ zabezpečený FAT32 (CHS)"
+
+msgid "DR-DOS 7.04+ secured FAT32 (LBA)"
+msgstr "DR-DOS 7.04+ zabezpečený FAT32 (LBA)"
+
+msgid "DR-DOS 7.04+ secured EXT DOS (LBA)"
+msgstr "DR-DOS 7.04+ zabezpečený EXT DOS (LBA)"
+
+msgid "REAL/32 secure big partition or Multiuser DOS secured partition"
+msgstr "Velký zabezpečený oddíl REAL/32 nebo zabezpečený oddíl Multiuser DOS"
+
+msgid "Old Multiuser DOS secured FAT12"
+msgstr "Zabezpečený oddíl FAT12 pro starší Multiuser DOS"
+
+msgid "Old Multiuser DOS secured FAT16 <32M"
+msgstr "Zabezpečený oddíl FAT16 <32M pro starší Multiuser DOS"
+
+msgid "Old Multiuser DOS secured extended partition"
+msgstr "Zabezpečený rozšířený oddíl pro starší Multiuser DOS"
+
+msgid "Old Multiuser DOS secured FAT16 >=32M"
+msgstr "Zabezpečený oddíl FAT16 >=32M pro starší Multiuser DOS"
+
+msgid "Non-FS Data"
+msgstr "Data bez souborového systému"
+
+msgid "Hidden CTOS Memdump?"
+msgstr "Skrytý oddíl CTOS Memdump?"
+
+msgid "Dell PowerEdge Server utilities (FAT fs)"
+msgstr "Utility Dell PowerEdge Server (souborový systém FAT)"
+
+msgid "DG/UX virtual disk manager partition or BootIt EMBRM"
+msgstr "Oddíl virtuálního správce disku DG/UX nebo BootIt EMBRM"
+
+msgid "Reserved by STMicroelectronics for a filesystem called ST AVFS"
+msgstr "Rezervováno STMicroelectronics pro souborový systém ST AVFS"
+
+msgid "DOS access or SpeedStor 12-bit FAT extended partition"
+msgstr "DOS access nebo rozšířený oddíl SpeedStor 12-bit FAT"
+
+msgid "DOS R/O or SpeedStor"
+msgstr "DOS R/O nebo SpeedStor"
+
+msgid "SpeedStor 16-bit FAT extended partition < 1024 cyl"
+msgstr "Rozšířený oddíl SpeedStor 16-bit FAT < 1024 cyl"
+
+msgid "Intel EFI GUID Partition Table (followed by an EFI header)"
+msgstr "Tabulka rozdělení disku Intel EFI GUID (za kterou následuje EFI-hlavička)"
+
+msgid "Intel EFI (FAT-12/16/32) file system partition"
+msgstr "Oddíl souborového systému Intel EFI (FAT-12/16/32)"
+
+msgid "Linux/PA-RISC"
+msgstr "Zavaděč Linux/PA-RISC"
+
+msgid "DOS 3.3+ secondary partition"
+msgstr "Druhý oddíl DOS 3.3+"
+
+msgid "SpeedStor large partition or Prologue single-volume partition"
+msgstr "Velký oddíl SpeedStor nebo jednosvazkový oddíl Prologue"
+
+msgid "Prologue multi-volume partition"
+msgstr "Vícesvazkový oddíl Prologue"
+
+msgid "VMware File System partition"
+msgstr "Oddíl se souborovým systémem VMware"
+
+msgid "VMware Swap partition"
+msgstr "Odkládací oddíl VMware"
+
+msgid "Linux raid partition with autodetect"
+msgstr "Oddíl Linux raid s autodetekcí"
+
+msgid "Windows NT Disk Administrator hidden partition or Linux LVM (old)"
+msgstr "Skrytý oddíl Windows NT Disk Administrator nebo Linux LVM (starší)"
+
+msgid "FATAL: "
+msgstr "FATÁLNÍ: "
+
+msgid "DEBUG: "
+msgstr "LADĚNÍ: "
+
+msgid "UNKNOWN: "
+msgstr "NEZNAMÝ: "
+
+msgid "Error writing log, it seems there is no space left on a device."
+msgstr "Chyba při zápisu do logu, vypadá to, že není místo na disku."
+
+msgid "Before interrupt INT 13h, AH=%02Xh"
+msgstr "Před přerušením INT 13h, AH=%02Xh"
+
+msgid "After interrupt"
+msgstr "Po přerušení"
+
+msgid "Error code: %u"
+msgstr "Kód chyby: %u"
+
+msgid "Unable to get maximum number of available devices."
+msgstr "Nemohu zjistit maximalní počet dostupných zařízení."
+
+msgid "Found devices: %u"
+msgstr "Nalezeno zařízení: %u"
+
+msgid "Device: 0x%02X."
+msgstr "Zařízení: 0x%02X."
+
+msgid "Extensions are not present, device will not be used."
+msgstr "Rozšíření nejsou dostupná, zařízení nebude použito."
+
+msgid "Magic number: %u"
+msgstr "Signatura: %u"
+
+msgid "Magic number is not equal to 0xAA55."
+msgstr "Signatura se liší od 0xAA55."
+
+msgid "Version of extensions: %u (is not equal to 0x30)"
+msgstr "Verze rozšíření: %u (nerovná se 0x30)"
+
+msgid "Interface support bitmap: %u"
+msgstr "List podpory rozhraní: %u"
+
+msgid "Fixed disk access subset is not supported by extensions."
+msgstr "Požadovaný přímý způsob přístupu na disk není rozšířeními podporován."
+
+msgid "Size of DeviceParameters structure: %u"
+msgstr "Velikost struktury DeviceParameters: %u"
+
+msgid "Could not get device parameters."
+msgstr "Nebylo možno zjistit parametry zařízení."
+
+msgid "Since structure size is more than 30 and interface support bitmap has EDD support extension, save important information from DPTE"
+msgstr "Jelikož velikost struktury je větší než 30 a seznam podporovaných rozhraní obsahuje EDD-rozšíření, důležité informace budou uloženy z DPTE"
+
+msgid "Size structure returned by BIOS interrupt: %u"
+msgstr "Velikost struktury získané přerušením BIOSu: %u"
+
+msgid "Structure returned by 'get device parameters' is less than minimum."
+msgstr "Struktura získaná pomocí 'get device parameters' je menší než minimální."
+
+msgid "Sector size: %u"
+msgstr "Velikost sektoru: %u"
+
+msgid "Size of a sector is not equal to 512."
+msgstr "Velikost sektoru není rovna 512."
+
+msgid "Calculating approximate size"
+msgstr "Počítám přibližnou velikost"
+
+msgid "Too small hard drive, it seems some error has occured."
+msgstr "Příliš malý pevný disk, vypadá to, že se vyskytla nějaká chyba."
+
+msgid "Memory allocation error"
+msgstr "Chyba alokace paměti"
+
+msgid "Internal error with dynamic list allocation logic, this should never happen"
+msgstr "Vnitřní chyba v logice alokace dynamického seznamu, to by se nemělo nikdy stát"
+
+msgid "Size of a structure is greater or equal than 30"
+msgstr "Velikost struktury je větší nebo rovna 30"
+
+msgid "Size of a structure is equal either to 74 or to 66"
+msgstr "Velikost struktury je buď 74 anebo 66"
+
+msgid "Should be 0xBEDD, found: 0x%X"
+msgstr "Mělo by být 0xBEDD, nalezeno: 0x%X"
+
+msgid "Key, indicating presence of Device Path Information was not found."
+msgstr "Klíč, indikující přítomnost Device Path Information, nebyl nalezen."
+
+msgid "Buffer size is %u, Device Path Information length is %u"
+msgstr "Velikost vyrovnávací paměti je %u, délka Device Path Information je %u"
+
+msgid "Buffer size does not suit the length of Device Path Information."
+msgstr "Velikost vyrovnávací paměti nevyhovuje délce Device Path Information."
+
+msgid "Host bus type was: '%s'"
+msgstr "Typ host-sběrnice byl: '%s'"
+
+msgid "Reducing trailing space"
+msgstr "Odstranění koncových mezer"
+
+msgid "Interface type was: '%s'"
+msgstr "Typ rozhraní byl: '%s'"
+
+msgid "Either ATA or SATA interface type is detected"
+msgstr "Detekováno buď ATA anebo SATA rozhraní"
+
+msgid "DevicePath[0]=0x%02X, so modifying ATADeviceBit"
+msgstr "DevicePath[0]=0x%02X, proto modifikuji ATADeviceBit"
+
+msgid "'Enhanced Disk Drive (EDD) Support' extensions subset is present"
+msgstr "Přítomno rozšíření pro podporu 'Enhanced Disk Drive' (EDD)"
+
+msgid "Primary interface"
+msgstr "Primární rozhraní"
+
+msgid "/Primary"
+msgstr "/Primární"
+
+msgid "Secondary interface"
+msgstr "Sekundární rozhraní"
+
+msgid "/Secondary"
+msgstr "/Sekundární"
+
+msgid "Master device"
+msgstr "Hlavní zařízení"
+
+msgid "/Master"
+msgstr "/Hlavní"
+
+msgid "Slave device"
+msgstr "Podřízené zařízení"
+
+msgid "/Slave"
+msgstr "/Podřízený"
+
+msgid "All 256 words of data have been received"
+msgstr "Bylo prijato všech 256 datových slov"
+
+msgid "Model number was: '%s'"
+msgstr "Číslo modelu: '%s'"
+
+msgid "Trying disk device %s"
+msgstr "Zkouším diskové zařízení %s"
+
+msgid "Unable to close disk device %s"
+msgstr "Nemohu uzavřít diskové zařízení %s"
+
+msgid "glob() system call succeeded on %s"
+msgstr "Systémové volání glob() úspěšně dokončeno pro %s"
+
+msgid "Unable to open file with model description, errno=%i, (%s)"
+msgstr "Nemohu otevřít záznam s popisem modelu, errno=%i, (%s)"
+
+msgid "Unable to read file with model description, errno=%i, (%s)"
+msgstr "Nemohu přečíst záznam s popisem modelu, errno=%i, (%s)"
+
+msgid "Running out of memory, errno=%i, (%s)"
+msgstr "Došla volná paměť, errno=%i, (%s)"
+
+msgid "Read error, errno=%i, (%s)"
+msgstr "Chyba čtení, errno=%i, (%s)"
+
+msgid "No found matches, errno=%i, (%s)"
+msgstr "Nic nenalezeno, errno=%i, (%s)"
+
+msgid "Unknown error, errno=%i, (%s)"
+msgstr "Neznámá chyba, errno=%i, (%s)"
+
+msgid "Unable to open file with vendor description, errno=%i, (%s)"
+msgstr "Nemohu otevřít záznam s popisem výrobce, errno=%i, (%s)"
+
+msgid "Unable to read file with vendor description, errno=%i, (%s)"
+msgstr "Nemohu přečíst záznam s popisem výrobce, errno=%i, (%s)"
+
+msgid "Unable to create temporary file, errno=%i, (%s)"
+msgstr "Nemohu vytvořit dočasný soubor, errno=%i, (%s)"
+
+msgid "Unable to close temporary file, errno=%i, (%s)"
+msgstr "Nemohu uzavřít dočasný soubor, errno=%i, (%s)"
+
+msgid "Command to run: '%s', error code=%i"
+msgstr "Příkaz ke spuštění: '%s', kód chyby=%i"
+
+msgid "Unable to execute sysctl command"
+msgstr "Nemohu vykonat příkaz sysctl"
+
+msgid "Unable to open temporary file, errno=%i, (%s)"
+msgstr "Nemohu otevřít dočasný soubor, errno=%i, (%s)"
+
+msgid "Trying to get description for device %s"
+msgstr "Zkouším získat popis zařízení %s"
+
+msgid "Trying to read device model/vendor for device %s"
+msgstr "Zkouším přečíst model/výrobce zařízení %s"
+
+msgid "Unable to open file with device description, errno=%i, (%s)"
+msgstr "Nemohu otevřít záznam s popisem zařízení, errno=%i, (%s)"
+
+msgid "Unable to read file with device description, errno=%i, (%s)"
+msgstr "Nemohu přečíst záznam s popisem zařízení, errno=%i, (%s)"
+
+msgid "Unable to delete temporary file, errno=%i, (%s)"
+msgstr "Nemohu smazat dočasný soubor, errno=%i, (%s)"
+
+msgid "DisksReadSector() started"
+msgstr "DisksReadSector() spuštěno"
+
+msgid "Device name could not be NULL"
+msgstr "Jméno zařízení nemůže být NULL"
+
+msgid "Length of string of DeviceName should be equal to 4, but it is %i (Device='%s')"
+msgstr "Délka názvu DeviceName by měla být 4 znaky a ne %i (Device='%s')"
+
+msgid "Invalid prefix in Device name (Device='%s')"
+msgstr "Neplatná předpona ve jménu zařízení (Device='%s')"
+
+msgid "Invalid Device name (Device='%s')"
+msgstr "Neplatné jméno zařízení (Device='%s')"
+
+msgid "Size of DeviceAddressPacket structure: %u"
+msgstr "Velikost struktury DeviceAddressPacket: %u"
+
+msgid "Unable to read sector."
+msgstr "Nemohu přečíst sektor."
+
+msgid "Unable to open device %s for reading, %s"
+msgstr "Nemohu otevřít zařízení %s pro čtení, %s"
+
+msgid "Unable to seek to desired position, %s"
+msgstr "Nemohu přejít na požadovanou pozici, %s"
+
+msgid "Unable to read data from device %s, %s"
+msgstr "Nemohu přečíst data ze zařízení %s, %s"
+
+msgid "Read operation returned unexpected number of bytes being read: %i"
+msgstr "Operace čtení vrátila neočekávaný počet přečtených bajtů: %i"
+
+msgid "Unable to close device %s, %s"
+msgstr "Nemohu uzavřít zařízení %s, %s"
+
+msgid "DisksWriteSector() started"
+msgstr "DisksWriteSector() spuštěno"
+
+msgid "Unable to write sector."
+msgstr "Nemohu zapsat sektor."
+
+msgid "Unable to open device %s for writing, %s"
+msgstr "Nemohu otevřít zařízení %s pro zápis, %s"
+
+msgid "Unable to write data to device %s, %s"
+msgstr "Nemohu zapsat data na zařízení %s, %s"
+
+msgid "Write operation returned unexpected number of bytes being written: %i"
+msgstr "Operace zápisu vrátila neočekávaný počet zapsaných bajtů: %i"
+
+msgid ""
+"Master Boot LoaDeR is a boot loader for master boot record intended to support\n"
+"booting from different partitions. It has simple text boot menu and occupies\n"
+"only the first sector of hard disk. It is intended to replace MBR contents\n"
+"coming with MS-DOS/Windows. It supports partition hiding, booting OSes above\n"
+"1024 cylinder, active partition switching and may load default OS by timeout.\n"
+"It is also capable to boot Linux/BSD partitions. This program is intended to\n"
+"install and configure mbldr on the HDD you choose using interactive menus.\n"
+"\n"
+msgstr ""
+"Master Boot LoaDeR je zavaděč pro hlavní spouštěcí záznam disku (MBR) určený\n"
+"pro zavádění systémů z různých diskových oddílů. Má jednoduché textové menu a\n"
+"obsazuje pouze první sektor disku. Nahrazuje obsah MBR z MS-DOS/Windows.\n"
+"Podporuje skrývání diskových oddílů, zavádění OS z cylindrů disku nad 1024cyl,\n"
+"nastavování aktivního diskového oddílu a umí zavést implicitní OS po překročení\n"
+"časového limitu. MBLDR je také schopen zavést Linux/BSD oddíly. Tento program\n"
+"slouží k instalaci a konfiguraci MBLDR na vybraném disku pomocí GUI.\n"
+"\n"
+
+msgid "Syntax: "
+msgstr "Syntaxe: "
+
+msgid " [option] [option]...\n"
+msgstr " [parametr] [parametr]...\n"
+
+msgid ""
+"Options are:\n"
+" -h Outputs help message and exits\n"
+" -v Verbose mode (debug only, uses log file)\n"
+msgstr ""
+"Dostupné přepínače:\n"
+" -h Zobrazí nápovědu a ukončí činnost\n"
+" -v Ladící režim (více informací, používá logovací soubor)\n"
+
+msgid ""
+" -d <device_number> Defines BIOS device number if hard disk autodetect does not\n"
+"    work. Parameter should be in the following form: '0x80', '0x81', etc.\n"
+"    (without apostrophes)"
+msgstr ""
+" -d <číslo_zařízení> Definuje číslo zařízení v BIOSu, pokud selže autodetekce.\n"
+"    Parametr by měl být v následující formě: '0x80', '0x81', atd.\n"
+"    (bez apostrofů)"
+
+msgid ""
+" -d <device> Defines a name of device (usually hard disk) to manage.\n"
+"    This is typically /dev/hda or /dev/sda under Linux and /dev/ad0 or\n"
+"    /dev/da0 under BSD. It also can be a regular file representing binary\n"
+"    image of some device."
+msgstr ""
+" -d <zařízení> Definuje jméno požadovaného zařízení (obvykle pevný disk).\n"
+"    Typicky /dev/hda nebo /dev/sda pod Linuxem a /dev/ad0 nebo /dev/da0\n"
+"    pod BSD. Také to může být obyčejný soubor reprezentující binární obraz\n"
+"    daného zařízení."
+
+msgid ""
+" -d <device_number> Defines a number of hard disk (should be a sequential\n"
+"    non-negative integer value: 0, 1, 2, etc.) This could be useful if disk\n"
+"    autodetect does not work for some reasons.\n"
+"    or\n"
+" -d <file_name> Representing binary image of a device. This syntax could also\n"
+"    be used if you want to specify devices which are not covered with\n"
+"    \\\\.\\PHYSICALDRIVE naming scheme."
+msgstr ""
+" -d <číslo_zařízení> Definuje číslo pevného disku (měla by to být celá\n"
+"    nezáporná po sobě jdoucí čísla jako: 0, 1, 2, atd.) Může to být užitečné\n"
+"    v případě, kdy z nějakého důvodu selže disková autodetekce.\n"
+"    nebo\n"
+" -d <jméno_souboru> Soubor s binárním obrazem zařízení. Tato syntaxe může být\n"
+"    také použita, jestliže chcete specifikovat zařízení, která neodpovídají\n"
+"    pojmenovávací uzanci \\\\.\\PHYSICALDRIVE."
+
+msgid "User asked for command-line help."
+msgstr "Uživatel požadoval nápovědu příkazového řádku."
+
+msgid "'%c' option is detected"
+msgstr "detekován parametr '%c'"
+
+msgid "Log level set to DEBUG"
+msgstr "Úroveň logování nastavena na LADĚNÍ"
+
+msgid "Invalid -d parameter: %s"
+msgstr "Neplatný parametr -d: %s"
+
+msgid "Device name has been set to %s"
+msgstr "Název zařízení byl nastaven na %s"
+
+msgid "Unknown option %c"
+msgstr "Neznámý parametr %c"
+
+msgid "Reading sector %lu."
+msgstr "Čtení sektoru %lu."
+
+msgid "Magic number 0xAA55 was not found."
+msgstr "Signatura 0xAA55 nebyla nalezena"
+
+msgid "Extended partition 0x%02X has been found."
+msgstr "Byl nalezen rozšířený oddíl 0x%02X."
+
+msgid "More than one extended partition has been found."
+msgstr "Byl nalezen více než jeden rozšířený oddíl."
+
+msgid "Storing initial extended partition offset 0x%08lX"
+msgstr "Ukládám počáteční pozici 0x%08lX rozšířeného oddílu"
+
+msgid "Calculating extended partition offset: initial 0x%08lX + current 0x%08lX"
+msgstr "Počítám pozici rozšířeného oddílu: počáteční 0x%08lX + současná 0x%08lX"
+
+msgid "Partition 0x%02X has been found."
+msgstr "Byl nalezen diskový oddíl 0x%02X."
+
+msgid "Relative offset in sectors: 0x%08lX"
+msgstr "Relativní pozice v sektorech: 0x%08lX"
+
+msgid "Size in sectors: 0x%08lX"
+msgstr "Velikost v sektorech: 0x%08lX"
+
+msgid "This partition is primary"
+msgstr "Tento diskový oddíl je základní"
+
+msgid "Swap partition entries: %s"
+msgstr "Položky odkládacího oddílu: %s"
+
+msgid "This partition belongs to an extended partition (is a logical disk)"
+msgstr "Tento diskový oddíl náleží do rozšířeného oddílu (logický disk)"
+
+msgid "Too many partitions have been found."
+msgstr "Bylo nalezeno příliš mnoho diskových oddílů."
+
+msgid "Empty partition slot has been found."
+msgstr "Bylo nalezeno prázdné místo pro diskový oddíl."
+
+msgid "Recursively call this function once again pointing it to an extended partition."
+msgstr "Ještě jednou zavolám rekurzivně tuto funkci na rozšířený oddíl."
+
+msgid "Verbosity is set to %u"
+msgstr "Úroveň detailů menu je nastavena na %u"
+
+msgid "Maximum verbosity reached"
+msgstr "Byla dosažena maximální úroveň detailů menu"
+
+msgid "Number of available characters for custom boot menu text: %i"
+msgstr "Počet dostupných znaků pro textové menu zavaděče: %i"
+
+msgid ""
+"Too many characters in custom boot menu text.\n"
+"Regenerate boot menu text automatically or upload smaller file.\n"
+"Installation of mbldr is not allowed until you free at least %i bytes."
+msgstr ""
+"Příliš mnoho znaků v textovém menu zavaděče.\n"
+"Obnovte textové menu zavaděče (automaticky) nebo nahrajte menší soubor.\n"
+"Instalace mbldr není povolena, dokud neuvolníte alespoň %i B."
+
+msgid "Boot menu text will be generated after adding bootable partitions."
+msgstr "Textové menu zavaděče bude generováno přidáváním zaváděcích oddílů."
+
+msgid "Program name and version"
+msgstr "Jméno a verze programu"
+
+msgid "Boot menu body with the list of partitions"
+msgstr "Obsah menu zavaděče se seznamem oddílů"
+
+msgid "Unknown partition has been found, empty label"
+msgstr "Byl nalezen neznámý oddíl, prázdná popiska"
+
+msgid "Timeout value and instruction how to interrupt timer"
+msgstr "Hodnota časového limitu a instrukce, jak přerušit časovač"
+
+msgid "TimerInterruptKey has unexpected value %u"
+msgstr "Neočekávaná hodnota TimerInterruptKey: %u"
+
+msgid "Instruction what Enter does"
+msgstr "Instrukce, co dělá Enter"
+
+msgid "Instruction what to click"
+msgstr "Instrukce, na co kliknout"
+
+msgid "Progress bar frame"
+msgstr "Rámec ukazatele průběhu"
+
+msgid "Number of characters left=%i"
+msgstr "Počet zbývajících znaků = %i"
+
+msgid "Result of nested call=%i"
+msgstr "Výsledek vloženého volání = %i"
+
+msgid "Populate boot menu text"
+msgstr "Vyplnit text menu zavaděče"
+
+msgid ""
+"Too many characters have been entered for labels of bootable partitions.\n"
+"Installation of mbldr is not allowed until you free at least %i bytes."
+msgstr ""
+"Bylo zadáno příliš mnoho znaků pro popisky zaveditelných oddílů.\n"
+"Instalace mbldr není povolena, dokud neuvolníte alespoň %i B."
+
+msgid "Old MBR contents:"
+msgstr "Předchozí obsah MBR:"
+
+msgid "mbldr_bin_len=%u, (not equal to 512)"
+msgstr "mbldr_bin_len=%u, (nerovná se 512)"
+
+msgid "First difference found at offset %u, found 0x%02X, should be 0x%02X."
+msgstr "První rozdíl byl nalezen na pozici %u, nalezeno 0x%02X, mělo by být 0x%02X."
+
+msgid "Mask array contains wrong values (offset %u, value 0x%02X)."
+msgstr "Pole masky obsahuje nesprávné hodnoty (pozice %u, hodnota 0x%02X)."
+
+msgid "Mbldr was found."
+msgstr "Mbldr nalezen."
+
+msgid ""
+"Existing mbldr was found on the chosen disk device. Would you\n"
+"like to configure it? (otherwise a fresh install will be performed)"
+msgstr ""
+"Na vybraném diskovém zařízení byla nalezena instalace mbldr.\n"
+"Přejete si ji nakonfigurovat? (jinak bude použita nová instalace)"
+
+msgid "User wants to configure existing mbldr."
+msgstr "Uživatel chce nakonfigurovat stávající instalaci mbldr."
+
+msgid "User wants to do fresh install."
+msgstr "Uživatel chce novou instalaci."
+
+msgid "ASCII code 0x%02X for timer interruption is neither Esc nor Space in existing mbldr."
+msgstr "ASCII kód 0x%02X pro přerušení časového limitu není ani Esc ani Mezerník v stávajícím mbldr."
+
+msgid "Number of bootable partitions is incorrect (%u) in existing mbldr."
+msgstr "Nesprávný počet zaveditelných oddílů (%u) v stávajícím mbldr."
+
+msgid "Number of default partition is incorrect (%u) in existing mbldr."
+msgstr "Nesprávné číslo implicitního zaváděcího oddílu (%u) v stávajícím mbldr."
+
+msgid "ASCII codes are used"
+msgstr "Použity ASCII kódy"
+
+msgid "Scan-codes are used"
+msgstr "Použity sken-kódy"
+
+msgid "Base keyboard code: %u"
+msgstr "Základní kód klávesy: %u"
+
+msgid "Progress-bar looks like 9876543210"
+msgstr "Ukazatel průběhu vypadá jako: 9876543210"
+
+msgid "Progress-bar symbol is '%c'"
+msgstr "Symbol ukazatele průběhu: '%c'"
+
+msgid "Progress-bar is disabled"
+msgstr "Ukazatel průběhu zakázán"
+
+msgid "Progress-bar is enabled"
+msgstr "Ukazatel průběhu povolen"
+
+msgid "Timed boot is disabled (opcode: 0x%02X)"
+msgstr "Závádění s časovým limitem zakázáno (opcode: 0x%02X)"
+
+msgid "Timed boot is set to %i, opcode: 0x%02X, timer_byte1=0x%02X, timer_byte2=0x%02X"
+msgstr "Časový limit pro zavedení je %i, opcode: 0x%02X, timer_byte1=0x%02X, timer_byte2=0x%02X"
+
+msgid "Timeout field is incorrect (%u) in existing mbldr."
+msgstr "Nesprávná hodnota pole pro časový limit (%u) v stávajícím mbldr."
+
+msgid "Timeout: %u"
+msgstr "Časový limit: %u"
+
+msgid "Boot menu text is corrupted."
+msgstr "Text menu zavaděče je poškozen."
+
+msgid ""
+"Existing mbldr is configured to use custom %skey codes.\n"
+"It is unable to properly parse boot menu text so all labels\n"
+"will be lost. You need to type them again or use custom boot\n"
+"menu."
+msgstr ""
+"Stávající mbldr je nakonfigurován tak, aby používal %skey kódy.\n"
+"Nemůže proto správně analyzovat textové menu zavaděče, takže\n"
+"všechny popisky budou ztraceny. Je zapotřebí, abyste je zadali\n"
+"znovu nebo použili upravené uživatelské zaváděcí menu."
+
+msgid "Partition %u: offset %u"
+msgstr "Oddíl %u: pozice %u"
+
+msgid "Partition's description: '%s'"
+msgstr "Popis oddílu: '%s'"
+
+msgid "New MBR contents:"
+msgstr "Nový obsah MBR:"
+
+msgid "Press Enter."
+msgstr "Stiskněte Enter."
+
+msgid "Yes, agree, go ahead"
+msgstr "Ano, souhlasím, pokračovat"
+
+msgid "No, please cancel the operation"
+msgstr "Ne, požaduji stornovat operaci"
+
+msgid "Choose the answer"
+msgstr "Vyberte odpověď"
+
+msgid "User's choice: '%s'"
+msgstr "Volba uživatele: '%s'"
+
+msgid "Author:"
+msgstr "Autor:"
+
+msgid "More info can be found at:"
+msgstr "Další informace můžete nalézt zde:"
+
+msgid "No devices has been found, try to explicitly specify device with '-d' option"
+msgstr "Nebylo nalezeno žádné zařízení, zkuste výslovně uvést zařízení pomocí parametru '-d'"
+
+msgid "Only one suitable device was found and will be used: "
+msgstr "Nalezeno bylo pouze jedno vhodné zařízení, které bude použito: "
+
+msgid "No partitions have been found"
+msgstr "Nebyl nalezen žádný diskový oddíl"
+
+msgid "Quit immediately"
+msgstr "Bezprostřední ukončení"
+
+msgid "Choose a device"
+msgstr "Vyberte zařízení"
+
+msgid "User chooses immediate quit."
+msgstr "Uživatel zvolil bezprostřední ukončení."
+
+msgid "User's choice: '%s' converted to integer %li."
+msgstr "Volba uživatele: '%s' konvertováno na celé číslo %li."
+
+msgid "The number of partitions reached its maximum (9). You can't add another one."
+msgstr "Počet diskových oddílů dosáhl maxima (9). Nemůžete přidat další oddíl."
+
+msgid "Partitions that are already in the bootable list are marked with asterisks."
+msgstr "Diskové oddíly, které jsou již uvedeny v seznamu pro zavádění, jsou označeny hvězdičkou."
+
+msgid "Partition %u is found in current configuration at slot %u"
+msgstr "Diskový oddíl %u byl nalezen ve stávající konfiguraci na pozici %u"
+
+msgid "PRI"
+msgstr "ZÁKL."
+
+msgid "EXT"
+msgstr "ROZŠ."
+
+msgid "Tb"
+msgstr "Тb"
+
+msgid "Gb"
+msgstr "Gb"
+
+msgid "Mb"
+msgstr "Мb"
+
+msgid "Kb"
+msgstr "Кb"
+
+msgid "'Skip boot attempt' is found in slot %u"
+msgstr "Položka 'Pokus o vynechání nabídky zavádění' byla nalezena na pozici %u"
+
+msgid "SKIP BOOT"
+msgstr "VYNECHAT NABÍDKU ZAVÁDĚNÍ"
+
+msgid "'Boot from next HDD' is found in slot %u"
+msgstr "Položka 'Zavedení z následujícího disku' byla nalezena na pozici %u"
+
+msgid "NEXT HDD"
+msgstr "ZAVEDENÍ Z NÁSLEDUJÍCÍHO DISKU"
+
+msgid "Do not add anything at this time"
+msgstr "Tentokrát nic nepridávat"
+
+msgid "Choose what do you want to add"
+msgstr "Vyberte, co chcete přidat"
+
+msgid "Do nothing, just go back from this menu."
+msgstr "Nic nedělat, jít zpět na předchozí nabídku."
+
+msgid "'Skip boot' menu item has been added."
+msgstr "Položka 'Vynechat zaváděcí nabídku' byla přidána do menu."
+
+msgid ""
+"'Next HDD' menu item adds the following capability to the\n"
+"boot loader: after choosing this menu item mbldr tries to\n"
+"load MBR from another hard drive (number of drive is increased\n"
+"sequentially: 0x80, 0x81, etc) and execute it. New master boot\n"
+"loader gets a number of drive being used as a parameter.\n"
+"Theoretically this scheme should work fine assuming that all\n"
+"boot loaders respect this input parameter. Unfortunately\n"
+"several boot loaders ignore it assuming that the drive number\n"
+"used to boot is always 0x80 (what is incorrect according to\n"
+"EDD3 specification). It may lead to impossibility to boot for\n"
+"so called 'passive' master boot loaders (that just try to boot\n"
+"not updating MBR every time you boot). But even worse for so\n"
+"called 'active' master boot loaders (that modify MBR every time\n"
+"you boot) you may overwrite MBR on the wrong disk. Please\n"
+"note that 'Next HDD' feature is not the same as the one\n"
+"provided by BIOS (boot from either of installed hard disks).\n"
+"BIOS does the reenumeration of hard drives making bootable\n"
+"disk always 0x80, while mbldr does not. Use this feature at\n"
+"your own risk! It is dangerous and may lead to data loss if\n"
+"you have master boot loaders others than mbldr with version\n"
+"1.37 or above!\n"
+"Are you sure?"
+msgstr ""
+"Položka 'Zavedení z následujícího disku' zpřístupní následující schopnost\n"
+"zavaděče: zavaděč mbldr se, po výberu této položky z menu,\n"
+"pokusí o zavedení pomocí nahrání a vykonání kódu MBR z jiného\n"
+"disku (číslo zařízení je přitom postupně zvyšováno: 0x80, 0x81,\n"
+"atd.) Nový zavaděč MBR obdrží číslo právě použitého zařízení\n"
+"jako parametr. Teoreticky by toto schéma mělo fungovat bez\n"
+"problémů za předpokladu, že všechny zavaděče budou respektovat\n"
+"tento vstupní parametr. Bohužel některé zavaděče jej ignorují\n"
+"a tiše předpokládají, že číslo zaváděného zařízení je vždy\n"
+"0x80 (což odporuje specifikaci EDD3). Tento fakt může vést\n"
+"k nemožnosti zavést tzv. 'pasivní' MBR zavaděče (tedy ty, které\n"
+"jednoduše zkouší zavést systém bez toho, aniž by pokaždé\n"
+"aktualizovaly MBR). A ještě hůře pro tzv. 'aktivní' zavaděče\n"
+"(ty, které modifikují MBR pokaždé při zavedení systému) - ty\n"
+"mohou přepsat MBR na nesprávném disku. Prosím povšimněte si, že\n"
+"'Zavedení z následujícího disku' není to samé jako možnost\n"
+"poskytovaná BIOSem (zavedení z libovolného dostupného disku).\n"
+"BIOS přečísluje disky tak, aby ten zaváděcí měl vždy číslo\n"
+"0x80, zatímco mbldr nikoliv. Použití této vlastnosti mbldr je\n"
+"tudíž na vlastní nebezpečí! Není to bezpečné a může to vést\n"
+"ke ztrátě dat, jestliže současně používáte i jiné MBR zavaděče\n"
+"než mbldr od verze 1.37 a vyšší!\n"
+"Jste si jistí?"
+
+msgid "Are you sure?"
+msgstr "Jste si jistí?"
+
+msgid "'Next HDD' menu item has been added."
+msgstr "Položka 'Zavedení z následujícího disku' byla přidána do menu."
+
+msgid "Type the label for this partition: "
+msgstr "Zadejte popisku tohoto diskového oddílu: "
+
+msgid "Unable to get current active codepage"
+msgstr "Není možné zjistit současnou aktivní kódovou stránku"
+
+msgid "Label of partition is set to '%s'"
+msgstr "Popiska diskového oddílu byla nastavena na '%s'"
+
+msgid "Partition has been added."
+msgstr "Byl přidán diskový oddíl."
+
+msgid ""
+"No partitions have been found in current configuration.\n"
+"You should add at least one."
+msgstr ""
+"V stávající konfiguraci nebyly nalezeny žádné diskové oddíly.\n"
+"Je zapotřebí přidat alespoň jeden."
+
+msgid "Default partition is what was booted last."
+msgstr "Posledně byl zaveden implicitní diskový oddíl."
+
+msgid "Default partition is marked with asterisk."
+msgstr "Hvězdička označuje implicitní diskový oddíl."
+
+msgid "Partition in the slot %u is the default one"
+msgstr "Implicitní diskový oddíl je na pozici %u"
+
+msgid "Skip boot attempt and try another device"
+msgstr "Vynechat zaváděcí nabídku a zkusit jiné zařízení"
+
+msgid "Try to boot from next hard disk (dangerous!)"
+msgstr "Pokusit se o zavedení z jiného disku (nebezpečné!)"
+
+msgid "Broken partition offset 0x08lX is found in slot %u"
+msgstr "Nekorektní ukazatel umístění 0x08lX diskového oddílu se nachazí na pozici %u"
+
+msgid "!!!BROKEN!!!"
+msgstr "!!!PORUŠENO!!!"
+
+msgid "Partition offset points to a wrong sector, remove it"
+msgstr "Ukazatel pozice diskového oddílu míří na chybný sektor, odstraňte ho"
+
+msgid "No default partition (load what was used on previous boot)"
+msgstr "Není nastaven implicitní diskový oddíl (zavedení oddílu, který byl použit posledně)"
+
+msgid "Choose partition or menu item"
+msgstr "Vyberte diskový oddíl nebo položku menu"
+
+msgid "The default partition has been reset. It will point to what was booted last."
+msgstr "Byl odstraněn implicitní diskový oddíl. Bude označen ten oddíl, který byl použit posledně."
+
+msgid "Remove this partition or boot menu item"
+msgstr "Odstranit tento diskový oddíl nebo položku menu"
+
+msgid "Set/edit text label for partition or boot menu item"
+msgstr "Nastavení/editace popisky diskového oddílu nebo položky menu"
+
+msgid "Set this partition as a default"
+msgstr "Nastavit tento diskový oddíl jako implicitní"
+
+msgid "What do you want to do?"
+msgstr "Co chcete dělat?"
+
+msgid "Using device %s"
+msgstr "Používám zařízení %s"
+
+msgid "User wants to remove this partition or menu item."
+msgstr "Uživatel si přeje odstranit tento diskový oddíl nebo položku menu."
+
+msgid "Decreasing number of default partition, now it's %u."
+msgstr "Snižuji číslo implicitního diskového oddílu, nyní je to %u."
+
+msgid "Partition has been removed from configuration."
+msgstr "Diskový oddíl byl odstraněn z konfigurace."
+
+msgid "List is now empty."
+msgstr "Seznam je nyní prázdný."
+
+msgid "User wants to set or edit text label for boot menu."
+msgstr "Uživatel si přeje vytvořit nebo editovat text popisky zaváděcího menu."
+
+msgid "custom"
+msgstr "uživatelský"
+
+msgid "automatic"
+msgstr "automatický"
+
+msgid "User wants to set this partition as a default."
+msgstr "Uživatel si přeje nastavit tento diskový oddíl jako implicitní."
+
+msgid "Partition %i is set as a default one."
+msgstr "Diskový oddíl %i je nastaven jako implicitní."
+
+msgid "Use <Esc> key to interrupt timer"
+msgstr "Použijte klávesu <Esc> pro přerušení časového limitu"
+
+msgid "Use <Space> key to interrupt timer"
+msgstr "Použijte klávesu <Mezerník> pro přerušení časového limitu"
+
+msgid "Choose timer interrupt key"
+msgstr "Vyberte klávesu pro přerušení časového limitu"
+
+msgid "Currently progress-bar is not allowed."
+msgstr "Ukazatel průběhu není nyní povolen."
+
+msgid "Current progress-bar type: "
+msgstr "Typ nastaveného ukazatele průběhu: "
+
+msgid "Decreasing digits"
+msgstr "odpočet"
+
+msgid "Asterisks"
+msgstr "hvězdičky"
+
+msgid "Equal signs"
+msgstr "rovnítka"
+
+msgid "Greater signs"
+msgstr "znaky 'větší než'"
+
+msgid "Dots"
+msgstr "tečky"
+
+msgid "Number signs"
+msgstr "čísla"
+
+msgid "Pluses"
+msgstr "plusy"
+
+msgid "Minuses"
+msgstr "mínusy"
+
+msgid "Custom symbols"
+msgstr "uživatelsky definovné symboly"
+
+msgid "Disabled"
+msgstr "Zakázáno"
+
+msgid "Choose progress-bar type"
+msgstr "Vyberte typ ukazatele průběhu"
+
+msgid "Type one custom symbol for progress-bar"
+msgstr "Zadejte jeden symbol pro ukazatel průběhu"
+
+msgid "Timed boot is not allowed."
+msgstr "Zavádění s časovým limitem není povoleno."
+
+msgid "Timed boot is: "
+msgstr "Časový limit pro zavedení je: "
+
+msgid "Timer interrupt key:"
+msgstr "Klávesa pro přerušení časového limitu:"
+
+msgid "Space"
+msgstr "Mezera"
+
+msgid "Timeout: %lusec"
+msgstr "Časový limit: %lusek"
+
+msgid "Default partition number: %u, label: '%s'"
+msgstr "Číslo implicitního diskového oddílu: %u, popiska: '%s'"
+
+msgid "Timeout value (in seconds) should be between 1 and 36000"
+msgstr "Délka časového limitu (v sekundách) by měla být od 1 do 36000"
+
+msgid "Immediate boot not waiting for user's input"
+msgstr "Bezprostřední zavedení (nečeká na vstup uživatele)"
+
+msgid "Do not use timed boot. Wait for user's choice infinitely"
+msgstr "Nepoužívat časový limit. Čekat libovolně dlouho na vstup uživatele."
+
+msgid "Manage timer interrupt key"
+msgstr "Nastavení klávesy pro přerušení časového limitu"
+
+msgid "Configure progress-bar parameters"
+msgstr "Nastavení parametrů ukazatele průběhu"
+
+msgid "Choose timeout"
+msgstr "Nastavte časový limit"
+
+msgid "Timed boot configuration is done."
+msgstr "Nastavení časového limitu je hotovo."
+
+msgid ""
+"Custom mode of boot menu text is active.\n"
+"Regenerate boot menu if you want to return to automatic mode."
+msgstr ""
+"Je aktivní uživatelský režim nebo textové menu zavaděče.\n"
+"Obnovte menu zavaděče, jestliže se chcete vrátit k automatickému režimu."
+
+msgid "Review boot menu text"
+msgstr "Náhled zaváděcího menu"
+
+msgid "Save boot menu text to a file for custom editing"
+msgstr "Uložení zaváděcího menu do souboru pro další úpravy"
+
+msgid "Load custom boot menu text from a file"
+msgstr "Nahrání zaváděcího menu ze souboru"
+
+msgid "Clear boot menu text to simulate hidden mode"
+msgstr "Vymazání menu zavaděče pro skrytý režim"
+
+msgid "Regenerate menu automatically based on internal structures"
+msgstr "Automatické obnovení menu z interních struktur"
+
+msgid "Maximum number of characters for boot menu text"
+msgstr "Maximální počet znaků v menu zavaděče"
+
+msgid "Length of current boot menu text (including trailing 0)"
+msgstr "Aktuální délka menu zavaděče (zahrnuje v sobě ukončující 0)"
+
+msgid "Number of available characters"
+msgstr "Počet dostupných znaků"
+
+msgid "Current boot menu text:"
+msgstr "Aktuální text menu zavaděče:"
+
+msgid "Enter the name of a file (existing file will be overwritten): "
+msgstr "Zadejte název souboru (existující soubor bude přepsán):"
+
+msgid "Error saving file."
+msgstr "Chyba při ukládání souboru."
+
+msgid "Error saving file, it seems there is no space left on a device."
+msgstr "Chyba při ukládání souboru, vypadá to na nedostatek volného místa na zařízení."
+
+msgid "File has been successfully written."
+msgstr "Soubor byl úspěšně uložen."
+
+msgid "Error opening file."
+msgstr "Chyba při otevírání souboru."
+
+msgid "Enter the name of existing file: "
+msgstr "Zadejte název existujícího souboru: "
+
+msgid "Error reading file."
+msgstr "Chyba při čtení ze souboru."
+
+msgid "Boot menu text has been truncated because file is too long."
+msgstr "Textové menu zavaděče bylo zkráceno, protože soubor je moc velký."
+
+msgid "File has been successfully read."
+msgstr "Soubor byl úspěšně načten."
+
+msgid "Boot menu is now empty."
+msgstr "Zaváděcí menu je nyní prázdné."
+
+msgid "Boot menu has been regenerated."
+msgstr "Zaváděcí menu bylo obnoveno."
+
+msgid ""
+"Custom mode of boot menu text is inactive.\n"
+"Text will be updated automatically."
+msgstr ""
+"Uživatelský režim zaváděcího menu je neaktivní.\n"
+"Text menu bude automaticky obnovován."
+
+msgid "ASCII codes detection mode is active."
+msgstr "Režim detekce ASCII kódů je aktivní."
+
+msgid "Keys: '1', '2', etc."
+msgstr "Klávesy: '1', '2', atd."
+
+msgid "Scan-codes detection mode is active."
+msgstr "Režim detekce sken-kódů je aktivní."
+
+msgid "Keys: 'F1', 'F2', etc."
+msgstr "Klávesy: 'F1', 'F2', и т.д."
+
+msgid "Code of base key=0x%02X."
+msgstr "Zakladní kód klávesy = 0x%02X."
+
+msgid "Use '1', '2', etc. to boot from desired partition"
+msgstr "Použijte '1', '2', atd. pro zavedení z požadovaného diskového oddílu"
+
+msgid "Use 'F1', 'F2', etc. to boot from desired partition"
+msgstr "Použijte 'F1', 'F2', atd. pro zavedení z požadovaného diskového oddílu"
+
+msgid "Use arbitrary ASCII code as a base key"
+msgstr "Použijte libovolný ASCII kód jako jako základní klávesu"
+
+msgid "Use arbitrary scan-code as a base key"
+msgstr "Použijte libovolný sken-kód jako základní klávesu"
+
+msgid "Boot will be activated by pressing '1', '2', etc."
+msgstr "Zavedení bude spuštěno stisknutím '1', '2', atd."
+
+msgid "Boot will be activated by pressing 'F1', 'F2', etc. "
+msgstr "Zavedení bude spuštěno stisknutím 'F1', 'F2', atd."
+
+msgid ""
+"This allows you to choose which keys will be used to boot\n"
+"operating systems from a list. In the mbldr assembly code\n"
+"that resides in MBR there is an ability to analyze either\n"
+"an ASCII code of the particular key being pressed or a\n"
+"scan-code. All operating systems (partitions) in a list\n"
+"are associated with incrementing list of ASCII/scan-codes\n"
+"so there is no ability to define particular key for each\n"
+"operating system. You are limited to choose a base code\n"
+"for the first partition in a list. All others will be\n"
+"identified with an appropriately increased ASCII/scan\n"
+"code (initial code + the offset of partition in a list).\n"
+"Please note that some keys on a keyboard generate neither\n"
+"ASCII code nor scan-code (best example is multimedia keys),\n"
+"so you could not use them. Also after specifying custom\n"
+"key code your boot menu text lacks key labels for\n"
+"partitions in the list. In this case you (most probably)\n"
+"should use custom boot menu text."
+msgstr ""
+"Toto Vám umožní vybrat, které klávesy budou použity pro\n"
+"zavedení systému z disku. Ve strojovém kódu mbldr, který je\n"
+"umístěn v MBR, existuje možnost analyzovat buď ASCII nebo\n"
+"sken-kód příslušné stisknuté klávesy. Všechny operační\n"
+"systémy (diskové oddíly) v seznamu jsou asociovány se\n"
+"vzrůstající posloupností ASCII/sken-kódů, takže neexistuje\n"
+"možnost nadefinovat individuální klávesy pro každý operační\n"
+"systém. Můžete pouze definovat počáteční kód prvního oddílu\n"
+"v seznamu. Všechny následující budou identifikovány\n"
+"příslušným vyšším ASCII/sken-kódem (počáteční kód + pořadí\n"
+"oddílu v seznamu). Prosím věnujte pozornost skutečnosti, že\n"
+"některé klávesy negenerují ani ASCII- ani sken-kódy (dobrým\n"
+"příkladem jsou multimediání klávesy), proto takové klávesy\n"
+"nemůžete použít. Dále Vaše textové menu zavaděče, po zadání\n"
+"uživatelsky definovaného kódu, nebude obsahovat popis\n"
+"kláves pro oddíly v seznamu. V tomto případě by jste měli\n"
+"nejspíše využít uživatelsky definovaný text menu zavaděče."
+
+msgid "You are about to define custom ASCII code for the base key."
+msgstr "Zadáváte uživatelsky definovaný ASCII-kód počáteční klávesy."
+
+msgid "You are about to define custom scan-code for the base key."
+msgstr "Zadáváte uživatelsky definovaný sken-kód počáteční klávesy."
+
+msgid "Enter the decimal value of the code (0-255)"
+msgstr "Zadejte decimální hodnotu kódu (0-255)"
+
+msgid "Custom code is set."
+msgstr "Uživatelsky definovaný kód je nastaven."
+
+#, fuzzy
+msgid "Backup existing MBR"
+msgstr "Uložení záložní kopie stávajícího MBR"
+
+#, fuzzy
+msgid "Restore MBR from a backup"
+msgstr "Obnovení MBR ze záložního"
+
+#, fuzzy
+msgid "file"
+msgstr "soubor"
+
+#, fuzzy
+msgid "sector"
+msgstr "sektor"
+
+msgid "File is too long."
+msgstr "Příliš velký soubor."
+
+msgid "Magic number 0xAA55 is not found, hard disk may not be bootable."
+msgstr "Signatura 0xAA55 nebyla nalezena, zavedení z tohoto disku nejspíš nebude možné."
+
+msgid ""
+"Several partitions have changed visibility (hidden became visible and/or\n"
+"vice versa). It is safe to restore old values from backup."
+msgstr ""
+
+msgid "Keep visibility as in current MBR"
+msgstr ""
+
+msgid "Update visibility as in the backup"
+msgstr ""
+
+msgid "Overwrite current partition table, restore whole MBR from backup"
+msgstr "Přepsat stávající tabulku rozdělění disku, kompletně obnovit MBR ze záložní kopie"
+
+msgid "Keep current partition table, restore only boot loader from backup"
+msgstr "Ponechat stávající tabulku rozdělení pevného disku, ze záložní kopie obnovit pouze kód zavaděče"
+
+msgid "Master boot record has been successfully written."
+msgstr "MBR byl úspěšně zapsán na disk."
+
+msgid "Cancelled. Master boot record is left untouched."
+msgstr "Stornováno. Stávající MBR na disku nebyl pozměněn."
+
+msgid "View list of available partitions and add to current configuration"
+msgstr "Přehled dostupných diskových oddílů a možnost jejich přidání do aktuální konfigurace"
+
+msgid "Manage bootable partitions (view list, remove, set default, set label)"
+msgstr "Spravovat zaváděcí diskové oddíly (prohlídka seznamu, odebírání, nastavení implicitního oddílu a popisek)"
+
+msgid "Set timed boot parameters (timeout value, timer interrupt key, progress-bar)"
+msgstr "Nastavení parametrů časovaného zavádění (časový limit, klávesa pro přerušení limitu, ukazatel průběhu)"
+
+msgid "Manage current boot menu text"
+msgstr "Upravit stávající text menu zavaděče"
+
+msgid "Define keys choosing what to boot"
+msgstr "Zvolit klávesy pro výběr zaváděných diskových oddílů"
+
+msgid "Backup/restore MBR and save current configuration"
+msgstr "Zálohovat/obnovit MBR, uložit aktuální konfiguraci"
+
+msgid "Logging finished"
+msgstr "Logování ukončeno"
+
+msgid "mbldr: Error"
+msgstr "mbldr: Chyba"
+
+msgid "mbldr: Information"
+msgstr "mbldr: Informace"
+
+msgid "mbldr: Question"
+msgstr "mbldr: Otázka"
+
+msgid "mbldr: Main configurator"
+msgstr "mbldr: Hlavní konfigurace"
+
+msgid "Available partitions:"
+msgstr "Dostupné diskové oddíly:"
+
+msgid "A&dd >"
+msgstr "Při&dat"
+
+msgid "< R&emove"
+msgstr "Od&ebrat"
+
+msgid "Configured partitions:"
+msgstr "Nastavené diskové oddíly:"
+
+msgid "Timed boot configuration:"
+msgstr "Nastavení časového limitu zavedení:"
+
+msgid "Allowed (user timer)"
+msgstr "Povoleno (uživatelský časovač)"
+
+msgid "Allowed (system timer)"
+msgstr "Povoleno (systémový časovač)"
+
+msgid "Never"
+msgstr "Nikdy"
+
+msgid "Immediate boot"
+msgstr "Bezprostřední zavedení"
+
+msgid "seconds"
+msgstr "sekund"
+
+msgid "Progress-bar:"
+msgstr "Ukazatel průběhu:"
+
+msgid "Label:"
+msgstr "Popiska:"
+
+msgid "Default:"
+msgstr "Implicitní:"
+
+msgid "Mar&k current"
+msgstr "Označit a&ktuální"
+
+msgid "Last b&ooted"
+msgstr "Nap&osledy zavedený"
+
+msgid "Keys choosing what to boot:"
+msgstr "Klávesy pro výběr, který diskový oddíl zavést:"
+
+msgid "Custom ASCII code"
+msgstr "ASCII-kód"
+
+msgid "Custom scan-code"
+msgstr "Sken-kód"
+
+msgid "decimal key code"
+msgstr "decimální kód klávesy"
+
+msgid "Boot menu text:"
+msgstr "Text menu zavaděče:"
+
+msgid "&Save..."
+msgstr "&Uložit..."
+
+msgid "&Load..."
+msgstr "&Nahrát..."
+
+msgid "&Clear"
+msgstr "&Vyčistit..."
+
+msgid "&Generate"
+msgstr "&Generovat..."
+
+msgid "&Backup MBR..."
+msgstr "&Zálohovat MBR..."
+
+msgid "&Restore MBR..."
+msgstr "&Obnovit MBR..."
+
+#, fuzzy
+msgid "Save new created mbldr configuration"
+msgstr "Uložení nově vytvořené konfigurace mbldr"
+
+#, fuzzy
+msgid "Save &mbldr..."
+msgstr "Uložit &mbldr..."
+
+msgid "&About"
+msgstr "O &programu"
+
+msgid "&Quit"
+msgstr "&Konec"
+
+msgid "mbldr: Choose device"
+msgstr "mbldr: Výběr zařízení"
+
+msgid "Please specify what do you want to configure:"
+msgstr "Prosím vyberte, co chcete konfigurovat:"
+
+msgid "Devices representing hard disk drives:"
+msgstr "Zařízení, představující pevné disky:"
+
+msgid "Files representing images of hard disks:"
+msgstr "Soubory, představující obrazy pevných disků:"
+
+msgid "Open &Device"
+msgstr "Otevřít &zařízení"
+
+msgid "&Browse..."
+msgstr "P&rocházet..."
+
+msgid "Open &File"
+msgstr "Otevřít &soubor"
+
+msgid ""
+"Windows 95/98/ME is not supported by GUI verion of mbldr installation program.\n"
+"Please use command-line version of mbldr (mbldrcli) for DOS/Windows 95/98/ME"
+msgstr ""
+"OS Windows 95/98/ME není podporován instalátorem mbldr s grafickým uživatelským rozhraním.\n"
+"Pro DOS/Windows 95/98/ME použijte prosím variantu mbldr pro příkazový řádek (mbldrcli)"
+
+msgid "Show frame of DeviceChoice."
+msgstr "Zobrazit dialog DeviceChoice."
+
+msgid "Show frame of MainConfigurator."
+msgstr "Zobrazit dialog MainConfigurator."
+
+msgid "scan-"
+msgstr "sken-"
+
+msgid "Switch between user and system timers"
+msgstr "Přepínač mezi uživatelským a systémovým časovačem"
+
+msgid "Switching from user timer to system timer."
+msgstr "Přepnutí z uživatelského na systémový časovač."
+
+msgid "Switching from system timer to user timer."
+msgstr "Přepnutí ze systémového na uživatelský časovač."
+
+msgid "Jump offset=0x%02X, other primary partitions should be hidden at boot attempt"
+msgstr "Pozice skoku = 0x%02X, ostatní primární diskové oddíly by měly být během zavádění skryté"
+
+msgid "Jump offset=0x%02X, other primary partitions should be left in original state at boot attempt"
+msgstr "Pozice skoku = 0x%02X, ostatní primární diskové oddíly by měly být během zavádění ponechány tak, jak jsou"
+
+msgid "Unrecognized jump offset=0x%02X, so let other partitions be hidden at boot attempt"
+msgstr "Nerozpoznaná pozice skoku = 0x%02X, takže ostatní diskové oddíly budou ponechány během zavádění skryté"
+
+msgid "Hide other primary partitions at boot time"
+msgstr "Skrýt ostatní primární diskové oddíly během zavádění"
+
+msgid "Don't hide other primary partitions at boot time"
+msgstr "Neskrývat ostatní primární diskové oddíly během zavádění"
+
+msgid "Other primary partitions will be hidden at the time of boot attempt."
+msgstr "Ostatní diskové oddíly budou během zavádění skryty."
+
+msgid "Other primary partitions will be left in their original state at boot attempt."
+msgstr "Ostatní diskové oddíly budou během zavádění ponechány tak, jak jsou."
+
+msgid "drive(%i): "
+msgstr "disk(%i): "
+
+msgid "No active (bootable) partitions have been found, the hard disk may not be bootable."
+msgstr "Nebyl nalezen žádný aktivní (zaváděcí) diskový oddíl, zavedení z tohoto disku nejspíš nebude možné."
+
+msgid "Mark primary partitions with active flag"
+msgstr ""
+
+msgid "Active flag on all primary partitions will be left intact at boot time"
+msgstr ""
+
+msgid "Primary partition being booted will be marked as active, all others will be marked inactive at boot time"
+msgstr ""
+
+msgid "Active flag of primary partitions will be left intact (NOP opcodes found)"
+msgstr ""
+
+msgid "Primary partitions will be marked active/inactive, opcodes: 0x%02X and 0x%02X"
+msgstr ""
+
+msgid "Mark primary partitions active/inactive at boot time"
+msgstr ""
+
+msgid "Leave active flag of primary partitions intact"
+msgstr ""
+
+msgid ""
+"The value of bootable entry usually corresponds to an offset of partition to\n"
+"boot. But you may modify it manually (for example to chain-load a copy of\n"
+"another MBR located somewhere). This is an expert feature, don't change this\n"
+"value if you don't know what you are doing!\n\n"
+"Enter a positive decimal value representing the offset in sectors:"
+msgstr ""
+
+msgid "The offset of bootable partition has been modified"
+msgstr ""
+
+msgid "CHAINLOAD"
+msgstr ""
+
+msgid "Offset points to a sector on a first track"
+msgstr ""
+
+msgid "Manually modify the offset"
+msgstr ""
+
+msgid "User wants to manually modify the offset"
+msgstr ""
+
+msgid ""
+"Backup, restore and save operations will deal with files. So, 'backup MBR'\n"
+"will save it to a file, and 'save current configuration of mbldr' will also\n"
+"write it to a file (not to MBR on a chosen hard drive)."
+msgstr ""
+
+msgid ""
+"Backup, restore and save operations will deal with sectors on a disk. So,\n"
+"'backup MBR' will save the MBR to a sector of your choice (can be used to\n"
+"prepare data for chainloading). 'Save current configuration of mbldr' will\n"
+"also write it to a sector (MBR by default as it is most useful operation)."
+msgstr ""
+
+msgid "Source or target for backup, restore and save operations"
+msgstr ""
+
+msgid ""
+"Enter a number of target sector to write the data to (0 means MBR, values in\n"
+"range of [1-62] usually correspond to sectors on a very first track, so they\n"
+"can be used for chainloading if not occupied). For your information, the list\n"
+"of free (filled by zeroes) sectors on a first track:\n"
+msgstr ""
+
+msgid "Target sector has been successfully written."
+msgstr ""
+
+msgid "Cancelled. Target sector is left untouched."
+msgstr ""
+
+msgid ""
+"The sector you have chosen is outside of the first track. This can\n"
+"be dangerous to write the data there and may lead to corruption of\n"
+"data integrity. Are you sure?"
+msgstr ""
+
+msgid "Do you want to add a chainload entry to the list of bootable partitions?"
+msgstr ""
+
+msgid ""
+"Enter a number of source sector to read the data from (0 means MBR, values in\n"
+"range of [1-62] usually correspond to sectors on a very first track, so they\n"
+"can be used for chainloading if not occupied). For your information, the list\n"
+"of occupied (bootable - having a 0x55AA signature at the end) sectors on a\n"
+"first track:\n"
+msgstr ""
+
+msgid ""
+"The sector you have chosen is outside of the first track. This space is\n"
+"usually occupied by partitions, so MBR backup should not be stored there.\n"
+"Are you sure?"
+msgstr ""
+
+msgid "Add 0xAA55 signature to the end of the backup sector"
+msgstr ""
+
+msgid "Leave backup sector with no signature"
+msgstr ""
+
+msgid ""
+"New partition(s) appeared in current MBR comparing to backup.\n"
+"It is highly recommended to keep current partition table from your MBR\n"
+"since restoring from backup may corrupt hard disk partitioning."
+msgstr ""
+
+msgid ""
+"Old partition(s) disappeared from current MBR comparing to backup.\n"
+"It is highly recommended to keep current partition table from your MBR\n"
+"since restoring from backup may corrupt hard disk partitioning."
+msgstr ""
+
+msgid ""
+"Partitions in current MBR have different geometry comparing to backup.\n"
+"It is highly recommended to keep current partition table from your MBR\n"
+"since restoring from backup may corrupt hard disk partitioning."
+msgstr ""
+
+msgid ""
+"Windows hard-disk signature is different in current MBR and backup.\n"
+"It is better to keep what you have in MBR if you use Windows operating system."
+msgstr ""
+
+msgid "Keep hard-disk signature from current MBR"
+msgstr ""
+
+msgid "Overwrite hard-disk signature with the version from backup"
+msgstr ""
+
+msgid ""
+"Different partitions are marked as actve in your current MBR and the backup.\n"
+"It is safe to restore old values from backup."
+msgstr ""
+
+msgid "Keep active partition as in current MBR"
+msgstr ""
+
+msgid "Update active partition as in the backup"
+msgstr ""
+
+msgid ""
+"Partitions in current MBR have different identifiers comparing to backup.\n"
+"It is highly recommended to keep current partition table from your MBR\n"
+"since restoring from backup may corrupt hard disk partitioning."
+msgstr ""
+

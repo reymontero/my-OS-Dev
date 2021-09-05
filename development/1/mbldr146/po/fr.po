@@ -1,0 +1,1814 @@
+# French translations for mbldr package
+# Traductions françaises du paquet mbldr.
+# Copyright (C) 2007 Free Software Foundation, Inc.
+# Michelle Baert (m dot baert at free dot fr), 2007.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: mbldr 1.44\n"
+"PO-Revision-Date: 2007-12-09 10:05+0100\n"
+"Report-Msgid-Bugs-To: arnold_shade at users dot sourceforge dot net\n"
+"Last-Translator: Michelle Baert ( m dot baert at free dot fr )\n"
+"Language-Team: French\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Empty"
+msgstr "Vide"
+
+msgid "DOS 12-bit FAT"
+msgstr "FAT-12 (DOS)"
+
+msgid "XENIX root"
+msgstr "racine XENIX"
+
+msgid "DOS 3.0+ 16-bit FAT (up to 32M)"
+msgstr "FAT-16 (DOS 3.0+, jusqu'à 32Mo)"
+
+msgid "Extended partition (DOS 3.3+)"
+msgstr "Partition étendue (DOS 3.3+)"
+
+msgid "Windows NT NTFS or OS/2 HPFS (IFS)"
+msgstr "Windows NT NTFS ou OS/2 HPFS (IFS)"
+
+msgid "AIX boot (PS/2 port) or OS/2 (v1.0-1.3) or SplitDrive"
+msgstr "AIX boot (PS/2 port) ou OS/2 (v1.0-1.3) ou SplitDrive"
+
+msgid "AIX data or Coherent filesystem or QNX 1.x-2.x"
+msgstr "AIX data ou Coherent filesystem ou QNX 1.x-2.x"
+
+msgid "OS/2 Boot Manager or Coherent swap partition or OPUS"
+msgstr ""
+
+msgid "WIN95_OSR2/Win98 FAT32, LBA-mapped"
+msgstr ""
+
+msgid "Unknown or not recognized"
+msgstr "Inconnu, ou non reconnu"
+
+msgid "WIN95/98: DOS 16-bit FAT, LBA-mapped"
+msgstr ""
+
+msgid "Extended partition, LBA-mapped (WIN95/98)"
+msgstr "Partition étendue, LBA-mapped (WIN95/98)"
+
+msgid "Hidden DOS 12-bit FAT or Leading Edge DOS 3.x"
+msgstr "DOS FAT-12 cachée ou Leading Edge DOS 3.x"
+
+msgid "Compaq configuration/diagnostics partition"
+msgstr "Partition de configuration/disagnostics Compaq"
+
+msgid "Hidden DOS 16-bit FAT <32M or AST DOS"
+msgstr "DOS FAT-16 cachée <32M ou AST DOS"
+
+msgid "Hidden DOS 16-bit FAT >=32M"
+msgstr "DOS FAT-16 cachée >=32M"
+
+msgid "Hidden NTFS/HPFS(IFS)"
+msgstr "NTFS/HPFS(IFS) cachée"
+
+msgid "AST SmartSleep Partition"
+msgstr "Partition AST SmartSleep"
+
+msgid "Hidden WIN95_OSR2/98 FAT32"
+msgstr ""
+
+msgid "Hidden WIN95_OSR2/98 FAT32, LBA-mapped"
+msgstr ""
+
+msgid "Hidden WIN95 16-bit FAT, LBA-mapped"
+msgstr ""
+
+msgid "AtheOS File System (AFS)"
+msgstr ""
+
+msgid "JFS on OS/2 or eCS"
+msgstr ""
+
+msgid "THEOS ver 3.2 2gb partition"
+msgstr ""
+
+msgid "Plan 9 partition or THEOS ver 4 spanned partition"
+msgstr ""
+
+msgid "THEOS ver 4 4gb partition"
+msgstr ""
+
+msgid "THEOS ver 4 extended partition"
+msgstr ""
+
+msgid "PartitionMagic recovery partition"
+msgstr ""
+
+msgid "Hidden NetWare"
+msgstr ""
+
+msgid "Linux/MINIX or PPC PReP Boot"
+msgstr ""
+
+msgid "Linux swap or SFS or Windows 2000 dynamic ext. partition marker"
+msgstr ""
+
+msgid "Linux native"
+msgstr ""
+
+msgid "GoBack partition"
+msgstr ""
+
+msgid "Boot-US boot manager or Priam or EUMEL/Elan"
+msgstr ""
+
+msgid "Oberon partition"
+msgstr ""
+
+msgid "QNX4.x 2nd part"
+msgstr ""
+
+msgid "QNX4.x 3rd part or Oberon partition"
+msgstr ""
+
+msgid "OnTrack Disk Manager (older versions) RO or Lynx RTOS"
+msgstr ""
+
+msgid "OnTrack Disk Manager RW (DM6 Aux1) or Novell"
+msgstr ""
+
+msgid "CP/M or Microport SysV/AT"
+msgstr ""
+
+msgid "DrivePro or VNDI Partition"
+msgstr ""
+
+msgid "Unix System V/386 (SCO, ISC Unix, UnixWare) or Mach or GNU Hurd"
+msgstr ""
+
+msgid "PC-ARMOUR protected partition or Novell Netware 286, 2.xx"
+msgstr ""
+
+msgid "Novell Netware 386, 3.xx or 4.xx"
+msgstr ""
+
+msgid "Novell Netware SMS Partition"
+msgstr ""
+
+msgid "Novell Netware 5+, Novell Netware NSS Partition"
+msgstr ""
+
+msgid "DiskSecure Multi-Boot"
+msgstr ""
+
+msgid "Scramdisk partition"
+msgstr ""
+
+msgid "M2FS/M2CS partition or VNDI Partition"
+msgstr ""
+
+msgid "XOSL FS"
+msgstr ""
+
+msgid "Old MINIX (until 1.4a)"
+msgstr ""
+
+msgid "MINIX since 1.4b, early Linux or Mitac disk manager"
+msgstr ""
+
+msgid "Linux swap or Prime or Solaris x86"
+msgstr ""
+
+msgid "Linux native partition"
+msgstr ""
+
+msgid "OS/2 hidden C: drive or Hibernation partition"
+msgstr ""
+
+msgid "Linux extended partition"
+msgstr ""
+
+msgid "Old Linux RAID partition superblock or FAT16 volume set"
+msgstr ""
+
+msgid "NTFS volume set"
+msgstr ""
+
+msgid "Linux plaintext partition table"
+msgstr ""
+
+msgid "Linux Kernel Partition (used by AiR-BOOT)"
+msgstr ""
+
+msgid "Legacy Fault Tolerant FAT32 volume"
+msgstr ""
+
+msgid "Legacy Fault Tolerant FAT32 volume using BIOS extended INT 13h"
+msgstr ""
+
+msgid "Free FDISK hidden Primary DOS FAT12 partitition"
+msgstr ""
+
+msgid "Linux Logical Volume Manager (LVM) partition"
+msgstr ""
+
+msgid "Free FDISK hidden Primary DOS FAT16 partitition"
+msgstr ""
+
+msgid "Free FDISK hidden DOS extended partitition"
+msgstr ""
+
+msgid "Free FDISK hidden Primary DOS large FAT16 partitition"
+msgstr ""
+
+msgid "Hidden Linux native partition or Amoeba"
+msgstr ""
+
+msgid "MIT EXOPC native partitions"
+msgstr ""
+
+msgid "Free FDISK hidden Primary DOS FAT32 partitition"
+msgstr ""
+
+msgid "DCE376 logical drive"
+msgstr ""
+
+msgid "Free FDISK hidden Primary DOS FAT16 partitition (LBA)"
+msgstr ""
+
+msgid "Free FDISK hidden DOS extended partitition (LBA)"
+msgstr ""
+
+msgid "IBM Thinkpad laptop hibernation partition"
+msgstr ""
+
+msgid "Laptop hibernation partition or HP Volume Expansion"
+msgstr ""
+
+msgid "HP Volume Expansion (SpeedStor variant)"
+msgstr ""
+
+msgid "OpenBSD or HP Volume Expansion (SpeedStor variant)"
+msgstr ""
+
+msgid "Olivetti Fat 12 1.44MB Service Partition"
+msgstr ""
+
+msgid "Mac OS-X (Darwin) Boot partition or GO! partition"
+msgstr ""
+
+msgid "ShagOS filesystem"
+msgstr ""
+
+msgid "ShagOS swap partition"
+msgstr ""
+
+msgid "Corrupted Windows NT mirror set (master), FAT16 file system"
+msgstr ""
+
+msgid "BSDI BSD/386 filesystem or Corrupted Win NT mirror set, NTFS"
+msgstr ""
+
+msgid "BSDI BSD/386 swap partition"
+msgstr ""
+
+msgid "Boot Wizard hidden"
+msgstr ""
+
+msgid "Solaris 8 boot partition"
+msgstr ""
+
+msgid "New Solaris x86 partition"
+msgstr ""
+
+msgid "CTOS or REAL/32 secure small partition or NTFT Partition"
+msgstr ""
+
+msgid "DRDOS/secured (FAT-12)"
+msgstr ""
+
+msgid "Hidden Linux"
+msgstr ""
+
+msgid "Hidden Linux swap"
+msgstr ""
+
+msgid "DRDOS/secured (FAT-16, < 32M)"
+msgstr ""
+
+msgid "DRDOS/secured (extended)"
+msgstr ""
+
+msgid ""
+"DRDOS/secured (FAT-16, >= 32M) or WinNT corrupted FAT16 volume/stripe set"
+msgstr ""
+
+msgid "Windows NT corrupted NTFS volume/stripe set or Syrinx boot"
+msgstr ""
+
+msgid "Reserved for DR-DOS 8.0+"
+msgstr ""
+
+msgid "DR-DOS 7.04+ secured FAT32 (CHS)"
+msgstr ""
+
+msgid "DR-DOS 7.04+ secured FAT32 (LBA)"
+msgstr ""
+
+msgid "DR-DOS 7.04+ secured EXT DOS (LBA)"
+msgstr ""
+
+msgid "REAL/32 secure big partition or Multiuser DOS secured partition"
+msgstr ""
+
+msgid "Old Multiuser DOS secured FAT12"
+msgstr ""
+
+msgid "Old Multiuser DOS secured FAT16 <32M"
+msgstr ""
+
+msgid "Old Multiuser DOS secured extended partition"
+msgstr ""
+
+msgid "Old Multiuser DOS secured FAT16 >=32M"
+msgstr ""
+
+msgid "Non-FS Data"
+msgstr ""
+
+msgid "Hidden CTOS Memdump?"
+msgstr ""
+
+msgid "Dell PowerEdge Server utilities (FAT fs)"
+msgstr ""
+
+msgid "DG/UX virtual disk manager partition or BootIt EMBRM"
+msgstr ""
+
+msgid "Reserved by STMicroelectronics for a filesystem called ST AVFS"
+msgstr ""
+
+msgid "DOS access or SpeedStor 12-bit FAT extended partition"
+msgstr ""
+
+msgid "DOS R/O or SpeedStor"
+msgstr ""
+
+msgid "SpeedStor 16-bit FAT extended partition < 1024 cyl"
+msgstr ""
+
+msgid "Intel EFI GUID Partition Table (followed by an EFI header)"
+msgstr ""
+
+msgid "Intel EFI (FAT-12/16/32) file system partition"
+msgstr ""
+
+msgid "Linux/PA-RISC"
+msgstr ""
+
+msgid "DOS 3.3+ secondary partition"
+msgstr ""
+
+msgid "SpeedStor large partition or Prologue single-volume partition"
+msgstr ""
+
+msgid "Prologue multi-volume partition"
+msgstr ""
+
+msgid "VMware File System partition"
+msgstr ""
+
+msgid "VMware Swap partition"
+msgstr ""
+
+msgid "Linux raid partition with autodetect"
+msgstr ""
+
+msgid "Windows NT Disk Administrator hidden partition or Linux LVM (old)"
+msgstr ""
+
+msgid "FATAL: "
+msgstr ""
+
+msgid "DEBUG: "
+msgstr ""
+
+msgid "UNKNOWN: "
+msgstr ""
+
+msgid "Error writing log, it seems there is no space left on a device."
+msgstr "Erreur lors de l'écriture du journal, il semble qu'il ne reste plus assez de place sur le péripherique"
+
+msgid "Before interrupt INT 13h, AH=%02Xh"
+msgstr ""
+
+msgid "After interrupt"
+msgstr ""
+
+msgid "Error code: %u"
+msgstr ""
+
+msgid "Unable to get maximum number of available devices."
+msgstr "Impossible de trouver le nombre maximum de périphériques"
+
+msgid "Found devices: %u"
+msgstr "Périphériques trouvés: %u"
+
+msgid "Device: 0x%02X."
+msgstr ""
+
+msgid "Extensions are not present, device will not be used."
+msgstr "Extensions absentes, le périphérique ne sera pas utilisé"
+
+msgid "Magic number: %u"
+msgstr ""
+
+msgid "Magic number is not equal to 0xAA55."
+msgstr ""
+
+msgid "Version of extensions: %u (is not equal to 0x30)"
+msgstr ""
+
+msgid "Interface support bitmap: %u"
+msgstr ""
+
+msgid "Fixed disk access subset is not supported by extensions."
+msgstr ""
+
+msgid "Size of DeviceParameters structure: %u"
+msgstr ""
+
+msgid "Could not get device parameters."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Since structure size is more than 30 and interface support bitmap has EDD "
+"support extension, save important information from DPTE"
+msgstr "La taille de la structure étant supérieure à 30, l'interface présente l'extension EDD. Je sauvegarde donc les informations importantes depuis le DPTE"
+
+msgid "Size structure returned by BIOS interrupt: %u"
+msgstr "Taille de la structure retournée par l'interruption BIOS: %u"
+
+msgid "Structure returned by 'get device parameters' is less than minimum."
+msgstr "La structure retournée par 'get device parameters' est plus petite que le minimum."
+
+msgid "Sector size: %u"
+msgstr "Taille d'un secteur: %u"
+
+msgid "Size of a sector is not equal to 512."
+msgstr "La taille d'un secteur est différente de 512."
+
+msgid "Calculating approximate size"
+msgstr "Je calcule la taille approximative"
+
+msgid "Too small hard drive, it seems some error has occured."
+msgstr "Disque dur trop petit, il semble qu'une erreur soit apparue."
+
+msgid "Memory allocation error"
+msgstr "Erreur d'allocation mémoire"
+
+msgid ""
+"Internal error with dynamic list allocation logic, this should never happen"
+msgstr "Erreur interne dans la logique d'allocation d'une liste dynamique, ce qui ne devrait jamais arriver"
+
+msgid "Size of a structure is greater or equal than 30"
+msgstr "La taille de structure est supérieure ou égale à 30"
+
+msgid "Size of a structure is equal either to 74 or to 66"
+msgstr "La taille de structure est égale soit à 74, soit à 66"
+
+msgid "Should be 0xBEDD, found: 0x%X"
+msgstr "Devrait être 0xBEDD, valeur trouvée: 0x%X"
+
+msgid "Key, indicating presence of Device Path Information was not found."
+msgstr "La clé indiquant la présence de l'information de chemin de périphérique, n'a pas été trouvée."
+
+msgid "Buffer size is %u, Device Path Information length is %u"
+msgstr "La taille du tampon est %u,  l'information de chemin de périphérique %u octets."
+
+msgid "Buffer size does not suit the length of Device Path Information."
+msgstr "La taille du tampon ne correspond pas à la longueur de l'information de chemin de périphérique."
+
+msgid "Host bus type was: '%s'"
+msgstr "Type de bus hôte : '%s'"
+
+#, fuzzy
+msgid "Reducing trailing space"
+msgstr "Réduction de l'espace de fin"
+
+msgid "Interface type was: '%s'"
+msgstr "Type d'interface: '%s'"
+
+msgid "Either ATA or SATA interface type is detected"
+msgstr "Une interface ATA ou SATA est détectée"
+
+msgid "DevicePath[0]=0x%02X, so modifying ATADeviceBit"
+msgstr ""
+
+msgid "'Enhanced Disk Drive (EDD) Support' extensions subset is present"
+msgstr "Présence de l'extension 'Enhanced Disk Drive' (EDD)"
+
+msgid "Primary interface"
+msgstr "Interface primaire"
+
+msgid "/Primary"
+msgstr ""
+
+msgid "Secondary interface"
+msgstr "Interface secondaire"
+
+msgid "/Secondary"
+msgstr ""
+
+msgid "Master device"
+msgstr "Unité maître"
+
+msgid "/Master"
+msgstr ""
+
+msgid "Slave device"
+msgstr "Unité esclave"
+
+msgid "/Slave"
+msgstr ""
+
+msgid "All 256 words of data have been received"
+msgstr "Les 256 mots de données ont été reçus"
+
+msgid "Model number was: '%s'"
+msgstr "Modèle n°: '%s'"
+
+msgid "Trying disk device %s"
+msgstr "Essai de l'unité de disque %s"
+
+msgid "Unable to close disk device %s"
+msgstr "Impossible de fermer l'unité de disque %s"
+
+msgid "glob() system call succeeded on %s"
+msgstr "Appel système glob() réussi sur %s"
+
+msgid "Unable to open file with model description, errno=%i, (%s)"
+msgstr "Impossible d'ouvrir le fichier de description du modèle, errno=%i, (%s)"
+
+msgid "Unable to read file with model description, errno=%i, (%s)"
+msgstr "Impossible de lire le fichier de description du modèle, errno=%i, (%s)"
+
+msgid "Running out of memory, errno=%i, (%s)"
+msgstr "Mémoire insuffisante, errno=%i (%s)"
+
+msgid "Read error, errno=%i, (%s)"
+msgstr "Echec en lecture, errno=%i (%s)"
+
+msgid "No found matches, errno=%i, (%s)"
+msgstr "Aucune correspondance trouvée, errno=%i (%s)"
+
+msgid "Unknown error, errno=%i, (%s)"
+msgstr "Erreur inconnue, errno=%i (%s)"
+
+msgid "Unable to open file with vendor description, errno=%i, (%s)"
+msgstr "Impossible d'ouvrir le fichier de description du constructeur, errno=%i (%s)"
+
+msgid "Unable to read file with vendor description, errno=%i, (%s)"
+msgstr "Impossible de lire le fichier de description du constructeur, errno=%i (%s)"
+
+msgid "Unable to create temporary file, errno=%i, (%s)"
+msgstr "Impossible de créer le fichier temporaire, errno=%i (%s)"
+
+msgid "Unable to close temporary file, errno=%i, (%s)"
+msgstr "Impossible de fermer le fichier temporaire, errno=%i (%s)"
+
+#, fuzzy
+msgid "Command to run: '%s', error code=%i"
+msgstr "Commande à exécuter: '%s', code d'erreur=%i"
+
+msgid "Unable to execute sysctl command"
+msgstr "Impossible d'exécuter la commande sysctl"
+
+msgid "Unable to open temporary file, errno=%i, (%s)"
+msgstr "Echec de l'ouverture du fichier temporaire, errno=%i (%s)"
+
+msgid "Trying to get description for device %s"
+msgstr "Je tente d'obtenir la description de l'unité %s"
+
+msgid "Trying to read device model/vendor for device %s"
+msgstr "Je tente de lire le modèle et le constucteur de l'unité %s"
+
+msgid "Unable to open file with device description, errno=%i, (%s)"
+msgstr "Impossible d'ouvrir le fichier de description de l'unité, errno=%i, (%s)"
+
+msgid "Unable to read file with device description, errno=%i, (%s)"
+msgstr "Impossible de lire le fichier de description de l'unité, errno=%i, (%s)"
+
+msgid "Unable to delete temporary file, errno=%i, (%s)"
+msgstr "Impossible de supprimer le fichier temporaire, errno=%i, (%s)"
+
+msgid "DisksReadSector() started"
+msgstr ""
+
+msgid "Device name could not be NULL"
+msgstr ""
+
+msgid ""
+"Length of string of DeviceName should be equal to 4, but it is %i (Device='%"
+"s')"
+msgstr "DeviceName devrait avoir 4 caractères, but %i trouvés(Device='%s')"
+
+msgid "Invalid prefix in Device name (Device='%s')"
+msgstr "Préfixe invalide pour le nom d'unité (Device='%s')"
+
+msgid "Invalid Device name (Device='%s')"
+msgstr "Nom d'unité invalide (Device='%s')"
+
+msgid "Size of DeviceAddressPacket structure: %u"
+msgstr ""
+
+msgid "Unable to read sector."
+msgstr "Échec de lecture du secteur"
+
+msgid "Unable to open device %s for reading, %s"
+msgstr "Impossible d'ouvrir l'unité %s en lecture, %s"
+
+msgid "Unable to seek to desired position, %s"
+msgstr "Impossible d'atteindre la position désirée, %s"
+
+msgid "Unable to read data from device %s, %s"
+msgstr "Échec lors de la lecture des données depuis l'unité %s, %s"
+
+msgid "Read operation returned unexpected number of bytes being read: %i"
+msgstr "L'opération de lecture a retourné un nombre inattendu d'octets lus: %i"
+
+msgid "Unable to close device %s, %s"
+msgstr "Échec lors de la fermeture de l'unité %s, %s"
+
+msgid "DisksWriteSector() started"
+msgstr ""
+
+msgid "Unable to write sector."
+msgstr "Échec d'écriture du secteur"
+
+msgid "Unable to open device %s for writing, %s"
+msgstr "Échec de l'ouverture de l'unité %s en écriture, %s"
+
+msgid "Unable to write data to device %s, %s"
+msgstr "Échec d'écriture des données vers %s, %s"
+
+msgid "Write operation returned unexpected number of bytes being written: %i"
+msgstr "L'opération d' écriture a retourné un nombre inattendu d'octets écrits: %i"
+
+msgid ""
+"Master Boot LoaDeR is a boot loader for master boot record intended to "
+"support\n"
+"booting from different partitions. It has simple text boot menu and "
+"occupies\n"
+"only the first sector of hard disk. It is intended to replace MBR contents\n"
+"coming with MS-DOS/Windows. It supports partition hiding, booting OSes "
+"above\n"
+"1024 cylinder, active partition switching and may load default OS by "
+"timeout.\n"
+"It is also capable to boot Linux/BSD partitions. This program is intended "
+"to\n"
+"install and configure mbldr on the HDD you choose using interactive menus.\n"
+"\n"
+msgstr ""
+"Master Boot LoaDeR est un chargeur de démarrage pour MBR (Master Boot\n"
+"Record) prévu pour supporter le démarrage depuis différentes\n"
+"partitions. Il présente un menu de démarrage en texte simple, et\n"
+"occupe seulement le premier secteur du disque dur. Il est prévu pour\n"
+"remplacer le contenu du MBR livré avec MS-DOS ou Windows. Il permet de\n"
+"cacher des partitions, de démarrer des systèmes au-delà du cylindre\n"
+"1024, le changement de la partition active, et de charger\n"
+"autmatiquement le système par défaut après écoulement du délai prévu.\n"
+"Il peut démarrer également des partitions Linux/BSD. Ce programme est\n"
+"conçu pour installer et configurer mbldr sur le disque que vous\n"
+"choisissez par des menus interactifs.\n"
+"\n"
+
+msgid "Syntax: "
+msgstr "Syntaxe: "
+
+msgid " [option] [option]...\n"
+msgstr ""
+
+msgid ""
+"Options are:\n"
+" -h Outputs help message and exits\n"
+" -v Verbose mode (debug only, uses log file)\n"
+msgstr ""
+"Les options sont:\n"
+" -h Affiche un message d'aide, puis se termine\n"
+" -v Mode verbeux (debogage seulement, utilise un fichier journal)\n"
+
+msgid ""
+" -d <device_number> Defines BIOS device number if hard disk autodetect does "
+"not\n"
+"    work. Parameter should be in the following form: '0x80', '0x81', etc.\n"
+"    (without apostrophes)"
+msgstr ""
+" -d <device_number> Définit le numéro BIOS de l'unité, si l'autodétection du disque dur ne fonctionne pas. Le paramètre doit être de la forme suivante: '0x80', '0x81', etc.\n"
+"    (sans les apostrophes)"
+
+msgid ""
+" -d <device> Defines a name of device (usually hard disk) to manage.\n"
+"    This is typically /dev/hda or /dev/sda under Linux and /dev/ad0 or\n"
+"    /dev/da0 under BSD. It also can be a regular file representing binary\n"
+"    image of some device."
+msgstr ""
+" -d <device> Définit le nom de l'unité (habituellement un disque dur) à gérer.\n"
+"    Typiquement, ce sera /dev/hda ou /dev/sda sous Linux et /dev/ad0 ou /dev/da0 sous BSD. Ce peut être également le nom d'un fichier régulier qui contient l'image binaire d'une unité."
+
+msgid ""
+" -d <device_number> Defines a number of hard disk (should be a sequential\n"
+"    non-negative integer value: 0, 1, 2, etc.) This could be useful if disk\n"
+"    autodetect does not work for some reasons.\n"
+"    or\n"
+" -d <file_name> Representing binary image of a device. This syntax could "
+"also\n"
+"    be used if you want to specify devices which are not covered with\n"
+"    \\\\.\\PHYSICALDRIVE naming scheme."
+msgstr ""
+
+msgid "User asked for command-line help."
+msgstr "L'utilisateur a demandé de l'aide sur la ligne de commande."
+
+msgid "'%c' option is detected"
+msgstr "option '%c' détectée"
+
+msgid "Log level set to DEBUG"
+msgstr "Niveau de journalisation mis à DEBUG"
+
+msgid "Invalid -d parameter: %s"
+msgstr "Paramètre -d invalide: %s"
+
+msgid "Device name has been set to %s"
+msgstr "Le nom d'unité est maintenant %s"
+
+msgid "Unknown option %c"
+msgstr "Option inconnue %c"
+
+msgid "Reading sector %lu."
+msgstr "Lecture du secteur %lu."
+
+msgid "Magic number 0xAA55 was not found."
+msgstr "Le nombre magique 0xAA55 est absent."
+
+msgid "Extended partition 0x%02X has been found."
+msgstr "La partition étendue 0x%02X a été trouvée."
+
+msgid "More than one extended partition has been found."
+msgstr "Plus d'une partition étendue a été trouvée."
+
+msgid "Storing initial extended partition offset 0x%08lX"
+msgstr ""
+
+msgid ""
+"Calculating extended partition offset: initial 0x%08lX + current 0x%08lX"
+msgstr ""
+
+msgid "Partition 0x%02X has been found."
+msgstr ""
+
+msgid "Relative offset in sectors: 0x%08lX"
+msgstr ""
+
+msgid "Size in sectors: 0x%08lX"
+msgstr ""
+
+msgid "This partition is primary"
+msgstr ""
+
+msgid "Swap partition entries: %s"
+msgstr ""
+
+msgid "This partition belongs to an extended partition (is a logical disk)"
+msgstr ""
+
+msgid "Too many partitions have been found."
+msgstr "Trop de partitions ont été trouvées."
+
+msgid "Empty partition slot has been found."
+msgstr ""
+
+msgid ""
+"Recursively call this function once again pointing it to an extended "
+"partition."
+msgstr ""
+
+msgid "Verbosity is set to %u"
+msgstr ""
+
+msgid "Maximum verbosity reached"
+msgstr ""
+
+msgid "Number of available characters for custom boot menu text: %i"
+msgstr "Nombre de caractères disponibles pour le texte du menu de démarrage personnalisé: %i"
+
+msgid ""
+"Too many characters in custom boot menu text.\n"
+"Regenerate boot menu text automatically or upload smaller file.\n"
+"Installation of mbldr is not allowed until you free at least %i bytes."
+msgstr ""
+"Trop de caractères dans le texte du menu de démarrage personnalisé.\n"
+"Recréez automatiquement un texte de menu ou chargez un fichier plus petit.\n"
+"L'installation de mbldr ne sera permise que lorsque vous aurez libéré au moins %i octets."
+
+msgid "Boot menu text will be generated after adding bootable partitions."
+msgstr "Le texte du menu de démarrage sera créé après avoir ajouté les partitions bootables."
+
+msgid "Program name and version"
+msgstr ""
+
+msgid "Boot menu body with the list of partitions"
+msgstr "Corps du menu de démarrage, avec la liste de partitions"
+
+msgid "Unknown partition has been found, empty label"
+msgstr ""
+
+msgid "Timeout value and instruction how to interrupt timer"
+msgstr ""
+
+msgid "TimerInterruptKey has unexpected value %u"
+msgstr ""
+
+msgid "Instruction what Enter does"
+msgstr ""
+
+msgid "Instruction what to click"
+msgstr ""
+
+msgid "Progress bar frame"
+msgstr ""
+
+msgid "Number of characters left=%i"
+msgstr "Nombre de caractères restants=%i"
+
+msgid "Result of nested call=%i"
+msgstr ""
+
+msgid "Populate boot menu text"
+msgstr ""
+
+msgid ""
+"Too many characters have been entered for labels of bootable partitions.\n"
+"Installation of mbldr is not allowed until you free at least %i bytes."
+msgstr ""
+"Trop de caractères dans les libellés de partitions bootables.\n"
+"L'installation de mbldr ne sera permise que lorsque vous aurez libéré au moins %i octets."
+
+msgid "Old MBR contents:"
+msgstr ""
+
+msgid "mbldr_bin_len=%u, (not equal to 512)"
+msgstr ""
+
+msgid "First difference found at offset %u, found 0x%02X, should be 0x%02X."
+msgstr ""
+
+msgid "Mask array contains wrong values (offset %u, value 0x%02X)."
+msgstr ""
+
+msgid "Mbldr was found."
+msgstr ""
+
+msgid ""
+"Existing mbldr was found on the chosen disk device. Would you\n"
+"like to configure it? (otherwise a fresh install will be performed)"
+msgstr ""
+"Un mbldr est déjà présent sur l'unité de disque. Souhaitez-vous le \n"
+"configurer ? (sinon une réinstallation sera réalisée)"
+
+msgid "User wants to configure existing mbldr."
+msgstr ""
+
+msgid "User wants to do fresh install."
+msgstr ""
+
+msgid ""
+"ASCII code 0x%02X for timer interruption is neither Esc nor Space in "
+"existing mbldr."
+msgstr ""
+
+msgid "Number of bootable partitions is incorrect (%u) in existing mbldr."
+msgstr ""
+
+msgid "Number of default partition is incorrect (%u) in existing mbldr."
+msgstr ""
+
+msgid "ASCII codes are used"
+msgstr ""
+
+msgid "Scan-codes are used"
+msgstr ""
+
+msgid "Base keyboard code: %u"
+msgstr ""
+
+msgid "Progress-bar looks like 9876543210"
+msgstr ""
+
+msgid "Progress-bar symbol is '%c'"
+msgstr ""
+
+msgid "Progress-bar is disabled"
+msgstr ""
+
+msgid "Progress-bar is enabled"
+msgstr ""
+
+msgid "Timed boot is disabled (opcode: 0x%02X)"
+msgstr ""
+
+msgid "Timed boot is set to %i, opcode: 0x%02X, timer_byte1=0x%02X, timer_byte2=0x%02X"
+msgstr ""
+
+msgid "Timeout field is incorrect (%u) in existing mbldr."
+msgstr ""
+
+msgid "Timeout: %u"
+msgstr ""
+
+msgid "Boot menu text is corrupted."
+msgstr ""
+
+msgid ""
+"Existing mbldr is configured to use custom %skey codes.\n"
+"It is unable to properly parse boot menu text so all labels\n"
+"will be lost. You need to type them again or use custom boot\n"
+"menu."
+msgstr ""
+
+msgid "Partition %u: offset %u"
+msgstr ""
+
+msgid "Partition's description: '%s'"
+msgstr ""
+
+msgid "New MBR contents:"
+msgstr ""
+
+msgid "Press Enter."
+msgstr ""
+
+msgid "Yes, agree, go ahead"
+msgstr ""
+
+msgid "No, please cancel the operation"
+msgstr ""
+
+msgid "Choose the answer"
+msgstr ""
+
+msgid "User's choice: '%s'"
+msgstr ""
+
+msgid "Author:"
+msgstr ""
+
+msgid "More info can be found at:"
+msgstr ""
+
+msgid ""
+"No devices has been found, try to explicitly specify device with '-d' option"
+msgstr "Aucune unité n'a été trouvée,  essayez d'indiquer explicitement l'unité avec l'option '-d'"
+
+msgid "Only one suitable device was found and will be used: "
+msgstr "Une seule unité adéquate a été trouvée, et sera utilisée: "
+
+msgid "No partitions have been found"
+msgstr "Auncune partition n'a été trouvée."
+
+msgid "Quit immediately"
+msgstr "Terminer immédiatement"
+
+msgid "Choose a device"
+msgstr "Choisissez une unité"
+
+msgid "User chooses immediate quit."
+msgstr ""
+
+msgid "User's choice: '%s' converted to integer %li."
+msgstr ""
+
+msgid ""
+"The number of partitions reached its maximum (9). You can't add another one."
+msgstr "Le nombre maximum de partitions est atteint (9). Vous ne pouvez plus en ajouter."
+
+msgid ""
+"Partitions that are already in the bootable list are marked with asterisks."
+msgstr ""
+
+msgid "Partition %u is found in current configuration at slot %u"
+msgstr ""
+
+msgid "PRI"
+msgstr ""
+
+msgid "EXT"
+msgstr ""
+
+msgid "Tb"
+msgstr ""
+
+msgid "Gb"
+msgstr ""
+
+msgid "Mb"
+msgstr ""
+
+msgid "Kb"
+msgstr ""
+
+msgid "'Skip boot attempt' is found in slot %u"
+msgstr ""
+
+msgid "SKIP BOOT"
+msgstr ""
+
+msgid "'Boot from next HDD' is found in slot %u"
+msgstr ""
+
+msgid "NEXT HDD"
+msgstr ""
+
+msgid "Do not add anything at this time"
+msgstr ""
+
+msgid "Choose what do you want to add"
+msgstr ""
+
+msgid "Do nothing, just go back from this menu."
+msgstr ""
+
+msgid "'Skip boot' menu item has been added."
+msgstr ""
+
+msgid ""
+"'Next HDD' menu item adds the following capability to the\n"
+"boot loader: after choosing this menu item mbldr tries to\n"
+"load MBR from another hard drive (number of drive is increased\n"
+"sequentially: 0x80, 0x81, etc) and execute it. New master boot\n"
+"loader gets a number of drive being used as a parameter.\n"
+"Theoretically this scheme should work fine assuming that all\n"
+"boot loaders respect this input parameter. Unfortunately\n"
+"several boot loaders ignore it assuming that the drive number\n"
+"used to boot is always 0x80 (what is incorrect according to\n"
+"EDD3 specification). It may lead to impossibility to boot for\n"
+"so called 'passive' master boot loaders (that just try to boot\n"
+"not updating MBR every time you boot). But even worse for so\n"
+"called 'active' master boot loaders (that modify MBR every time\n"
+"you boot) you may overwrite MBR on the wrong disk. Please\n"
+"note that 'Next HDD' feature is not the same as the one\n"
+"provided by BIOS (boot from either of installed hard disks).\n"
+"BIOS does the reenumeration of hard drives making bootable\n"
+"disk always 0x80, while mbldr does not. Use this feature at\n"
+"your own risk! It is dangerous and may lead to data loss if\n"
+"you have master boot loaders others than mbldr with version\n"
+"1.37 or above!\n"
+"Are you sure?"
+msgstr ""
+"Le choix de menu 'Next HDD' (unité de disque suivante) ajoute au chargeur \n"
+"de démarrage la fonctionnalité suivante:\n"
+"\n"
+"Après avoir sélectionné cette option mbldr essaie de charger le MBR\n"
+"depuis un autre disque (le numéro est incrémenté séquentiellement:\n"
+"0x80, 0x81, etc) et l''exécute.  Le nouveau master boot loader prend\n"
+"le numéro d'unité en utiliser en paramètre.\n"
+"\n"
+"Théoriquement, ce schéma devrait fonctionner en assumant que tous les\n"
+"chargeurs de démarrage respectent ce paramètre d'entrée.  Hélas\n"
+"plusieurs chargeurs ignorent ce dernier, en assumant que le numéro\n"
+"d'unité à démarrer est toujours 0x80 (ce qui est incorrect selon la\n"
+"spécification EDD3). Ceci peut mener à l'impossibilité de démarrer\n"
+"pour les chargeurs dits 'passifs' (qui cherchent seulement à démarrer,\n"
+"pas à modifier le MBR à chaque démarrage). Mais c'est pire encore pour\n"
+"les chargeurs de MBR dits 'actifs' (qui modifient le MBR à chaque\n"
+"démarrage), car vous pouvez écraser le MBR d'un autre disque.  Notez\n"
+"bien que la fonction 'Next HDD' n'est pas la même que celle fournie\n"
+"par le BIOS (démarrer depuis l'un ou l'autre des disques durs).\n"
+"Le BIOS renumérote en effet les disques, attribuant toujours le numéros 0x80\n"
+"au disque à booter, chose que mbldr ne fait pas.\n"
+"\n"
+"Utilisez cette fonction à vos risques et périls ! Elle est dangereuse et peut\n"
+"provoquer des pertes de données si vous utilisez des chargeurs autres que mbldr\n"
+"version 1.37 ou supérieure.\n"
+"\n"
+"Êtes-vous certain(e) ?"
+
+msgid "Are you sure?"
+msgstr "Êtes-vous sûr(e)?"
+
+msgid "'Next HDD' menu item has been added."
+msgstr "L'option de menu 'Next HDD' (unité de disque suivante) a été ajoutée."
+
+msgid "Type the label for this partition: "
+msgstr "Entrez le libellé pour cette partition: "
+
+msgid "Unable to get current active codepage"
+msgstr ""
+
+msgid "Label of partition is set to '%s'"
+msgstr ""
+
+msgid "Partition has been added."
+msgstr "La partition a été ajoutée"
+
+msgid ""
+"No partitions have been found in current configuration.\n"
+"You should add at least one."
+msgstr ""
+
+msgid "Default partition is what was booted last."
+msgstr "La partition par défaut est celle qui a été démarré en dernier"
+
+msgid "Default partition is marked with asterisk."
+msgstr ""
+
+msgid "Partition in the slot %u is the default one"
+msgstr ""
+
+msgid "Skip boot attempt and try another device"
+msgstr ""
+
+msgid "Try to boot from next hard disk (dangerous!)"
+msgstr ""
+
+msgid "Broken partition offset 0x08lX is found in slot %u"
+msgstr ""
+
+msgid "!!!BROKEN!!!"
+msgstr ""
+
+msgid "Partition offset points to a wrong sector, remove it"
+msgstr ""
+
+msgid "No default partition (load what was used on previous boot)"
+msgstr ""
+
+msgid "Choose partition or menu item"
+msgstr "Choisissez une partition ou un entrée de menu"
+
+msgid ""
+"The default partition has been reset. It will point to what was booted last."
+msgstr ""
+
+msgid "Remove this partition or boot menu item"
+msgstr ""
+
+msgid "Set/edit text label for partition or boot menu item"
+msgstr ""
+
+msgid "Set this partition as a default"
+msgstr ""
+
+msgid "What do you want to do?"
+msgstr "Que voulez-vous faire ?"
+
+msgid "Using device %s"
+msgstr ""
+
+msgid "User wants to remove this partition or menu item."
+msgstr ""
+
+msgid "Decreasing number of default partition, now it's %u."
+msgstr ""
+
+msgid "Partition has been removed from configuration."
+msgstr ""
+
+msgid "List is now empty."
+msgstr "La liste est vide maintenant"
+
+msgid "User wants to set or edit text label for boot menu."
+msgstr ""
+
+msgid "custom"
+msgstr ""
+
+msgid "automatic"
+msgstr ""
+
+msgid "User wants to set this partition as a default."
+msgstr ""
+
+msgid "Partition %i is set as a default one."
+msgstr ""
+
+msgid "Use <Esc> key to interrupt timer"
+msgstr ""
+
+msgid "Use <Space> key to interrupt timer"
+msgstr ""
+
+msgid "Choose timer interrupt key"
+msgstr ""
+
+msgid "Currently progress-bar is not allowed."
+msgstr ""
+
+msgid "Current progress-bar type: "
+msgstr ""
+
+msgid "Decreasing digits"
+msgstr ""
+
+msgid "Asterisks"
+msgstr ""
+
+msgid "Equal signs"
+msgstr ""
+
+msgid "Greater signs"
+msgstr ""
+
+msgid "Dots"
+msgstr ""
+
+msgid "Number signs"
+msgstr ""
+
+msgid "Pluses"
+msgstr ""
+
+msgid "Minuses"
+msgstr ""
+
+msgid "Custom symbols"
+msgstr ""
+
+msgid "Disabled"
+msgstr ""
+
+msgid "Choose progress-bar type"
+msgstr ""
+
+msgid "Type one custom symbol for progress-bar"
+msgstr ""
+
+msgid "Timed boot is not allowed."
+msgstr ""
+
+msgid "Timed boot is: "
+msgstr ""
+
+msgid "Timer interrupt key:"
+msgstr ""
+
+msgid "Space"
+msgstr ""
+
+msgid "Timeout: %lusec"
+msgstr ""
+
+msgid "Default partition number: %u, label: '%s'"
+msgstr ""
+
+msgid "Timeout value (in seconds) should be between 1 and 36000"
+msgstr ""
+
+msgid "Immediate boot not waiting for user's input"
+msgstr ""
+
+msgid "Do not use timed boot. Wait for user's choice infinitely"
+msgstr ""
+
+msgid "Manage timer interrupt key"
+msgstr ""
+
+msgid "Configure progress-bar parameters"
+msgstr ""
+
+msgid "Choose timeout"
+msgstr ""
+
+msgid "Timed boot configuration is done."
+msgstr ""
+
+msgid ""
+"Custom mode of boot menu text is active.\n"
+"Regenerate boot menu if you want to return to automatic mode."
+msgstr ""
+
+msgid "Review boot menu text"
+msgstr ""
+
+msgid "Save boot menu text to a file for custom editing"
+msgstr ""
+
+msgid "Load custom boot menu text from a file"
+msgstr ""
+
+msgid "Clear boot menu text to simulate hidden mode"
+msgstr ""
+
+msgid "Regenerate menu automatically based on internal structures"
+msgstr ""
+
+msgid "Maximum number of characters for boot menu text"
+msgstr ""
+
+msgid "Length of current boot menu text (including trailing 0)"
+msgstr ""
+
+msgid "Number of available characters"
+msgstr ""
+
+msgid "Current boot menu text:"
+msgstr ""
+
+msgid "Enter the name of a file (existing file will be overwritten): "
+msgstr ""
+
+msgid "Error saving file."
+msgstr ""
+
+msgid "Error saving file, it seems there is no space left on a device."
+msgstr ""
+
+msgid "File has been successfully written."
+msgstr ""
+
+msgid "Error opening file."
+msgstr ""
+
+msgid "Enter the name of existing file: "
+msgstr ""
+
+msgid "Error reading file."
+msgstr ""
+
+msgid "Boot menu text has been truncated because file is too long."
+msgstr ""
+
+msgid "File has been successfully read."
+msgstr ""
+
+msgid "Boot menu is now empty."
+msgstr ""
+
+msgid "Boot menu has been regenerated."
+msgstr ""
+
+msgid ""
+"Custom mode of boot menu text is inactive.\n"
+"Text will be updated automatically."
+msgstr ""
+
+msgid "ASCII codes detection mode is active."
+msgstr ""
+
+msgid "Keys: '1', '2', etc."
+msgstr ""
+
+msgid "Scan-codes detection mode is active."
+msgstr ""
+
+msgid "Keys: 'F1', 'F2', etc."
+msgstr ""
+
+msgid "Code of base key=0x%02X."
+msgstr ""
+
+msgid "Use '1', '2', etc. to boot from desired partition"
+msgstr ""
+
+msgid "Use 'F1', 'F2', etc. to boot from desired partition"
+msgstr ""
+
+msgid "Use arbitrary ASCII code as a base key"
+msgstr ""
+
+msgid "Use arbitrary scan-code as a base key"
+msgstr ""
+
+msgid "Boot will be activated by pressing '1', '2', etc."
+msgstr ""
+
+msgid "Boot will be activated by pressing 'F1', 'F2', etc. "
+msgstr ""
+
+#, fuzzy
+msgid ""
+"This allows you to choose which keys will be used to boot\n"
+"operating systems from a list. In the mbldr assembly code\n"
+"that resides in MBR there is an ability to analyze either\n"
+"an ASCII code of the particular key being pressed or a\n"
+"scan-code. All operating systems (partitions) in a list\n"
+"are associated with incrementing list of ASCII/scan-codes\n"
+"so there is no ability to define particular key for each\n"
+"operating system. You are limited to choose a base code\n"
+"for the first partition in a list. All others will be\n"
+"identified with an appropriately increased ASCII/scan\n"
+"code (initial code + the offset of partition in a list).\n"
+"Please note that some keys on a keyboard generate neither\n"
+"ASCII code nor scan-code (best example is multimedia keys),\n"
+"so you could not use them. Also after specifying custom\n"
+"key code your boot menu text lacks key labels for\n"
+"partitions in the list. In this case you (most probably)\n"
+"should use custom boot menu text."
+msgstr ""
+"Ceci vous permet de choisir quelles touches seront utilisées pour démarrer des systèmes d'exploitation depuis une liste. Dans le code machine installé dans le MBR, il y a la possibilité d'analyser soit un code ASCII pour une touche donnée,\n"
+"soit un 'scan-code'. Tous les systèmes d'exploitation (partitions) de la liste sont associés avec une liste aascendante de codes ASCII/scan-codes de sorte qu'il n'est pas possible de définir une touche particulière pour chaque O.S. Vous êtes limités à choisir le code de de base pour la première partition de la liste.\n"
+"Tous les autres seront calculés par incrémentation du code clavier (code initial + position de la partition dans la liste).\n"
+"\n"
+"Veuillez noter que certaines touches du clavier ne génèrent aucun code\n"
+"ASCII ni scan-code (le meuilleur exemple étant les touches\n"
+"multimedia), vous ne pourrez donc pas les utiliser.\n"
+"De plus, après avoir spécifié des codes de touches personnalisés, votre menu de démarrage ne montrera plus les libellés de touche pour chaque partition.\n"
+"Dans ce cas vous devrez (très probablement) utiliser un text de menu de démarrage personnalisé."
+
+msgid "You are about to define custom ASCII code for the base key."
+msgstr ""
+
+msgid "You are about to define custom scan-code for the base key."
+msgstr ""
+
+msgid "Enter the decimal value of the code (0-255)"
+msgstr ""
+
+msgid "Custom code is set."
+msgstr ""
+
+msgid "Backup existing MBR"
+msgstr ""
+
+msgid "Restore MBR from a backup"
+msgstr ""
+
+msgid "file"
+msgstr ""
+
+msgid "sector"
+msgstr ""
+
+msgid "File is too long."
+msgstr ""
+
+msgid "Magic number 0xAA55 is not found, hard disk may not be bootable."
+msgstr ""
+
+msgid ""
+"Several partitions have changed visibility (hidden became visible and/or\n"
+"vice versa). It is safe to restore old values from backup."
+msgstr ""
+
+msgid "Keep visibility as in current MBR"
+msgstr ""
+
+msgid "Update visibility as in the backup"
+msgstr ""
+
+msgid "Overwrite current partition table, restore whole MBR from backup"
+msgstr ""
+
+msgid "Keep current partition table, restore only boot loader from backup"
+msgstr ""
+
+msgid "Master boot record has been successfully written."
+msgstr ""
+
+msgid "Cancelled. Master boot record is left untouched."
+msgstr ""
+
+msgid "View list of available partitions and add to current configuration"
+msgstr ""
+
+msgid "Manage bootable partitions (view list, remove, set default, set label)"
+msgstr ""
+
+msgid ""
+"Set timed boot parameters (timeout value, timer interrupt key, progress-bar)"
+msgstr ""
+
+msgid "Manage current boot menu text"
+msgstr ""
+
+msgid "Define keys choosing what to boot"
+msgstr ""
+
+msgid "Backup/restore MBR and save current configuration"
+msgstr ""
+
+msgid "Logging finished"
+msgstr ""
+
+msgid "mbldr: Error"
+msgstr ""
+
+msgid "mbldr: Information"
+msgstr ""
+
+msgid "mbldr: Question"
+msgstr ""
+
+msgid "mbldr: Main configurator"
+msgstr ""
+
+msgid "Available partitions:"
+msgstr ""
+
+msgid "A&dd >"
+msgstr ""
+
+msgid "< R&emove"
+msgstr ""
+
+msgid "Configured partitions:"
+msgstr ""
+
+msgid "Timed boot configuration:"
+msgstr ""
+
+msgid "Allowed (user timer)"
+msgstr ""
+
+msgid "Allowed (system timer)"
+msgstr ""
+
+msgid "Never"
+msgstr ""
+
+msgid "Immediate boot"
+msgstr ""
+
+msgid "seconds"
+msgstr ""
+
+msgid "Progress-bar:"
+msgstr ""
+
+msgid "Label:"
+msgstr ""
+
+msgid "Default:"
+msgstr ""
+
+msgid "Mar&k current"
+msgstr ""
+
+msgid "Last b&ooted"
+msgstr ""
+
+msgid "Keys choosing what to boot:"
+msgstr ""
+
+msgid "Custom ASCII code"
+msgstr ""
+
+msgid "Custom scan-code"
+msgstr ""
+
+msgid "decimal key code"
+msgstr ""
+
+msgid "Boot menu text:"
+msgstr ""
+
+msgid "&Save..."
+msgstr ""
+
+msgid "&Load..."
+msgstr ""
+
+msgid "&Clear"
+msgstr ""
+
+msgid "&Generate"
+msgstr ""
+
+msgid "&Backup MBR..."
+msgstr ""
+
+msgid "&Restore MBR..."
+msgstr ""
+
+msgid "Save new created mbldr configuration"
+msgstr ""
+
+msgid "Save &mbldr..."
+msgstr ""
+
+msgid "&About"
+msgstr ""
+
+msgid "&Quit"
+msgstr ""
+
+msgid "mbldr: Choose device"
+msgstr ""
+
+msgid "Please specify what do you want to configure:"
+msgstr ""
+
+msgid "Devices representing hard disk drives:"
+msgstr ""
+
+msgid "Files representing images of hard disks:"
+msgstr ""
+
+msgid "Open &Device"
+msgstr ""
+
+msgid "&Browse..."
+msgstr ""
+
+msgid "Open &File"
+msgstr ""
+
+msgid ""
+"Windows 95/98/ME is not supported by GUI verion of mbldr installation "
+"program.\n"
+"Please use command-line version of mbldr (mbldrcli) for DOS/Windows 95/98/ME"
+msgstr ""
+
+msgid "Show frame of DeviceChoice."
+msgstr ""
+
+msgid "Show frame of MainConfigurator."
+msgstr ""
+
+msgid "scan-"
+msgstr ""
+
+msgid "Switch between user and system timers"
+msgstr ""
+
+msgid "Switching from user timer to system timer."
+msgstr ""
+
+msgid "Switching from system timer to user timer."
+msgstr ""
+
+msgid "Jump offset=0x%02X, other primary partitions should be hidden at boot attempt"
+msgstr ""
+
+msgid "Jump offset=0x%02X, other primary partitions should be left in original state at boot attempt"
+msgstr ""
+
+msgid "Unrecognized jump offset=0x%02X, so let other partitions be hidden at boot attempt"
+msgstr ""
+
+msgid "Hide other primary partitions at boot time"
+msgstr ""
+
+msgid "Don't hide other primary partitions at boot time"
+msgstr ""
+
+msgid "Other primary partitions will be hidden at the time of boot attempt."
+msgstr ""
+
+msgid "Other primary partitions will be left in their original state at boot attempt."
+msgstr ""
+
+msgid "drive(%i): "
+msgstr ""
+
+msgid "No active (bootable) partitions have been found, the hard disk may not be bootable."
+msgstr ""
+
+msgid "Mark primary partitions with active flag"
+msgstr ""
+
+msgid "Active flag on all primary partitions will be left intact at boot time"
+msgstr ""
+
+msgid "Primary partition being booted will be marked as active, all others will be marked inactive at boot time"
+msgstr ""
+
+msgid "Active flag of primary partitions will be left intact (NOP opcodes found)"
+msgstr ""
+
+msgid "Primary partitions will be marked active/inactive, opcodes: 0x%02X and 0x%02X"
+msgstr ""
+
+msgid "Mark primary partitions active/inactive at boot time"
+msgstr ""
+
+msgid "Leave active flag of primary partitions intact"
+msgstr ""
+
+msgid ""
+"The value of bootable entry usually corresponds to an offset of partition to\n"
+"boot. But you may modify it manually (for example to chain-load a copy of\n"
+"another MBR located somewhere). This is an expert feature, don't change this\n"
+"value if you don't know what you are doing!\n\n"
+"Enter a positive decimal value representing the offset in sectors:"
+msgstr ""
+
+msgid "The offset of bootable partition has been modified"
+msgstr ""
+
+msgid "CHAINLOAD"
+msgstr ""
+
+msgid "Offset points to a sector on a first track"
+msgstr ""
+
+msgid "Manually modify the offset"
+msgstr ""
+
+msgid "User wants to manually modify the offset"
+msgstr ""
+
+msgid ""
+"Backup, restore and save operations will deal with files. So, 'backup MBR'\n"
+"will save it to a file, and 'save current configuration of mbldr' will also\n"
+"write it to a file (not to MBR on a chosen hard drive)."
+msgstr ""
+
+msgid ""
+"Backup, restore and save operations will deal with sectors on a disk. So,\n"
+"'backup MBR' will save the MBR to a sector of your choice (can be used to\n"
+"prepare data for chainloading). 'Save current configuration of mbldr' will\n"
+"also write it to a sector (MBR by default as it is most useful operation)."
+msgstr ""
+
+msgid "Source or target for backup, restore and save operations"
+msgstr ""
+
+msgid ""
+"Enter a number of target sector to write the data to (0 means MBR, values in\n"
+"range of [1-62] usually correspond to sectors on a very first track, so they\n"
+"can be used for chainloading if not occupied). For your information, the list\n"
+"of free (filled by zeroes) sectors on a first track:\n"
+msgstr ""
+
+msgid "Target sector has been successfully written."
+msgstr ""
+
+msgid "Cancelled. Target sector is left untouched."
+msgstr ""
+
+msgid ""
+"The sector you have chosen is outside of the first track. This can\n"
+"be dangerous to write the data there and may lead to corruption of\n"
+"data integrity. Are you sure?"
+msgstr ""
+
+msgid "Do you want to add a chainload entry to the list of bootable partitions?"
+msgstr ""
+
+msgid ""
+"Enter a number of source sector to read the data from (0 means MBR, values in\n"
+"range of [1-62] usually correspond to sectors on a very first track, so they\n"
+"can be used for chainloading if not occupied). For your information, the list\n"
+"of occupied (bootable - having a 0x55AA signature at the end) sectors on a\n"
+"first track:\n"
+msgstr ""
+
+msgid ""
+"The sector you have chosen is outside of the first track. This space is\n"
+"usually occupied by partitions, so MBR backup should not be stored there.\n"
+"Are you sure?"
+msgstr ""
+
+msgid "Add 0xAA55 signature to the end of the backup sector"
+msgstr ""
+
+msgid "Leave backup sector with no signature"
+msgstr ""
+
+msgid ""
+"New partition(s) appeared in current MBR comparing to backup.\n"
+"It is highly recommended to keep current partition table from your MBR\n"
+"since restoring from backup may corrupt hard disk partitioning."
+msgstr ""
+
+msgid ""
+"Old partition(s) disappeared from current MBR comparing to backup.\n"
+"It is highly recommended to keep current partition table from your MBR\n"
+"since restoring from backup may corrupt hard disk partitioning."
+msgstr ""
+
+msgid ""
+"Partitions in current MBR have different geometry comparing to backup.\n"
+"It is highly recommended to keep current partition table from your MBR\n"
+"since restoring from backup may corrupt hard disk partitioning."
+msgstr ""
+
+msgid ""
+"Windows hard-disk signature is different in current MBR and backup.\n"
+"It is better to keep what you have in MBR if you use Windows operating system."
+msgstr ""
+
+msgid "Keep hard-disk signature from current MBR"
+msgstr ""
+
+msgid "Overwrite hard-disk signature with the version from backup"
+msgstr ""
+
+msgid ""
+"Different partitions are marked as actve in your current MBR and the backup.\n"
+"It is safe to restore old values from backup."
+msgstr ""
+
+msgid "Keep active partition as in current MBR"
+msgstr ""
+
+msgid "Update active partition as in the backup"
+msgstr ""
+
+msgid ""
+"Partitions in current MBR have different identifiers comparing to backup.\n"
+"It is highly recommended to keep current partition table from your MBR\n"
+"since restoring from backup may corrupt hard disk partitioning."
+msgstr ""
+

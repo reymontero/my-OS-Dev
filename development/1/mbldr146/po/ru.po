@@ -1,0 +1,1847 @@
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgid "Empty"
+msgstr "Пусто"
+
+msgid "DOS 12-bit FAT"
+msgstr "DOS 12-бит FAT"
+
+msgid "XENIX root"
+msgstr "XENIX корневой раздел"
+
+msgid "DOS 3.0+ 16-bit FAT (up to 32M)"
+msgstr "DOS 3.0+ 16-бит FAT (до 32M)"
+
+msgid "Extended partition (DOS 3.3+)"
+msgstr "Расширенный раздел (DOS 3.3+)"
+
+msgid "DOS 3.31+ 16-bit FAT (over 32M)"
+msgstr "DOS 3.31+ 16-бит FAT (более 32M)"
+
+msgid "Windows NT NTFS or OS/2 HPFS (IFS)"
+msgstr "Windows NT NTFS или OS/2 HPFS (IFS)"
+
+msgid "AIX boot (PS/2 port) or OS/2 (v1.0-1.3) or SplitDrive"
+msgstr "AIX загрузочный (PS/2 порт) или OS/2 (v1.0-1.3) или SplitDrive"
+
+msgid "AIX data or Coherent filesystem or QNX 1.x-2.x"
+msgstr "AIX данные или файловая система Coherent или QNX 1.x-2.x"
+
+msgid "OS/2 Boot Manager or Coherent swap partition or OPUS"
+msgstr "OS/2 Boot Manager или раздел подкачки Coherent или OPUS"
+
+msgid "WIN95_OSR2/Win98 FAT32, LBA-mapped"
+msgstr "WIN95_OSR2/Win98 FAT32, режим LBA"
+
+msgid "Unknown or not recognized"
+msgstr "Неизвестный или нераспознанный раздел"
+
+msgid "WIN95/98: DOS 16-bit FAT, LBA-mapped"
+msgstr "WIN95/98: DOS 16-бит FAT, режим LBA"
+
+msgid "Extended partition, LBA-mapped (WIN95/98)"
+msgstr "Расширенный раздел, режим LBA (WIN95/98)"
+
+msgid "Hidden DOS 12-bit FAT or Leading Edge DOS 3.x"
+msgstr "Скрытый DOS 12-бит FAT или Leading Edge DOS 3.x"
+
+msgid "Compaq configuration/diagnostics partition"
+msgstr "Раздел конфигурации/диагностики Compaq"
+
+msgid "Hidden DOS 16-bit FAT <32M or AST DOS"
+msgstr "Скрытый DOS 16-бит FAT <32M или AST DOS"
+
+msgid "Hidden DOS 16-bit FAT >=32M"
+msgstr "Скрытый DOS 16-бит FAT >=32M"
+
+msgid "Hidden NTFS/HPFS(IFS)"
+msgstr "Скрытый NTFS/HPFS(IFS)"
+
+msgid "AST SmartSleep Partition"
+msgstr "Раздел AST SmartSleep"
+
+msgid "Hidden WIN95_OSR2/98 FAT32"
+msgstr "Скрытый WIN95_OSR2/98 FAT32"
+
+msgid "Hidden WIN95_OSR2/98 FAT32, LBA-mapped"
+msgstr "Скрытый WIN95_OSR2/98 FAT32, режим LBA"
+
+msgid "Hidden WIN95 16-bit FAT, LBA-mapped"
+msgstr "Скрытый WIN95 16-бит FAT, режим LBA"
+
+msgid "AtheOS File System (AFS)"
+msgstr "Файловая система AtheOS (AFS)"
+
+msgid "JFS on OS/2 or eCS"
+msgstr "JFS на OS/2 или eCS"
+
+msgid "THEOS ver 3.2 2gb partition"
+msgstr "Раздел THEOS версии 3.2 2gb"
+
+msgid "Plan 9 partition or THEOS ver 4 spanned partition"
+msgstr "Раздел Plan 9 или распределенный раздел THEOS версии 4"
+
+msgid "THEOS ver 4 4gb partition"
+msgstr "Раздел THEOS версии 4 4gb"
+
+msgid "THEOS ver 4 extended partition"
+msgstr "Расширенный раздел THEOS версии 4"
+
+msgid "PartitionMagic recovery partition"
+msgstr "Раздел PartitionMagic для восстановления"
+
+msgid "Hidden NetWare"
+msgstr "Скрытый раздел NetWare"
+
+msgid "Linux/MINIX or PPC PReP Boot"
+msgstr "Linux/MINIX или PPC PReP Boot"
+
+msgid "Linux swap or SFS or Windows 2000 dynamic ext. partition marker"
+msgstr "Раздел подкачки Linux или SFS или маркер динамического расширенного раздела Windows 2000"
+
+msgid "Linux native"
+msgstr "Родной раздел Linux"
+
+msgid "GoBack partition"
+msgstr "Раздел GoBack"
+
+msgid "Boot-US boot manager or Priam or EUMEL/Elan"
+msgstr "Boot-US boot manager или Priam или EUMEL/Elan"
+
+msgid "Oberon partition"
+msgstr "Раздел Oberon"
+
+msgid "QNX4.x 2nd part"
+msgstr "QNX4.x 2-ая часть"
+
+msgid "QNX4.x 3rd part or Oberon partition"
+msgstr "QNX4.x 3-я часть или раздел Oberon"
+
+msgid "OnTrack Disk Manager (older versions) RO or Lynx RTOS"
+msgstr "OnTrack Disk Manager (старые версии) RO или Lynx RTO"
+
+msgid "OnTrack Disk Manager RW (DM6 Aux1) or Novell"
+msgstr "OnTrack Disk Manager RW (DM6 Aux1) или Novell"
+
+msgid "CP/M or Microport SysV/AT"
+msgstr "CP/M или Microport SysV/AT"
+
+msgid "DrivePro or VNDI Partition"
+msgstr "Разедл DrivePro или VNDI"
+
+msgid "Unix System V/386 (SCO, ISC Unix, UnixWare) or Mach or GNU Hurd"
+msgstr "Unix System V/386 (SCO, ISC Unix, UnixWare) или Mach или GNU Hurd"
+
+msgid "PC-ARMOUR protected partition or Novell Netware 286, 2.xx"
+msgstr "Защищенный раздел PC-ARMOUR или Novell Netware 286, 2.xx"
+
+msgid "Novell Netware 386, 3.xx or 4.xx"
+msgstr "Novell Netware 386, 3.xx или 4.xx"
+
+msgid "Novell Netware SMS Partition"
+msgstr "SMS раздел Novell Netware"
+
+msgid "Novell Netware 5+, Novell Netware NSS Partition"
+msgstr "Novell Netware 5+, NSS раздел Novell Netware"
+
+msgid "DiskSecure Multi-Boot"
+msgstr "Мультизагрузочный раздел DiskSecure"
+
+msgid "Scramdisk partition"
+msgstr "Раздел Scramdisk"
+
+msgid "M2FS/M2CS partition or VNDI Partition"
+msgstr "Раздел M2FS/M2CS или VNDI"
+
+msgid "XOSL FS"
+msgstr "Файловая система XOSL"
+
+msgid "Old MINIX (until 1.4a)"
+msgstr "Старые версии MINIX (до 1.4a)"
+
+msgid "MINIX since 1.4b, early Linux or Mitac disk manager"
+msgstr "MINIX с версии 1.4b, ранние Linux или диск-менеджер Mitac"
+
+msgid "Linux swap or Prime or Solaris x86"
+msgstr "Раздел подкачки Linux или Prime или Solaris x86"
+
+msgid "Linux native partition"
+msgstr "Родной раздел Linux"
+
+msgid "OS/2 hidden C: drive or Hibernation partition"
+msgstr "OS/2 скрытый диск C: или раздел Hibernation"
+
+msgid "Linux extended partition"
+msgstr "Расширенный раздел Linux"
+
+msgid "Old Linux RAID partition superblock or FAT16 volume set"
+msgstr "Суперблок RAID раздела старых версий Linux или набор томов FAT16"
+
+msgid "NTFS volume set"
+msgstr "Набор томов NTFS"
+
+msgid "Linux plaintext partition table"
+msgstr "Открытая таблица разделов Linux"
+
+msgid "Linux Kernel Partition (used by AiR-BOOT)"
+msgstr "Раздел ядра Linux (используется AiR-BOOT)"
+
+msgid "Legacy Fault Tolerant FAT32 volume"
+msgstr "Том FAT32, устойчивый к сбоям"
+
+msgid "Legacy Fault Tolerant FAT32 volume using BIOS extended INT 13h"
+msgstr "Том FAT32, устойчивый к сбоям (расширенное прерывание INT 13h BIOS)"
+
+msgid "Free FDISK hidden Primary DOS FAT12 partitition"
+msgstr "Скрытый основной раздел DOS FAT12 (для Free FDISK)"
+
+msgid "Linux Logical Volume Manager (LVM) partition"
+msgstr "Раздел Linux Logical Volume Manager (LVM)"
+
+msgid "Free FDISK hidden Primary DOS FAT16 partitition"
+msgstr "Скрытый основной раздел DOS FAT16 (для Free FDISK)"
+
+msgid "Free FDISK hidden DOS extended partitition"
+msgstr "Скрытый расширенный раздел DOS (для Free FDISK)"
+
+msgid "Free FDISK hidden Primary DOS large FAT16 partitition"
+msgstr "Скрытый основной большой раздел DOS FAT16 (для Free FDISK)"
+
+msgid "Hidden Linux native partition or Amoeba"
+msgstr "Скрытый родной раздел Linux или Amoeba"
+
+msgid "MIT EXOPC native partitions"
+msgstr "Родной раздел MIT EXOPC"
+
+msgid "Free FDISK hidden Primary DOS FAT32 partitition"
+msgstr "Скрытый основной раздел DOS FAT32 (для Free FDISK)"
+
+msgid "DCE376 logical drive"
+msgstr "Логический диск DCE376"
+
+msgid "Free FDISK hidden Primary DOS FAT16 partitition (LBA)"
+msgstr "Скрытый основной раздел DOS FAT16, режим LBA (для Free FDISK)"
+
+msgid "Free FDISK hidden DOS extended partitition (LBA)"
+msgstr "Скрытый расширенный раздел DOS, режим LBA (для Free FDISK)"
+
+msgid "IBM Thinkpad laptop hibernation partition"
+msgstr "Hibernation раздел ноутбуков IBM Thinkpad"
+
+msgid "Laptop hibernation partition or HP Volume Expansion"
+msgstr "Hibernation раздел ноутбуков или HP Volume Expansion"
+
+msgid "HP Volume Expansion (SpeedStor variant)"
+msgstr "HP Volume Expansion (вариант SpeedStor)"
+
+msgid "OpenBSD or HP Volume Expansion (SpeedStor variant)"
+msgstr "OpenBSD или HP Volume Expansion (вариант SpeedStor)"
+
+msgid "Olivetti Fat 12 1.44MB Service Partition"
+msgstr "Сервисный раздел Olivetti Fat 12 1.44MB"
+
+msgid "Mac OS-X (Darwin) Boot partition or GO! partition"
+msgstr "Загрузочный раздел Mac OS-X (Darwin) или раздел GO!"
+
+msgid "ShagOS filesystem"
+msgstr "Файловая система ShagOS"
+
+msgid "ShagOS swap partition"
+msgstr "Раздел подкачки ShagOS"
+
+msgid "Corrupted Windows NT mirror set (master), FAT16 file system"
+msgstr "Испорченное основное зеркало Windows NT, файловая система FAT16"
+
+msgid "BSDI BSD/386 filesystem or Corrupted Win NT mirror set, NTFS"
+msgstr "Файловая система BSDI BSD/386 или испорченное зеркало Win NT, NTFS"
+
+msgid "BSDI BSD/386 swap partition"
+msgstr "Раздел подкачки BSDI BSD/386"
+
+msgid "Boot Wizard hidden"
+msgstr "Скрытый раздел Boot Wizard"
+
+msgid "Solaris 8 boot partition"
+msgstr "Загрузочный раздел Solaris 8"
+
+msgid "New Solaris x86 partition"
+msgstr "Новый раздел Solaris x86"
+
+msgid "CTOS or REAL/32 secure small partition or NTFT Partition"
+msgstr "CTOS или маленький защищенный раздел REAL/32 или раздел NTFT"
+
+msgid "DRDOS/secured (FAT-12)"
+msgstr "DRDOS/защищенный (FAT-12)"
+
+msgid "Hidden Linux"
+msgstr "Скрытый раздел Linux"
+
+msgid "Hidden Linux swap"
+msgstr "Скрытый раздел подкачки Linux"
+
+msgid "DRDOS/secured (FAT-16, < 32M)"
+msgstr "DRDOS/защищенный (FAT-16, < 32M)"
+
+msgid "DRDOS/secured (extended)"
+msgstr "DRDOS/защищенный (расширенный)"
+
+msgid "DRDOS/secured (FAT-16, >= 32M) or WinNT corrupted FAT16 volume/stripe set"
+msgstr "DRDOS/защищенный (FAT-16, >= 32M) или испорченный FAT16 том/stripe set"
+
+msgid "Windows NT corrupted NTFS volume/stripe set or Syrinx boot"
+msgstr "Испорченный NTFS том/stripe set Windows NT или загрузочный раздел Syrinx"
+
+msgid "Reserved for DR-DOS 8.0+"
+msgstr "Резервировано для DR-DOS 8.0+"
+
+msgid "DR-DOS 7.04+ secured FAT32 (CHS)"
+msgstr "DR-DOS 7.04+ защищенный FAT32 (CHS)"
+
+msgid "DR-DOS 7.04+ secured FAT32 (LBA)"
+msgstr "DR-DOS 7.04+ защищенный FAT32 (LBA)"
+
+msgid "DR-DOS 7.04+ secured EXT DOS (LBA)"
+msgstr "DR-DOS 7.04+ защищенный EXT DOS (LBA)"
+
+msgid "REAL/32 secure big partition or Multiuser DOS secured partition"
+msgstr "Большой защищенный раздел REAL/32 или защищенный раздел Multiuser DOS"
+
+msgid "Old Multiuser DOS secured FAT12"
+msgstr "Защищенный раздел FAT12 для старой Multiuser DOS"
+
+msgid "Old Multiuser DOS secured FAT16 <32M"
+msgstr "Защищенный раздел FAT16 <32M для старой Multiuser DOS"
+
+msgid "Old Multiuser DOS secured extended partition"
+msgstr "Защищенный расширенный раздел для старой Multiuser DOS"
+
+msgid "Old Multiuser DOS secured FAT16 >=32M"
+msgstr "Защищенный раздел FAT16 >=32M для старой Multiuser DOS"
+
+msgid "Non-FS Data"
+msgstr "Данные не файловой системы"
+
+msgid "Hidden CTOS Memdump?"
+msgstr "Скрытый раздел CTOS Memdump?"
+
+msgid "Dell PowerEdge Server utilities (FAT fs)"
+msgstr "Утилиты Dell PowerEdge Server (файловая система FAT)"
+
+msgid "DG/UX virtual disk manager partition or BootIt EMBRM"
+msgstr "Раздел виртуального диск менеджера DG/UX или BootIt EMBRM"
+
+msgid "Reserved by STMicroelectronics for a filesystem called ST AVFS"
+msgstr "Резервировано STMicroelectronics для файловой системы ST AVFS"
+
+msgid "DOS access or SpeedStor 12-bit FAT extended partition"
+msgstr "DOS access или расширенный разде SpeedStor 12-бит FAT"
+
+msgid "DOS R/O or SpeedStor"
+msgstr "DOS R/O или SpeedStor"
+
+msgid "SpeedStor 16-bit FAT extended partition < 1024 cyl"
+msgstr "Расширенный раздел SpeedStor 16-бит FAT < 1024 cyl"
+
+msgid "Intel EFI GUID Partition Table (followed by an EFI header)"
+msgstr "Таблица разделов Intel EFI GUID (за которой идет заголовок EFI)"
+
+msgid "Intel EFI (FAT-12/16/32) file system partition"
+msgstr "Раздел файловой системы Intel EFI (FAT-12/16/32)"
+
+msgid "Linux/PA-RISC"
+msgstr "Загрузчик Linux/PA-RISC"
+
+msgid "DOS 3.3+ secondary partition"
+msgstr "Вторичный раздел DOS 3.3+"
+
+msgid "SpeedStor large partition or Prologue single-volume partition"
+msgstr "Большой раздел SpeedStor или однотомный раздел Prologue"
+
+msgid "Prologue multi-volume partition"
+msgstr "Многотомный раздел Prologue"
+
+msgid "VMware File System partition"
+msgstr "Раздел файловой системы VMware"
+
+msgid "VMware Swap partition"
+msgstr "Раздел подкачки VMware"
+
+msgid "Linux raid partition with autodetect"
+msgstr "Раздел Linux raid с автораспознаванием"
+
+msgid "Windows NT Disk Administrator hidden partition or Linux LVM (old)"
+msgstr "Скрытый раздел Windows NT Disk Administrator или Linux LVM (старый)"
+
+msgid "FATAL: "
+msgstr "ФАТАЛЬНО: "
+
+msgid "DEBUG: "
+msgstr "ОТЛАДКА: "
+
+msgid "UNKNOWN: "
+msgstr "НЕИЗВЕСТНО: "
+
+msgid "Error writing log, it seems there is no space left on a device."
+msgstr "Ошибка записи в лог, похоже на то, что на устройстве нет свободного места."
+
+msgid "Before interrupt INT 13h, AH=%02Xh"
+msgstr "До прерывания INT 13h, AH=%02Xh"
+
+msgid "After interrupt"
+msgstr "После прерывания"
+
+msgid "Error code: %u"
+msgstr "Код ошибки: %u"
+
+msgid "Unable to get maximum number of available devices."
+msgstr "Невозможно определить количество доступных устройств."
+
+msgid "Found devices: %u"
+msgstr "Найдено устройств: %u"
+
+msgid "Device: 0x%02X."
+msgstr "Устройство: 0x%02X."
+
+msgid "Extensions are not present, device will not be used."
+msgstr "Расширения не присутстивуют, устройство не может быть использовано."
+
+msgid "Magic number: %u"
+msgstr "Сигнатура: %u"
+
+msgid "Magic number is not equal to 0xAA55."
+msgstr "Сигнатура не равна 0xAA55."
+
+msgid "Version of extensions: %u (is not equal to 0x30)"
+msgstr "Версия расширений: %u (не равна 0x30)"
+
+msgid "Interface support bitmap: %u"
+msgstr "Карта поддерживаемых расширений: %u"
+
+msgid "Fixed disk access subset is not supported by extensions."
+msgstr "Необходимая часть расширений по доступу к жестким дискам не реализована."
+
+msgid "Size of DeviceParameters structure: %u"
+msgstr "Размер структуры DeviceParameters: %u"
+
+msgid "Could not get device parameters."
+msgstr "Невозможно получить параметры устройства."
+
+msgid "Since structure size is more than 30 and interface support bitmap has EDD support extension, save important information from DPTE"
+msgstr "Поскольку размер структуры более 30 байт и карта поддерживаемых расширений содержит EDD, сохраняем важную информацию из DPTE"
+
+msgid "Size structure returned by BIOS interrupt: %u"
+msgstr "Размер структуры, возвращенной прерыванием BIOS: %u"
+
+msgid "Structure returned by 'get device parameters' is less than minimum."
+msgstr "Структура, возвращенная 'get device parameters' меньше необходимого минимума."
+
+msgid "Sector size: %u"
+msgstr "Размер сектора: %u"
+
+msgid "Size of a sector is not equal to 512."
+msgstr "Размер сектора не равен 512."
+
+msgid "Calculating approximate size"
+msgstr "Вычисление примерного размера"
+
+msgid "Too small hard drive, it seems some error has occured."
+msgstr "Размер жесткого диска слишком мал, похоже на ошибку."
+
+msgid "Memory allocation error"
+msgstr "Ошибка выделения памяти"
+
+msgid "Internal error with dynamic list allocation logic, this should never happen"
+msgstr "Внутренная ошибка логики управления динамическим списком, это никогда не должно случаться."
+
+msgid "Size of a structure is greater or equal than 30"
+msgstr "Размер структуры больше или равен 30"
+
+msgid "Size of a structure is equal either to 74 or to 66"
+msgstr "Размер структуры равен либо 74, либо 66"
+
+msgid "Should be 0xBEDD, found: 0x%X"
+msgstr "Должно быть 0xBEDD, найдено: 0x%X"
+
+msgid "Key, indicating presence of Device Path Information was not found."
+msgstr "Ключ, указывающий на наличие Device Path Information, не найден."
+
+msgid "Buffer size is %u, Device Path Information length is %u"
+msgstr "Размер буфера %u, длина Device Path Information %u"
+
+msgid "Buffer size does not suit the length of Device Path Information."
+msgstr "Размер буфера не подходит к длине Device Path Information."
+
+msgid "Host bus type was: '%s'"
+msgstr "Тип шины хоста: '%s'"
+
+msgid "Reducing trailing space"
+msgstr "Удаление завершающих пробелов"
+
+msgid "Interface type was: '%s'"
+msgstr "Тип интерфейса: '%s'"
+
+msgid "Either ATA or SATA interface type is detected"
+msgstr "Обнаруженный тип интерфейса: либо ATA либо SATA"
+
+msgid "DevicePath[0]=0x%02X, so modifying ATADeviceBit"
+msgstr "DevicePath[0]=0x%02X, поэтому модифицируем ATADeviceBit"
+
+msgid "'Enhanced Disk Drive (EDD) Support' extensions subset is present"
+msgstr "Присутствует расширение 'Поддержка Enhanced Disk Drive (EDD)'"
+
+msgid "Primary interface"
+msgstr "Первичный интерфейс"
+
+msgid "/Primary"
+msgstr "/Первичный"
+
+msgid "Secondary interface"
+msgstr "Вторичный интерфейс"
+
+msgid "/Secondary"
+msgstr "/Вторичный"
+
+msgid "Master device"
+msgstr "Главное устройство"
+
+msgid "/Master"
+msgstr "/Главное"
+
+msgid "Slave device"
+msgstr "Подчиненное устройство"
+
+msgid "/Slave"
+msgstr "/Подчиненное"
+
+msgid "All 256 words of data have been received"
+msgstr "Все 256 слов данных были получены"
+
+msgid "Model number was: '%s'"
+msgstr "Номер модели: '%s'"
+
+msgid "Trying disk device %s"
+msgstr "Пробуем дисковое устройство %s"
+
+msgid "Unable to close disk device %s"
+msgstr "Невозможно закрыть дисковое устройство %s"
+
+msgid "glob() system call succeeded on %s"
+msgstr "Системный вызов glob() успешно завершен: %s"
+
+msgid "Unable to open file with model description, errno=%i, (%s)"
+msgstr "Невозможно открыть файл с описанием модели, errno=%i, (%s)"
+
+msgid "Unable to read file with model description, errno=%i, (%s)"
+msgstr "Невозможно прочесть файл с описанием модели, errno=%i, (%s)"
+
+msgid "Running out of memory, errno=%i, (%s)"
+msgstr "Закончилась свободная память, errno=%i, (%s)"
+
+msgid "Read error, errno=%i, (%s)"
+msgstr "Ошибка чтения, errno=%i, (%s)"
+
+msgid "No found matches, errno=%i, (%s)"
+msgstr "Ничего не найдено, errno=%i, (%s)"
+
+msgid "Unknown error, errno=%i, (%s)"
+msgstr "Неизвестная ошибка, errno=%i, (%s)"
+
+msgid "Unable to open file with vendor description, errno=%i, (%s)"
+msgstr "Невозможно открыть файл с описанием производителя, errno=%i, (%s)"
+
+msgid "Unable to read file with vendor description, errno=%i, (%s)"
+msgstr "Невозможно прочесть файл с описанием производителя, errno=%i, (%s)"
+
+msgid "Unable to create temporary file, errno=%i, (%s)"
+msgstr "Невозможно создать временный файл, errno=%i, (%s)"
+
+msgid "Unable to close temporary file, errno=%i, (%s)"
+msgstr "Невозможно закрыть временный файл, errno=%i, (%s)"
+
+msgid "Command to run: '%s', error code=%i"
+msgstr "Команда для выполнения: '%s', код ошибки=%i"
+
+msgid "Unable to execute sysctl command"
+msgstr "Невозможно выполнить команду sysctl"
+
+msgid "Unable to open temporary file, errno=%i, (%s)"
+msgstr "Невозможно открыть временный файл, errno=%i, (%s)"
+
+msgid "Trying to get description for device %s"
+msgstr "Попытка получить описание устройства %s"
+
+msgid "Trying to read device model/vendor for device %s"
+msgstr "Попытка прочитать модель/производителя устройства %s"
+
+msgid "Unable to open file with device description, errno=%i, (%s)"
+msgstr "Невозможно открыть файл с описанием устройства, errno=%i, (%s)"
+
+msgid "Unable to read file with device description, errno=%i, (%s)"
+msgstr "Невозможно прочесть файл с описанием устройства, errno=%i, (%s)"
+
+msgid "Unable to delete temporary file, errno=%i, (%s)"
+msgstr "Невозможно удалить временный файл, errno=%i, (%s)"
+
+msgid "DisksReadSector() started"
+msgstr "DisksReadSector() стартовала"
+
+msgid "Device name could not be NULL"
+msgstr "Имя устройства не может быть NULL"
+
+msgid "Length of string of DeviceName should be equal to 4, but it is %i (Device='%s')"
+msgstr "Длина строки DeviceName должна быть равна 4, а не %i (Device='%s')"
+
+msgid "Invalid prefix in Device name (Device='%s')"
+msgstr "Неверный префикс в имени устройства (Device='%s')"
+
+msgid "Invalid Device name (Device='%s')"
+msgstr "Неверное имя устройства (Device='%s')"
+
+msgid "Size of DeviceAddressPacket structure: %u"
+msgstr "Размер структуры DeviceAddressPacket: %u"
+
+msgid "Unable to read sector."
+msgstr "Невозможно прочесть сектор."
+
+msgid "Unable to open device %s for reading, %s"
+msgstr "Невозможно открыть устройство %s на чтение, %s"
+
+msgid "Unable to seek to desired position, %s"
+msgstr "Невозможно произвести позиционирование на желаемую позицию, %s"
+
+msgid "Unable to read data from device %s, %s"
+msgstr "Невозможно прочесть данные из устройства %s, %s"
+
+msgid "Read operation returned unexpected number of bytes being read: %i"
+msgstr "Операция чтения вернула неожиданное число прочтенных байт: %i"
+
+msgid "Unable to close device %s, %s"
+msgstr "Невозможно закрыть устройство %s, %s"
+
+msgid "DisksWriteSector() started"
+msgstr "DisksWriteSector() стартовала"
+
+msgid "Unable to write sector."
+msgstr "Невозможно записать сектор."
+
+msgid "Unable to open device %s for writing, %s"
+msgstr "Невозможно открыть устройство %s на запись, %s"
+
+msgid "Unable to write data to device %s, %s"
+msgstr "Невозможно записать данные в устройство %s, %s"
+
+msgid "Write operation returned unexpected number of bytes being written: %i"
+msgstr "Операция записи вернула неожиданное число записанных байт: %i"
+
+msgid ""
+"Master Boot LoaDeR is a boot loader for master boot record intended to support\n"
+"booting from different partitions. It has simple text boot menu and occupies\n"
+"only the first sector of hard disk. It is intended to replace MBR contents\n"
+"coming with MS-DOS/Windows. It supports partition hiding, booting OSes above\n"
+"1024 cylinder, active partition switching and may load default OS by timeout.\n"
+"It is also capable to boot Linux/BSD partitions. This program is intended to\n"
+"install and configure mbldr on the HDD you choose using interactive menus.\n"
+"\n"
+msgstr ""
+"Master Boot LoaDeR это программа для главной загрузочной записи винчестера,\n"
+"поддерживающая загрузку с разных разделов. Она имеет простое текстовое меню и\n"
+"занимает только первый сектор винчестера. Она предназначена для замены MBR\n"
+"из MS-DOS/Windows. Она поддерживает сокрытие разделов, загрузку ОС выше 1024\n"
+"цилиндра, переключение активного раздела и может загружать ОС по таймауту.\n"
+"mbldr также умеет загружать Linux/BSD разделы. Эта программа предназначена\n"
+"для интерактивной инсталляции и конфигурации mbldr на нужном винчестере.\n"
+"\n"
+
+msgid "Syntax: "
+msgstr "Синтаксис: "
+
+msgid " [option] [option]...\n"
+msgstr " [параметр] [параметр]...\n"
+
+msgid ""
+"Options are:\n"
+" -h Outputs help message and exits\n"
+" -v Verbose mode (debug only, uses log file)\n"
+msgstr ""
+"Допустимые параметры:\n"
+" -h Отображает справочное сообщение и завершает работу\n"
+" -v Отладочный режим с использованием подробного лог-файла\n"
+
+msgid ""
+" -d <device_number> Defines BIOS device number if hard disk autodetect does not\n"
+"    work. Parameter should be in the following form: '0x80', '0x81', etc.\n"
+"    (without apostrophes)"
+msgstr ""
+" -d <номер_устройства> Задает номер устройства для BIOS, если автоматическое\n"
+"    распознавание не работает. Параметр должен иметь форму: '0x80', '0x81',\n"
+"    и т.д. (без апострофов)"
+
+msgid ""
+" -d <device> Defines a name of device (usually hard disk) to manage.\n"
+"    This is typically /dev/hda or /dev/sda under Linux and /dev/ad0 or\n"
+"    /dev/da0 under BSD. It also can be a regular file representing binary\n"
+"    image of some device."
+msgstr ""
+" -d <устройство> Выбирает нужное устройство (обычно винчестер) по названию.\n"
+"    Обычно это /dev/hda или /dev/sda под Linux и /dev/ad0 или /dev/da0 под\n"
+"    BSD. Это также может быть обычный файл с двоичным образом какого-нибудь\n"
+"    устройства."
+
+msgid ""
+" -d <device_number> Defines a number of hard disk (should be a sequential\n"
+"    non-negative integer value: 0, 1, 2, etc.) This could be useful if disk\n"
+"    autodetect does not work for some reasons.\n"
+"    or\n"
+" -d <file_name> Representing binary image of a device. This syntax could also\n"
+"    be used if you want to specify devices which are not covered with\n"
+"    \\\\.\\PHYSICALDRIVE naming scheme."
+msgstr ""
+" -d <номер_устройства> Задает номер винчестера (положительное целое число: 0,\n"
+"    1, 2, и т.д.) Это может быть полезно, если автораспознавание дисков не\n"
+"    работает по каким-либо причинам.\n"
+"    or\n"
+" -d <имя_файла> Представляющего двоичный образ устройства. Этот синтаксис\n"
+"    может также быть использован, если вы хотите сконфигурировать устройство,\n"
+"    не покрытое схемой именования \\\\.\\PHYSICALDRIVE."
+
+msgid "User asked for command-line help."
+msgstr "Пользователь запрашивает командно-строковую справку."
+
+msgid "'%c' option is detected"
+msgstr "обнаружен параметр '%c'"
+
+msgid "Log level set to DEBUG"
+msgstr "Уровень лога установлен на ОТЛАДКУ"
+
+msgid "Invalid -d parameter: %s"
+msgstr "Неверный параметр -d: %s"
+
+msgid "Device name has been set to %s"
+msgstr "Название устройства установлено на %s"
+
+msgid "Unknown option %c"
+msgstr "Неизвестный параметр %c"
+
+msgid "Reading sector %lu."
+msgstr "Чтение сектора %lu."
+
+msgid "Magic number 0xAA55 was not found."
+msgstr "Сигнатура 0xAA55 не обнаружена"
+
+msgid "Extended partition 0x%02X has been found."
+msgstr "Найден расширенный раздел 0x%02X"
+
+msgid "More than one extended partition has been found."
+msgstr "Найдено более одного расширенного раздела."
+
+msgid "Storing initial extended partition offset 0x%08lX"
+msgstr "Сохранение начального смещения расширенного раздела 0x%08lX"
+
+msgid "Calculating extended partition offset: initial 0x%08lX + current 0x%08lX"
+msgstr "Вычисление смещения расширенного раздела: начальное 0x%08lX + текущее 0x%08lX"
+
+msgid "Partition 0x%02X has been found."
+msgstr "Найден раздел 0x%02X"
+
+msgid "Relative offset in sectors: 0x%08lX"
+msgstr "Относительное смещение в секторах: 0x%08lX"
+
+msgid "Size in sectors: 0x%08lX"
+msgstr "Размер в секторах: 0x%08lX"
+
+msgid "This partition is primary"
+msgstr "Этот раздел основной"
+
+msgid "Swap partition entries: %s"
+msgstr "Меняем разделы местами: %s"
+
+msgid "This partition belongs to an extended partition (is a logical disk)"
+msgstr "Этот раздел принадлежит к расширенному разделу (логический диск)"
+
+msgid "Too many partitions have been found."
+msgstr "Найдено слишком много разделов."
+
+msgid "Empty partition slot has been found."
+msgstr "Найден пустой слот для раздела."
+
+msgid "Recursively call this function once again pointing it to an extended partition."
+msgstr "Еще раз вызываем функцию рекурсивно, позиционируя ее на расширенный раздел."
+
+msgid "Verbosity is set to %u"
+msgstr "Уровень детализированности меню установлен на %u"
+
+msgid "Maximum verbosity reached"
+msgstr "Достигнут максимальный уровень детализированности меню"
+
+msgid "Number of available characters for custom boot menu text: %i"
+msgstr "Количество доступных символов для неавтоматического текста меню загрузки: %i"
+
+msgid ""
+"Too many characters in custom boot menu text.\n"
+"Regenerate boot menu text automatically or upload smaller file.\n"
+"Installation of mbldr is not allowed until you free at least %i bytes."
+msgstr ""
+"Слишком много символов в тексте меню загрузки (в неавтоматическом режиме).\n"
+"Пересоздайте меню в автоматическом режиме или загрузите файл меньшего размера.\n"
+"Установка mbldr невозможна до того, как минимум %i байтов будут освобождены."
+
+msgid "Boot menu text will be generated after adding bootable partitions."
+msgstr "Меню загрузки будет создано после добавления загрузочных разделов."
+
+msgid "Program name and version"
+msgstr "Название программы и версия"
+
+msgid "Boot menu body with the list of partitions"
+msgstr "Тело загрузочного меню со списком разделов"
+
+msgid "Unknown partition has been found, empty label"
+msgstr "Найден неизвестный раздел, пустая метка"
+
+msgid "Timeout value and instruction how to interrupt timer"
+msgstr "Значение таймаута и инструкции, как прервать таймер"
+
+msgid "TimerInterruptKey has unexpected value %u"
+msgstr "Неожиданное значение TimerInterruptKey: %u"
+
+msgid "Instruction what Enter does"
+msgstr "Инструкции, что делает Enter"
+
+msgid "Instruction what to click"
+msgstr "Инструкции, что нажимать"
+
+msgid "Progress bar frame"
+msgstr "Рамка прогресс-бара"
+
+msgid "Number of characters left=%i"
+msgstr "Количество оставшихся символов=%i"
+
+msgid "Result of nested call=%i"
+msgstr "Результат вложенного вызова=%i"
+
+msgid "Populate boot menu text"
+msgstr "Заполнение текста загрузочного меню"
+
+msgid ""
+"Too many characters have been entered for labels of bootable partitions.\n"
+"Installation of mbldr is not allowed until you free at least %i bytes."
+msgstr ""
+"Слишком много символов использовано для меток загрузочных разделов.\n"
+"Установка mbldr невозможна до того, как минимум %i байтов будут освобождены."
+
+msgid "Old MBR contents:"
+msgstr "Содержимое старого MBR:"
+
+msgid "mbldr_bin_len=%u, (not equal to 512)"
+msgstr "mbldr_bin_len=%u, (не равно 512)"
+
+msgid "First difference found at offset %u, found 0x%02X, should be 0x%02X."
+msgstr "Первое различие найдено на смещении %u, найдено 0x%02X, должно быть 0x%02X."
+
+msgid "Mask array contains wrong values (offset %u, value 0x%02X)."
+msgstr "Массив маски содержит недопустимые значения (смещение %u, значение 0x%02X)."
+
+msgid "Mbldr was found."
+msgstr "Найден mbldr."
+
+msgid ""
+"Existing mbldr was found on the chosen disk device. Would you\n"
+"like to configure it? (otherwise a fresh install will be performed)"
+msgstr ""
+"На выбранном устройстве найдена существующая установка mbldr. Хотите\n"
+"ее сконфигурировать? (иначе будет произведена новая чистая установка)"
+
+msgid "User wants to configure existing mbldr."
+msgstr "Пользователь желает сконфигурировать существующую инсталляцию mbldr."
+
+msgid "User wants to do fresh install."
+msgstr "Пользователь желает произвести чистую установку."
+
+msgid "ASCII code 0x%02X for timer interruption is neither Esc nor Space in existing mbldr."
+msgstr "ASCII код 0x%02X для прерывания таймера это не Esc и не Пробел в существующем mbldr."
+
+msgid "Number of bootable partitions is incorrect (%u) in existing mbldr."
+msgstr "Неверное количество загружаемых разделов (%u) в существующем mbldr."
+
+msgid "Number of default partition is incorrect (%u) in existing mbldr."
+msgstr "Неверный номер раздела по умолчанию (%u) в существующем mbldr."
+
+msgid "ASCII codes are used"
+msgstr "Используются ASCII коды"
+
+msgid "Scan-codes are used"
+msgstr "Используются скан-коды"
+
+msgid "Base keyboard code: %u"
+msgstr "Базовый клавиатурный код: %u"
+
+msgid "Progress-bar looks like 9876543210"
+msgstr "Прогресс-бар выглядит так: 9876543210"
+
+msgid "Progress-bar symbol is '%c'"
+msgstr "Символ прогресс-бара: '%c'"
+
+msgid "Progress-bar is disabled"
+msgstr "Прогресс-бар запрещен"
+
+msgid "Progress-bar is enabled"
+msgstr "Прогресс-бар разрешен"
+
+msgid "Timed boot is disabled (opcode: 0x%02X)"
+msgstr "Загрузка по таймеру запрещена (опкод: 0x%02X)"
+
+msgid "Timed boot is set to %i, opcode: 0x%02X, timer_byte1=0x%02X, timer_byte2=0x%02X"
+msgstr "Загрузка по таймеру установлена в %i, опкод: 0x%02X, байт1_таймера=0x%02X, байт2_таймера=0x%02X"
+
+msgid "Timeout field is incorrect (%u) in existing mbldr."
+msgstr "Некорректное значение поля таймаута (%u) в существующем mbldr."
+
+msgid "Timeout: %u"
+msgstr "Таймаут: %u"
+
+msgid "Boot menu text is corrupted."
+msgstr "Текст загрузочного меню поврежден."
+
+msgid ""
+"Existing mbldr is configured to use custom %skey codes.\n"
+"It is unable to properly parse boot menu text so all labels\n"
+"will be lost. You need to type them again or use custom boot\n"
+"menu."
+msgstr ""
+"Существующий mbldr сконфигурирован для использования нестандартных\n"
+"%sкодов. В этом режиме правильное распознавание меток элементов в\n"
+"загрузочном меню невозможно, поэтому необходимо заново ввести значения\n"
+"для всех меток или использовать неавтоматическое меню загрузки."
+
+msgid "Partition %u: offset %u"
+msgstr "Смещение раздела %u: %u"
+
+msgid "Partition's description: '%s'"
+msgstr "Описание раздела: '%s'"
+
+msgid "New MBR contents:"
+msgstr "Содержимое нового MBR:"
+
+msgid "Press Enter."
+msgstr "Нажмите Enter."
+
+msgid "Yes, agree, go ahead"
+msgstr "Да, согласен, давайте"
+
+msgid "No, please cancel the operation"
+msgstr "Нет, пожалуйста отмените операцию"
+
+msgid "Choose the answer"
+msgstr "Выберите ответ"
+
+msgid "User's choice: '%s'"
+msgstr "Выбор пользователя: '%s'"
+
+msgid "Author:"
+msgstr "Автор:"
+
+msgid "More info can be found at:"
+msgstr "Детальную информацию можно найти здесь:"
+
+msgid "No devices has been found, try to explicitly specify device with '-d' option"
+msgstr "Не было найдено ни одного устройства, попробуйте задать его при помощи параметра '-d'"
+
+msgid "Only one suitable device was found and will be used: "
+msgstr "Найдено только одно подходящее устройство, оно и будет использовано: "
+
+msgid "No partitions have been found"
+msgstr "Не было найдено ни одного раздела"
+
+msgid "Quit immediately"
+msgstr "Немедленный выход"
+
+msgid "Choose a device"
+msgstr "Выберите устройство"
+
+msgid "User chooses immediate quit."
+msgstr "Пользователь желает немедленно выйти."
+
+msgid "User's choice: '%s' converted to integer %li."
+msgstr "Выбор пользователя: '%s' преобразован в число %li."
+
+msgid "The number of partitions reached its maximum (9). You can't add another one."
+msgstr "Число разделов достигло максимального (9). Больше добавлять нельзя."
+
+msgid "Partitions that are already in the bootable list are marked with asterisks."
+msgstr "Разделы, уже находящиеся в списке для загрузки, помечены звездочками."
+
+msgid "Partition %u is found in current configuration at slot %u"
+msgstr "Раздел %u найден в текущей конфигурации в слоте %u"
+
+msgid "PRI"
+msgstr "ОСНОВН"
+
+msgid "EXT"
+msgstr "РАСШИР"
+
+msgid "Tb"
+msgstr "Тб"
+
+msgid "Gb"
+msgstr "Гб"
+
+msgid "Mb"
+msgstr "Мб"
+
+msgid "Kb"
+msgstr "Кб"
+
+msgid "'Skip boot attempt' is found in slot %u"
+msgstr "Пункт 'Пропустить попытку загрузки' был найден в слоте %u"
+
+msgid "SKIP BOOT"
+msgstr "ПРОПУСТИТЬ"
+
+msgid "'Boot from next HDD' is found in slot %u"
+msgstr "Пункт 'Загрузка со следующего жесткого диска' был найден в слоте %u"
+
+msgid "NEXT HDD"
+msgstr "СЛЕДУЮЩИЙ"
+
+msgid "Do not add anything at this time"
+msgstr "Ничего не добавлять сейчас"
+
+msgid "Choose what do you want to add"
+msgstr "Выберите, что вы хотите добавить"
+
+msgid "Do nothing, just go back from this menu."
+msgstr "Ничего не делать, просто выйти из этого меню."
+
+msgid "'Skip boot' menu item has been added."
+msgstr "Пункт 'Пропустить попытку загрузки' был добавлен в меню."
+
+msgid ""
+"'Next HDD' menu item adds the following capability to the\n"
+"boot loader: after choosing this menu item mbldr tries to\n"
+"load MBR from another hard drive (number of drive is increased\n"
+"sequentially: 0x80, 0x81, etc) and execute it. New master boot\n"
+"loader gets a number of drive being used as a parameter.\n"
+"Theoretically this scheme should work fine assuming that all\n"
+"boot loaders respect this input parameter. Unfortunately\n"
+"several boot loaders ignore it assuming that the drive number\n"
+"used to boot is always 0x80 (what is incorrect according to\n"
+"EDD3 specification). It may lead to impossibility to boot for\n"
+"so called 'passive' master boot loaders (that just try to boot\n"
+"not updating MBR every time you boot). But even worse for so\n"
+"called 'active' master boot loaders (that modify MBR every time\n"
+"you boot) you may overwrite MBR on the wrong disk. Please\n"
+"note that 'Next HDD' feature is not the same as the one\n"
+"provided by BIOS (boot from either of installed hard disks).\n"
+"BIOS does the reenumeration of hard drives making bootable\n"
+"disk always 0x80, while mbldr does not. Use this feature at\n"
+"your own risk! It is dangerous and may lead to data loss if\n"
+"you have master boot loaders others than mbldr with version\n"
+"1.37 or above!\n"
+"Are you sure?"
+msgstr ""
+"Пункт 'Загрузка со следующего жесткого диска' добавляет\n"
+"следующую функциональность к загрузчику: после выбора этого\n"
+"пункта меню mbldr пытается загрузить MBR с другого винчестера\n"
+"(номер диска увеличивается на единицу: 0x80, 0x81, и т.д.) и\n"
+"выполнить его. Новый загрузчик получает номер диска в качестве\n"
+"параметра. Теоретически это должно работать нормально,\n"
+"предполагая, что все загрузчики используют этот параметр.\n"
+"К сожалению некоторые игнорируют номер диска, предполагая, что\n"
+"загрузка всегда идет с винчестера 0x80 (что неверно по\n"
+"спецификации EDD3). Это может привести к невозможности\n"
+"загрузиться для так называемых 'пассивных' загрузчиков\n"
+"(которые просто пытаются загружать ОС, не обновляя содержимое\n"
+"MBR каждый раз). Но даже хуже, для 'активных' загрузчиков\n"
+"(которые модифицируют MBR каждый раз при загрузке ОС) вы\n"
+"можете перезаписать MBR не на том диске. Пожалуйста обратите\n"
+"внимание, что 'Загрузка со следующего жесткого диска' это не то\n"
+"же самое, что предоставляет BIOS (загрузка с любого доступного\n"
+"винчестера). BIOS перенумеровывает жесткие диски, делая\n"
+"загрузочный диск всегда имеющим номер 0x80, а mbldr - нет.\n"
+"Используйте этот пункт меню аккуратно! Он опасен и может\n"
+"привести к потере данных если вы используете любые загрузчики\n"
+"кроме mbldr версии 1.37 или выше!\n"
+"Вы уверены?"
+
+msgid "Are you sure?"
+msgstr "Вы уверены?"
+
+msgid "'Next HDD' menu item has been added."
+msgstr "Пункт 'Загрузка со следующего жесткого диска' был добавлен в меню."
+
+msgid "Type the label for this partition: "
+msgstr "Введите метку для этого раздела: "
+
+msgid "Unable to get current active codepage"
+msgstr "Невозможно получить текущую активную кодовую страницу"
+
+msgid "Label of partition is set to '%s'"
+msgstr "Метка раздела установлена в '%s'"
+
+msgid "Partition has been added."
+msgstr "Раздел был добавлен."
+
+msgid ""
+"No partitions have been found in current configuration.\n"
+"You should add at least one."
+msgstr ""
+"В текущей конфигурации не найдено ни одного раздела.\n"
+"Нужно добавить как минимум один."
+
+msgid "Default partition is what was booted last."
+msgstr "Раздел по умолчанию тот, который был загружен последним."
+
+msgid "Default partition is marked with asterisk."
+msgstr "Раздел по умолчанию помечен звездочкой."
+
+msgid "Partition in the slot %u is the default one"
+msgstr "Раздел в слоте %u назначен разделом по умолчанию"
+
+msgid "Skip boot attempt and try another device"
+msgstr "Пропустить попытку загрузки и попробовать другое устройство"
+
+msgid "Try to boot from next hard disk (dangerous!)"
+msgstr "Попытка загрузки со следующего жесткого диска (опасно!)"
+
+msgid "Broken partition offset 0x08lX is found in slot %u"
+msgstr "Найдено некорректное смещение раздела 0x08lX в слоте %u"
+
+msgid "!!!BROKEN!!!"
+msgstr "!!!НЕКОРРЕКТНО!!!"
+
+msgid "Partition offset points to a wrong sector, remove it"
+msgstr "Смещение раздела указывает на неверный сектор, удаляем его"
+
+msgid "No default partition (load what was used on previous boot)"
+msgstr "Нет раздела по умолчанию (загрузка того, что было использовано в предыдущий раз)"
+
+msgid "Choose partition or menu item"
+msgstr "Выберите раздел или пункт меню"
+
+msgid "The default partition has been reset. It will point to what was booted last."
+msgstr "Раздел по умолчанию сброшен. Будет производиться загрузка того раздела, который был использован в предыдущий раз"
+
+msgid "Remove this partition or boot menu item"
+msgstr "Удаление этого раздела или пункта меню"
+
+msgid "Set/edit text label for partition or boot menu item"
+msgstr "Установка/редактирование метки раздела или пункта меню"
+
+msgid "Set this partition as a default"
+msgstr "Установка этого раздела разделом по умолчанию"
+
+msgid "What do you want to do?"
+msgstr "Что вы хотите сделать?"
+
+msgid "Using device %s"
+msgstr "Использование устройства %s"
+
+msgid "User wants to remove this partition or menu item."
+msgstr "Пользователь желает удалить этот раздел или пункт меню."
+
+msgid "Decreasing number of default partition, now it's %u."
+msgstr "Уменьшение номера раздела по умолчанию, теперь это %u."
+
+msgid "Partition has been removed from configuration."
+msgstr "Раздел удален из конфигурации."
+
+msgid "List is now empty."
+msgstr "Список пуст."
+
+msgid "User wants to set or edit text label for boot menu."
+msgstr "Пользователь желает установить или редактировать метку в меню загрузки"
+
+msgid "custom"
+msgstr "неавтоматический"
+
+msgid "automatic"
+msgstr "автоматический"
+
+msgid "User wants to set this partition as a default."
+msgstr "Пользователь желает установить этот раздел разделом по умолчанию."
+
+msgid "Partition %i is set as a default one."
+msgstr "Раздел %i установлен разделом по умолчанию."
+
+msgid "Use <Esc> key to interrupt timer"
+msgstr "Используйте <Esc> для прерывания таймера"
+
+msgid "Use <Space> key to interrupt timer"
+msgstr "Используйте <Пробел> для прерывания таймера"
+
+msgid "Choose timer interrupt key"
+msgstr "Выбор клавиши прерывания таймера"
+
+msgid "Currently progress-bar is not allowed."
+msgstr "Сейчас прогресс-бар запрещен."
+
+msgid "Current progress-bar type: "
+msgstr "Текущий тип прогресс-бара: "
+
+msgid "Decreasing digits"
+msgstr "Обратный отсчет"
+
+msgid "Asterisks"
+msgstr "Звездочки"
+
+msgid "Equal signs"
+msgstr "Знаки равенства"
+
+msgid "Greater signs"
+msgstr "Знаки больше"
+
+msgid "Dots"
+msgstr "Точки"
+
+msgid "Number signs"
+msgstr "Знаки диеза"
+
+msgid "Pluses"
+msgstr "Плюсы"
+
+msgid "Minuses"
+msgstr "Минусы"
+
+msgid "Custom symbols"
+msgstr "Конфигурируемый символ"
+
+msgid "Disabled"
+msgstr "Запрещено"
+
+msgid "Choose progress-bar type"
+msgstr "Выберите тип прогресс-бара"
+
+msgid "Type one custom symbol for progress-bar"
+msgstr "Введите один символ для прогресс-бара"
+
+msgid "Timed boot is not allowed."
+msgstr "Загрузка по таймеру запрещена."
+
+msgid "Timed boot is: "
+msgstr "Загрузка по таймеру: "
+
+msgid "Timer interrupt key:"
+msgstr "Клавиша прерывания таймера:"
+
+msgid "Space"
+msgstr "Пробел"
+
+msgid "Timeout: %lusec"
+msgstr "Таймер: %luсек"
+
+msgid "Default partition number: %u, label: '%s'"
+msgstr "Номер раздела по умолчанию: %u, метка: '%s'"
+
+msgid "Timeout value (in seconds) should be between 1 and 36000"
+msgstr "Значение таймаута (в секундах) должно быть между 1 и 36000"
+
+msgid "Immediate boot not waiting for user's input"
+msgstr "Немедленная загрузка, не ожидая действий пользователя"
+
+msgid "Do not use timed boot. Wait for user's choice infinitely"
+msgstr "Не использовать загрузку по таймеру. Ждать указаний от пользователя"
+
+msgid "Manage timer interrupt key"
+msgstr "Управление клавишей прерывания таймера"
+
+msgid "Configure progress-bar parameters"
+msgstr "Конфигурация параметров прогресс-бара"
+
+msgid "Choose timeout"
+msgstr "Выберите таймаут"
+
+msgid "Timed boot configuration is done."
+msgstr "Конфигурация загрузки по таймеру завершена."
+
+msgid ""
+"Custom mode of boot menu text is active.\n"
+"Regenerate boot menu if you want to return to automatic mode."
+msgstr ""
+"Включен неавтоматический режим загрузочного меню.\n"
+"Пересоздайте меню, если вы хотите вернуться в автоматический режим."
+
+msgid "Review boot menu text"
+msgstr "Просмотр загрузочного меню"
+
+msgid "Save boot menu text to a file for custom editing"
+msgstr "Сохранение загрузочного меню в файл для редактирования"
+
+msgid "Load custom boot menu text from a file"
+msgstr "Загрузка текста меню из файла"
+
+msgid "Clear boot menu text to simulate hidden mode"
+msgstr "Очистка загрузочного меню для симуляции невидимого режима"
+
+msgid "Regenerate menu automatically based on internal structures"
+msgstr "Автоматическое пересоздание меню на основе внутренних структур"
+
+msgid "Maximum number of characters for boot menu text"
+msgstr "Максимальное количество символов в загрузочном меню"
+
+msgid "Length of current boot menu text (including trailing 0)"
+msgstr "Длина текущего загрузочного меню (включая последний 0)"
+
+msgid "Number of available characters"
+msgstr "Количество доступных символов"
+
+msgid "Current boot menu text:"
+msgstr "Текст текущего загрузочного меню:"
+
+msgid "Enter the name of a file (existing file will be overwritten): "
+msgstr "Введите имя файла (существующие файлы будут перезаписаны):"
+
+msgid "Error saving file."
+msgstr "Ошибка записи файла."
+
+msgid "Error saving file, it seems there is no space left on a device."
+msgstr "Ошибка записи файла, похоже на то, что на устройстве нет свободного места."
+
+msgid "File has been successfully written."
+msgstr "Файл был успешно записан."
+
+msgid "Error opening file."
+msgstr "Ошибка открытия файла."
+
+msgid "Enter the name of existing file: "
+msgstr "Введите имя существующего файла: "
+
+msgid "Error reading file."
+msgstr "Ошибка чтения файла."
+
+msgid "Boot menu text has been truncated because file is too long."
+msgstr "Загрузочное меню было усечено из-за того, что файл имеет слишком большую длину."
+
+msgid "File has been successfully read."
+msgstr "Файл был успешно прочитан."
+
+msgid "Boot menu is now empty."
+msgstr "Загрузочное меню очищено."
+
+msgid "Boot menu has been regenerated."
+msgstr "Загрузочное меню пересоздано."
+
+msgid ""
+"Custom mode of boot menu text is inactive.\n"
+"Text will be updated automatically."
+msgstr ""
+"Включен автоматический режим загрузочного меню.\n"
+"Текст меню будет обновляться сам."
+
+msgid "ASCII codes detection mode is active."
+msgstr "Включен режим проверки ASCII кодов."
+
+msgid "Keys: '1', '2', etc."
+msgstr "Клавиши: '1', '2', и т.д."
+
+msgid "Scan-codes detection mode is active."
+msgstr "Включен режим проверки скан-кодов."
+
+msgid "Keys: 'F1', 'F2', etc."
+msgstr "Клавиши: 'F1', 'F2', и т.д."
+
+msgid "Code of base key=0x%02X."
+msgstr "Базовый код клавиши=0x%02X."
+
+msgid "Use '1', '2', etc. to boot from desired partition"
+msgstr "'1', '2', и т.д. для загрузки с нужного раздела"
+
+msgid "Use 'F1', 'F2', etc. to boot from desired partition"
+msgstr "'F1', 'F2', и т.д. для загрузки с нужного раздела"
+
+msgid "Use arbitrary ASCII code as a base key"
+msgstr "Произвольный ASCII код для базовой клавиши"
+
+msgid "Use arbitrary scan-code as a base key"
+msgstr "Произвольный скан-код для базовой клавиши"
+
+msgid "Boot will be activated by pressing '1', '2', etc."
+msgstr "Загрузка будет активирована нажатием '1', '2', и т.д."
+
+msgid "Boot will be activated by pressing 'F1', 'F2', etc. "
+msgstr "Загрузка будет активирована нажатием 'F1', 'F2', и т.д."
+
+msgid ""
+"This allows you to choose which keys will be used to boot\n"
+"operating systems from a list. In the mbldr assembly code\n"
+"that resides in MBR there is an ability to analyze either\n"
+"an ASCII code of the particular key being pressed or a\n"
+"scan-code. All operating systems (partitions) in a list\n"
+"are associated with incrementing list of ASCII/scan-codes\n"
+"so there is no ability to define particular key for each\n"
+"operating system. You are limited to choose a base code\n"
+"for the first partition in a list. All others will be\n"
+"identified with an appropriately increased ASCII/scan\n"
+"code (initial code + the offset of partition in a list).\n"
+"Please note that some keys on a keyboard generate neither\n"
+"ASCII code nor scan-code (best example is multimedia keys),\n"
+"so you could not use them. Also after specifying custom\n"
+"key code your boot menu text lacks key labels for\n"
+"partitions in the list. In this case you (most probably)\n"
+"should use custom boot menu text."
+msgstr ""
+"Это позволяет задать клавиши для загрузки операционных\n"
+"систем из списка. В ассемблерном коде mbldr, который\n"
+"располагается в MBR, есть возможность проанализировать\n"
+"ASCII или скан-код нажатой клавиши. Все операционные\n"
+"системы (разделы) в списке ассоциированы с\n"
+"последовательностью увеличивающихся ASCII/скан-кодов,\n"
+"поэтому нет возможности задать свою клавишу для каждой\n"
+"ОС. Вы можете только выбрать базовый код для первого\n"
+"раздела в списке. Все остальные будут идентифицированы\n"
+"с соответствующими ASCII/скан-кодами (начальный код +\n"
+"смещение раздела в списке). Пожалуйста обратите внимание,\n"
+"что некоторые клавиши на клавиатуре не гегерируют ни ASCII\n"
+"ни скан-кодов (например мультимедийные клавиши), поэтому\n"
+"их нельзя использовать. Также после задания базового кода\n"
+"в загрузочном меню исчезнут наименования клавиш рядом с\n"
+"метками разделов в списке. В этом случае скорее всего\n"
+"придется использовать неавтоматический режим меню загрузки."
+
+msgid "You are about to define custom ASCII code for the base key."
+msgstr "Вы задаете ASCII код для базовой клавиши"
+
+msgid "You are about to define custom scan-code for the base key."
+msgstr "Вы задаете скан-код для базовой клавиши"
+
+msgid "Enter the decimal value of the code (0-255)"
+msgstr "Введите десятичное значение кода (0-255)"
+
+msgid "Custom code is set."
+msgstr "Код установлен."
+
+msgid "Backup existing MBR"
+msgstr "Сохранение резервной копии существующего MBR"
+
+msgid "Restore MBR from a backup"
+msgstr "Восстановление MBR из резервной копии"
+
+msgid "file"
+msgstr "файл"
+
+msgid "sector"
+msgstr "сектор"
+
+msgid "File is too long."
+msgstr "Слишком длинный файл."
+
+msgid "Magic number 0xAA55 is not found, hard disk may not be bootable."
+msgstr "Сигнатура 0xAA55 не найдена, возможны проблемы с загрузкой с этого винчестера."
+
+msgid ""
+"Several partitions have changed visibility (hidden became visible and/or\n"
+"vice versa). It is safe to restore old values from backup."
+msgstr ""
+"Несколько разделов поменяли видимость (скрытые стали видимыми и/или\n"
+"наоборот). Восстановление старых значений из резервной копии безопасно."
+
+msgid "Keep visibility as in current MBR"
+msgstr "Сохранить видимость разделов, как в текущем MBR"
+
+msgid "Update visibility as in the backup"
+msgstr "Обновить видимость разделов, как в резервной копии"
+
+msgid "Overwrite current partition table, restore whole MBR from backup"
+msgstr "Перезаписать текущую таблицу разделов, восстанавливая MBR целиком из резервной копии"
+
+msgid "Keep current partition table, restore only boot loader from backup"
+msgstr "Сохранить текущую таблицу разделов, восстанавливая только загрузчик из резервной копии"
+
+msgid "Master boot record has been successfully written."
+msgstr "Главная загрузочная запись была успешно записана."
+
+msgid "Cancelled. Master boot record is left untouched."
+msgstr "Действие отменено. Главная загрузочная запись осталась без изменений."
+
+msgid "View list of available partitions and add to current configuration"
+msgstr "Просмотр списка доступных разделов и добавление в текущую конфигурацию"
+
+msgid "Manage bootable partitions (view list, remove, set default, set label)"
+msgstr "Управление загружаемыми разделами (просмотр списка, установка по умолчанию, изменение метки)"
+
+msgid "Set timed boot parameters (timeout value, timer interrupt key, progress-bar)"
+msgstr "Установка параметров загрузки по таймеру (значение таймаута, клавиша прерывания таймера, прогресс-бар)"
+
+msgid "Manage current boot menu text"
+msgstr "Управление текстом текущего меню загрузки"
+
+msgid "Define keys choosing what to boot"
+msgstr "Определение клавиш, выбирающих что загружать"
+
+msgid "Backup/restore MBR and save current configuration"
+msgstr "Сохранение текущей конфигурации, создание и восстановление из резервных копий"
+
+msgid "Logging finished"
+msgstr "Ведение лог-файла завершено"
+
+msgid "mbldr: Error"
+msgstr "mbldr: Ошибка"
+
+msgid "mbldr: Information"
+msgstr "mbldr: Информация"
+
+msgid "mbldr: Question"
+msgstr "mbldr: Вопрос"
+
+msgid "mbldr: Main configurator"
+msgstr "mbldr: Основная конфигурация"
+
+msgid "Available partitions:"
+msgstr "Доступные разделы:"
+
+msgid "A&dd >"
+msgstr "&Добавить"
+
+msgid "< R&emove"
+msgstr "&Удалить"
+
+msgid "Configured partitions:"
+msgstr "Загружаемые разделы:"
+
+msgid "Timed boot configuration:"
+msgstr "Конфигурация загрузки по таймеру"
+
+msgid "Allowed (user timer)"
+msgstr "Разрешено (таймер пользователя)"
+
+msgid "Allowed (system timer)"
+msgstr "Разрешено (системный таймер)"
+
+msgid "Never"
+msgstr "Никогда"
+
+msgid "Immediate boot"
+msgstr "Немедленная загрузка"
+
+msgid "seconds"
+msgstr "секунд"
+
+msgid "Progress-bar:"
+msgstr "Прогресс-бар:"
+
+msgid "Label:"
+msgstr "Метка:"
+
+msgid "Default:"
+msgstr "По умолчанию:"
+
+msgid "Mar&k current"
+msgstr "Пометить &текущую"
+
+msgid "Last b&ooted"
+msgstr "&Последний загруженный"
+
+msgid "Keys choosing what to boot:"
+msgstr "Клавиши, выбирающие что загружать"
+
+msgid "Custom ASCII code"
+msgstr "ASCII код"
+
+msgid "Custom scan-code"
+msgstr "Скан-код"
+
+msgid "decimal key code"
+msgstr "десятичный код клавиши"
+
+msgid "Boot menu text:"
+msgstr "Текст меню загрузки:"
+
+msgid "&Save..."
+msgstr "&Сохранить..."
+
+msgid "&Load..."
+msgstr "&Загрузить..."
+
+msgid "&Clear"
+msgstr "О&чистить..."
+
+msgid "&Generate"
+msgstr "П&ересоздать..."
+
+msgid "&Backup MBR..."
+msgstr "Сох&ранить MBR..."
+
+msgid "&Restore MBR..."
+msgstr "Восст&ановить MBR..."
+
+msgid "Save new created mbldr configuration"
+msgstr "Сохранение новой созданной конфигурации mbldr"
+
+msgid "Save &mbldr..."
+msgstr "Сохран&ить mbldr..."
+
+msgid "&About"
+msgstr "&О программе"
+
+msgid "&Quit"
+msgstr "&Выход"
+
+msgid "mbldr: Choose device"
+msgstr "mbldr: Выбор устройства"
+
+msgid "Please specify what do you want to configure:"
+msgstr "Пожалуйста, выберите устройство или файл для конфигурации:"
+
+msgid "Devices representing hard disk drives:"
+msgstr "Устройства, представляющие жесткие диски:"
+
+msgid "Files representing images of hard disks:"
+msgstr "Файлы, представляющие образы жестких дисков:"
+
+msgid "Open &Device"
+msgstr "Открыть &устройство"
+
+msgid "&Browse..."
+msgstr "О&бзор..."
+
+msgid "Open &File"
+msgstr "Открыть &файл"
+
+msgid ""
+"Windows 95/98/ME is not supported by GUI verion of mbldr installation program.\n"
+"Please use command-line version of mbldr (mbldrcli) for DOS/Windows 95/98/ME"
+msgstr ""
+"Windows 95/98/ME не поддерживается графической версией инсталлятора mbldr.\n"
+"Пожалуйста используйте командно-строковую версию mbldr (mbldrcli) для DOS/Windows 95/98/ME"
+
+msgid "Show frame of DeviceChoice."
+msgstr "Показ диалога DeviceChoice."
+
+msgid "Show frame of MainConfigurator."
+msgstr "Показ диалога MainConfigurator."
+
+msgid "scan-"
+msgstr "скан-"
+
+msgid "Switch between user and system timers"
+msgstr "Переключение между пользовательским и системным таймерами"
+
+msgid "Switching from user timer to system timer."
+msgstr "Переключение с пользовательского таймера на системный."
+
+msgid "Switching from system timer to user timer."
+msgstr "Переключение с системного таймера на пользовательский."
+
+msgid "Jump offset=0x%02X, other primary partitions should be hidden at boot attempt"
+msgstr "Смещение перехода=0x%02X, прочие основные разделы будут помечены скрытыми в процессе загрузки"
+
+msgid "Jump offset=0x%02X, other primary partitions should be left in original state at boot attempt"
+msgstr "Смещение перехода=0x%02X, прочие основные разделы будут оставлены в исходном состоянии в процессе загрузки"
+
+msgid "Unrecognized jump offset=0x%02X, so let other partitions be hidden at boot attempt"
+msgstr "Нераспознанное смещение перехода=0x%02X, так что прочие разделы будут помечены скрытыми в процессе загрузки"
+
+msgid "Hide other primary partitions at boot time"
+msgstr "Скрывать прочие основные разделы во время загрузки"
+
+msgid "Don't hide other primary partitions at boot time"
+msgstr "Не скрывать прочие основные разделы во время загрузки"
+
+msgid "Other primary partitions will be hidden at the time of boot attempt."
+msgstr "Прочие основные разделы будут помечены скрытыми при попытке загрузки."
+
+msgid "Other primary partitions will be left in their original state at boot attempt."
+msgstr "Прочие основные разделы будут оставлены в исходном состоянии при попытке загрузки."
+
+msgid "drive(%i): "
+msgstr "привод(%i): "
+
+msgid "No active (bootable) partitions have been found, the hard disk may not be bootable."
+msgstr "Не найдено ни одного активного (загрузочного) раздела, возможны проблемы загрузки с жесткого диска"
+
+msgid "Mark primary partitions with active flag"
+msgstr "Управлять флагом активности основных разделов"
+
+msgid "Active flag on all primary partitions will be left intact at boot time"
+msgstr "Флаг активности на всех основных разделах будет оставлен без изменений в процессе загрузки"
+
+msgid "Primary partition being booted will be marked as active, all others will be marked inactive at boot time"
+msgstr "Загружаемый раздел будет помечен активным, остальные будут помечены неактивными"
+
+msgid "Active flag of primary partitions will be left intact (NOP opcodes found)"
+msgstr "Флаг активности на основных разделах будет оставлен без изменений так как найдены коды операции NOP"
+
+msgid "Primary partitions will be marked active/inactive, opcodes: 0x%02X and 0x%02X"
+msgstr "Будет осуществляться управление флагом активности, коды: 0x%02X and 0x%02X"
+
+msgid "Mark primary partitions active/inactive at boot time"
+msgstr "Управлять флагом активности основных разделов в процессе загрузки"
+
+msgid "Leave active flag of primary partitions intact"
+msgstr "Не изменять флаг активности на основных разделах в процессе загрузки"
+
+msgid ""
+"The value of bootable entry usually corresponds to an offset of partition to\n"
+"boot. But you may modify it manually (for example to chain-load a copy of\n"
+"another MBR located somewhere). This is an expert feature, don't change this\n"
+"value if you don't know what you are doing!\n\n"
+"Enter a positive decimal value representing the offset in sectors:"
+msgstr ""
+"Значения в загрузочной таблице обычно соответствуют смещениям разделов. Но\n"
+"можно изменять их вручную например для зарузки другой копии MBR, сохраненной\n"
+"где-нибудь на диске. Не пользуйтесь этой возможностью, если вы не знаете, что\n"
+"делаете!\n\n"
+"Введите положительное десятичное значение, представляющее смещение в секторах:"
+
+msgid "The offset of bootable partition has been modified"
+msgstr "Смещение загружаемого раздела было изменено"
+
+msgid "CHAINLOAD"
+msgstr "ЦЕПОЧКА"
+
+msgid "Offset points to a sector on a first track"
+msgstr "Смещение указывает на сектор на первой дорожке"
+
+msgid "Manually modify the offset"
+msgstr "Вручную изменить смещение"
+
+msgid "User wants to manually modify the offset"
+msgstr "Пользователь хочет вручную изменить смещение"
+
+msgid ""
+"Backup, restore and save operations will deal with files. So, 'backup MBR'\n"
+"will save it to a file, and 'save current configuration of mbldr' will also\n"
+"write it to a file (not to MBR on a chosen hard drive)."
+msgstr ""
+"Операции записи, резервного копирования и восстановления будут работать с\n"
+"файлами. Таким образом, операция 'сохранить MBR' запишет его в файл, и\n"
+"'сохранение mbldr' тоже запишет конфигурацию в файл, а не в MBR на выбранном\n"
+"жестком диске."
+
+msgid ""
+"Backup, restore and save operations will deal with sectors on a disk. So,\n"
+"'backup MBR' will save the MBR to a sector of your choice (can be used to\n"
+"prepare data for chainloading). 'Save current configuration of mbldr' will\n"
+"also write it to a sector (MBR by default as it is most useful operation)."
+msgstr ""
+"Операции записи, резервного копирования и восстановления будут работать с\n"
+"секторами. Таким образом, операция 'сохранить MBR' запишет его в один из\n"
+"секторов по вашему выбору (можно использовать для подготовки к загрузке по\n"
+"цепочке). 'Сохранение mbldr' тоже запишет конфигурацию в сектор (MBR по\n"
+"умолчанию, так как это самая широко используемая операция)."
+
+msgid "Source or target for backup, restore and save operations"
+msgstr "Источник или приемник для операций записи, резервного копирования и восстановления"
+
+msgid ""
+"Enter a number of target sector to write the data to (0 means MBR, values in\n"
+"range of [1-62] usually correspond to sectors on a very first track, so they\n"
+"can be used for chainloading if not occupied). For your information, the list\n"
+"of free (filled by zeroes) sectors on a first track:\n"
+msgstr ""
+"Введите номер целевого сектора для записи данных (0 соответствует MBR, значения\n"
+"от 1 до 62 обычно соответствуют секторам на самой первой дорожке, поэтому они\n"
+"могут быть использованы для загрузки по цепочке если не заняты). Список свободных\n"
+"(заполненных нулями) секторов на первой дорожке:\n"
+
+msgid "Target sector has been successfully written."
+msgstr "Целевой сектор был успешно записан."
+
+msgid "Cancelled. Target sector is left untouched."
+msgstr "Действие отменено. Целевой сектор остался без изменений."
+
+msgid ""
+"The sector you have chosen is outside of the first track. This can\n"
+"be dangerous to write the data there and may lead to corruption of\n"
+"data integrity. Are you sure?"
+msgstr ""
+"Выбранный сектор лежит вне пределов первой дорожки. Может быть опасно\n"
+"записывать данные туда, так как это может привести к повреждению целостности\n"
+"данных на винчестере. Вы уверены?"
+
+msgid "Do you want to add a chainload entry to the list of bootable partitions?"
+msgstr "Вы хотите добавить загрузку по цепочке в список загружаемых разделов?"
+
+msgid ""
+"Enter a number of source sector to read the data from (0 means MBR, values in\n"
+"range of [1-62] usually correspond to sectors on a very first track, so they\n"
+"can be used for chainloading if not occupied). For your information, the list\n"
+"of occupied (bootable - having a 0x55AA signature at the end) sectors on a\n"
+"first track:\n"
+msgstr ""
+"Введите номер сектора-источника для чтения данных (0 соответствует MBR, значения\n"
+"от 1 до 62 обычно соответствуют секторам на самой первой дорожке, поэтому они\n"
+"могут быть использованы для загрузки по цепочке если не заняты). Список\n"
+"потенциально загружаемых (имеющих сигнатуру 0x55AA в конце) секторов на\n"
+"первой дорожке:\n"
+
+msgid ""
+"The sector you have chosen is outside of the first track. This space is\n"
+"usually occupied by partitions, so MBR backup should not be stored there.\n"
+"Are you sure?"
+msgstr ""
+"Выбранный сектор лежит вне пределов первой дорожки. Это пространство\n"
+"обычно занято разделами, поэтому не следует сохранять туда резервную копию\n"
+"MBR (из-за риска повреждения целостности данных). Вы уверены?"
+
+msgid "Add 0xAA55 signature to the end of the backup sector"
+msgstr "Добавить сигнатуру 0xAA55 в конец сектора с резервной копией"
+
+msgid "Leave backup sector with no signature"
+msgstr "Оставить сектор с резервной копией без сигнатуры"
+
+msgid ""
+"New partition(s) appeared in current MBR comparing to backup.\n"
+"It is highly recommended to keep current partition table from your MBR\n"
+"since restoring from backup may corrupt hard disk partitioning."
+msgstr ""
+"Новые разделы появились в текущем MBR по сравнению с резервной копией.\n"
+"Очень рекомендуется сохранить текущую таблицу разделов из вашего MBR\n"
+"поскольку восстановление из резервной копии может повредить разметку\n"
+"жесткого диска."
+
+msgid ""
+"Old partition(s) disappeared from current MBR comparing to backup.\n"
+"It is highly recommended to keep current partition table from your MBR\n"
+"since restoring from backup may corrupt hard disk partitioning."
+msgstr ""
+"Старые разделы исчезли из текущего MBR по сравнению с резервной копией.\n"
+"Очень рекомендуется сохранить текущую таблицу разделов из вашего MBR\n"
+"поскольку восстановление из резервной копии может повредить разметку\n"
+"жесткого диска."
+
+msgid ""
+"Partitions in current MBR have different geometry comparing to backup.\n"
+"It is highly recommended to keep current partition table from your MBR\n"
+"since restoring from backup may corrupt hard disk partitioning."
+msgstr ""
+"Разделы в MBR имеют другую геометрию по сравнению с резервной копией.\n"
+"Очень рекомендуется сохранить текущую таблицу разделов из вашего MBR\n"
+"поскольку восстановление из резервной копии может повредить разметку\n"
+"жесткого диска."
+
+msgid ""
+"Windows hard-disk signature is different in current MBR and backup.\n"
+"It is better to keep what you have in MBR if you use Windows operating system."
+msgstr ""
+"Windows сигнатура жесткого диска в текущем MBR отличается от резервной копии.\n"
+"Лучше сохранить то, что в MBR, если вы используете операционную систему Windows."
+
+msgid "Keep hard-disk signature from current MBR"
+msgstr "Сохранить сигнатуру жесткого диска, как в текущем MBR"
+
+msgid "Overwrite hard-disk signature with the version from backup"
+msgstr "Обновить сигнатуру жесткого диска, как в резервной копии"
+
+msgid ""
+"Different partitions are marked as actve in your current MBR and the backup.\n"
+"It is safe to restore old values from backup."
+msgstr ""
+"Различные разделы помечены активными в текущем MBR и в резервной копии.\n"
+"Восстановление старых значений безпасно."
+
+msgid "Keep active partition as in current MBR"
+msgstr "Сохранить активный раздел, как в текущем MBR"
+
+msgid "Update active partition as in the backup"
+msgstr "Обновить активный раздел, как в резервной копии"
+
+msgid ""
+"Partitions in current MBR have different identifiers comparing to backup.\n"
+"It is highly recommended to keep current partition table from your MBR\n"
+"since restoring from backup may corrupt hard disk partitioning."
+msgstr ""
+"Разделы в MBR имеют другие идентификаторы по сравнению с резервной копией.\n"
+"Очень рекомендуется сохранить текущую таблицу разделов из вашего MBR\n"
+"поскольку восстановление из резервной копии может повредить разметку\n"
+"жесткого диска."
+

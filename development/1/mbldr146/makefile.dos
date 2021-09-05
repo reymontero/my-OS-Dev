@@ -1,0 +1,59 @@
+include Makefile.inc
+PACKAGE=$(PACKAGENAME)$(MAJORVERSION)$(MINORVERSION)
+
+CC=gcc
+
+# When using DJGPP I recommend using '-save-temps'option passed to gcc to take
+# control over the intermediate assembly syntax produced by gcc with inlines
+CFLAGS+=-Wall -g -Os -U__unix__ -save-temps
+LDFLAGS+=-lintl -liconv
+STRIPFLAGS+=--strip-unneeded -R .comment -R .note
+
+all: $(PACKAGENAME).exe $(MOFILES)
+
+mo/%/LC_MESSAGES/$(PACKAGENAME).mo: po/%.po
+	mkdir -p $(@D)
+	msgfmt $< -o $@
+
+$(PACKAGENAME).exe: $(CLINAME).o disks.o log.o common.o
+	$(CC) -o $@ $(CLINAME).o disks.o log.o common.o $(LDFLAGS)
+	strip $(STRIPFLAGS) $@
+	-upx --best $@
+
+$(CLINAME).o: $(CLINAME).c mbldr.h common.h
+	$(CC) $(CFLAGS) -c $(CLINAME).c
+
+disks.o: disks.c disks.h
+	$(CC) $(CFLAGS) -c disks.c
+
+log.o: log.c log.h
+	$(CC) $(CFLAGS) -c log.c
+
+common.o: common.c common.h
+	$(CC) $(CFLAGS) -c common.c
+
+mbldr.h: mbldr.bin
+	xxd -i -c16 mbldr.bin $@
+
+mbldr.bin: mbldr.asm
+	nasm -o $@ -f bin -l mbldr.lst -Z mbldr.err mbldr.asm
+	-ndisasm $@ > mbldr.rec
+
+clean:
+	-rm -f *.o
+	-rm -f *.i
+	-rm -f *.s
+	-rm -f $(PACKAGENAME).exe
+	-rm -f mbldr.h
+	-rm -f mbldr.bin
+	-rm -f mbldr.lst
+	-rm -f mbldr.err
+	-rm -f mbldr.rec
+	-rm -f mbldr.log
+	-rm -f $(MOFILES)
+	-rm -rf mo/
+	-rm -f $(PACKAGE).zip
+
+dist: all
+	zip -9 -r $(PACKAGE).zip disks.h log.h common.h disks.c log.c common.c $(CLINAME).c make_dos.bat mbldr.asm Makefile.dos Makefile.inc $(PACKAGENAME).exe changes authors copying mo po
+

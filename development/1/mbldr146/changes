@@ -1,0 +1,313 @@
+Changes for version 1.46
+Date: December 12, 2008
+
+Boot loader:
+ - The timer interrupt handler now invokes old body only for system
+   timer (08h), but not for user interrupt. The first byte of PUSH
+   opcode is replaced with IRET to do this. This modification takes
+   place because it has been reported that mbldr 1.45 hangs for both
+   system and user interrupts on certain configurations while 1.44
+   works fine.
+
+Installation/configuration program:
+ - Czech translation has been added (created by Ondrej Muller)
+ - Ability to customize the behavior of boot loader - whether to
+   mark the partition (being booted) with "active" flag (all other
+   primary partitions have this flag reset) or not at the time of
+   boot attempt. This can be used for "chainload" feature
+   when all primary partitions may mistakenly have this flag reset.
+ - Ability to manually change the offset of bootable partitions
+   (double-click on it in GUI version). This may be useful if user
+   wants to chain-load a copy of another MBR located somewhere. This
+   is an expert feature, unexperienced users should never modify
+   these values.
+ - Spin control is now used for timeout value field in GUI version
+ - Ability to make backup, restore from backup and save new
+   configuration of mbldr either to file or to chosen sector. It can
+   be used for chainloading.
+ - All sectors on a first track are now marked as "chainload" in the
+   list of bootable partitions.
+ - Minor modification in GUI appearance: the warnings, questions and
+   notification dialogs will appear in the center on the parent window
+ - Functionality of "restore from backup" is improved in a way to
+   intelligently detect cases when existing partitions are hidden,
+   new partitions appear or old disappear. User is allowed to do
+   only partial restore keeping desired modified fields in MBR with
+   no changes.
+
+Changes for version 1.45
+Date: May 30, 2008
+
+Boot loader:
+ - Ability to intercept either user (1Ch) or system (08h) timer with
+   invocation of an old handler code. This is a workaround for those
+   buggy BIOSes (mainly on laptops) which don't call interrupt of
+   user timer causing timed boot to stand
+
+Installation/configuration program:
+ - Partial French localization by Michelle Baert
+ - Makefiles changed to support nasm 2.x options (-E changed to -Z)
+   (backward compatibility will not be maintained)
+ - Ability to customise the behavior of boot loader - whether to
+   hide other primary partitions (all primary partitions with the
+   exception of the one being booted) or not at the time of boot
+   attempt. This solves problem if NTFS/FAT data partitions (shared
+   between several operating systems) are also primary.
+ - Windows version now adds the number of detected drive to its
+   description to avoid confusion when two identical disks are used
+ - Warning is issued if there are no active (bootable) partitions on
+   the MBR
+
+Changes for version 1.44
+Date: November 23, 2007
+
+Installation/configuration program:
+ - Initial version which supports interface localization using gettext
+ (Russian is the only available translation for now except English) for
+ DOS, Windows and *nix. Both GUI and CLI versions are affected.
+
+Changes for version 1.43
+Date: June 6, 2007
+
+Installation/configuration program:
+ - New icon and logotype on the web-site
+ - New GUI configuration program (mbldrgui) has been introduced which is
+ based on wxWidgets library
+ - Command-line mbldr renamed to mbldrcli (except DOS-version)
+ - Some redesign of Makefiles and shared components across mbldrcli and
+ mbldrgui to avoid copy-paste of the code blocks
+ - Logging mechanism has been simplified
+ - Support for disks autodetection under Linux and FreeBSD
+ - Some preparations have been made to the upcoming support of
+ multilanguage interface (internationalization)
+
+Changes for version 1.42
+Date: January 11, 2007
+
+Installation/configuration program:
+ - Mbldr is now able to detect hard disk size, bus type, vendor and model
+ name under Windows
+
+Changes for version 1.41
+Date: November 29, 2006
+
+Boot loader:
+ - 6 bytes were reserved in MBR for DiskSignature required by Windows Vista
+ This allows Vista to boot correctly with mbldr.
+
+Changes for version 1.40
+Date: November 15, 2006
+
+Installation/configuration program:
+ - Fixed a bug with parsing of existing labels if F-keys were used to choose
+ desired boot menu item
+ - The support for RHIDE has been removed for DOS version, now the only way
+ to build mbldr under DOS is to use make_dos.bat with makefile.dos
+ - Several improvements of building process intended for better compatibility
+ with BSD-family operating systems
+
+Boot loader:
+ - All code developed by Thomas is wiped out, so the whole project is covered
+ with BSD license
+ - Customizable progress-bar showing delay before timed boot (unfortunately
+ the space for boot menu text was reduced by 10 symbols). It is also used to
+ indicate whether the timer is running/stopped
+ - Maximum timeout was increased from 30 minutes to 10 hours
+
+Changes for version 1.39
+Date: October 31, 2006
+
+Installation/configuration program:
+ - New menu for keys configuration has been introduced
+ - Several minor typos have been corrected
+ - Ported under Microsoft Windows (should be compiled with MinGW,
+ not Microsoft Visual C due to lack of proper getopt() support)
+
+Boot loader:
+ - mbldr is now able to remember the last booted OS as a default one for
+ next boot.
+ - Configurable keys used to choose an operating system to boot (either '1',
+ '2', etc. or 'F1', 'F2', etc.)
+ - Small code-size optimizations
+
+Changes for version 1.38
+Date: August 18, 2006
+
+Installation/configuration program:
+ - Ported under Linux and FreeBSD, compatibility with MS-DOS/FreeDOS has
+ been kept, appropriate Makefile has been created
+
+Changes for version 1.37
+Date: June 13, 2006
+
+Boot loader:
+ - It is now possible to load operating systems from logical disks of an
+ extended partition
+ - Netwide assemler is now used to compile the assembly source code of boot
+ loader (MS-DOS based commercial outdated TASM is now not required), now you
+ may compile the source under any operating system supported by NASM
+ (including Linux)
+ - Boot menu now supports up to 9 menu items instead of 4. They may be
+ arranged in a boot menu list in any order as specified by a user at
+ installation time
+ - Some cosmetic changes in appearance of boot menu text. In fact the boot
+ menu text if fully editable by a user after installation/configuration is
+ done.
+ - Partitions hiding works only for NTFS/FAT disks that reside on primary
+ partitions. Logical drives are never hidden even if user boots from them.
+ - The default entry in a boot menu text is marked with a special character.
+ It appears between key number and a label of an operating system
+ - New items are available to be inserted into boot menu: "skip boot" which is
+ intended to inform BIOS that the next boot device should be used (invoking
+ INT 18h). By default, only first hard disk with a number 80h is bootable,
+ so "skip boot" is used to proceed with other boot devices like network cards
+ or sometimes CD-ROMs. The another special boot menu item is "next HDD" that
+ causes MBR from next hard disk to be executed. This option is dangerous, see
+ the explanation in the configuration program and on the site.
+ - The algorithm of detection whether the mbldr is present on a hard disk was
+ completely reworked. Signatures like "OS-BS" or "mbldr" were removed in order
+ to save MBR space. Installation/configuration program compares all constant
+ bytes of the existing MBR contents with what is expected to see for mbldr of
+ the version being used. Installation/configuration programs will not be
+ backward compatible (meaning old and new mbldr versions will not be
+ recognized). Number, size and location of data structures in MBR may differ
+ from version to version.
+ - Active (bootable) flag is set only for primary partitions. If user has
+ booted the operating system from a logical disk, all primary partitions will
+ have active flag reset. Logical disks never get active flag set to on.
+ - <Esc> or <Space> key could now be used to stop timer (it is configurable)
+ - <Enter> key could now be used to immediately boot default partition
+ - If boot sector could not be loaded or AA55 signature is not found, boot
+ loader will reload itself avoiding crash/hanging that may be caused by random
+ code
+ - 1.5 times more free space for boot menu text in MBR, no limitation for a
+ size of label of particular partition
+ - Several code-size optimization have been applied
+
+Installation/configuration program (MS-DOS)
+ - It was rewritten from scratch using C instead of assembly programming
+ language using DJGPP under FreeDOS. The reasons to do so are:
+ 1. The ease of maintenance of C program against assembly source (adding new
+ features, fixing bugs, etc.)
+ 2. Another step in the process of eliminating Thomas's code in order to
+ replace the license
+ 3. In future the same source code will be compiled under FreeBSD and Linux,
+ assembly language is inapplicable to reach this goal
+ 4. I hate colors chosen by Thomas and in general I don't like self-made
+ interface with menus, edit-boxes, etc. New program does not have colored
+ output and it is capable to be run in any text resolution (not only 80x25)
+ - It may configure any of the available HDDs found in a system
+ - Since master boot loader is written in assembly language and installation
+ program is written in C it is needed to somehow tie them with each other. It
+ is done with xxd program used to generate C header file from binary
+ - The list of partitions recognized by installer is significantly enhanced
+ - RHIDE project files are used to debug installer, while makefile is used to
+ build a release (without debug options, but with size-optimizations)
+ - Hard disks related operations are separated to a special module
+ (disks.c/.h)
+ - EDD3 specification is used to access hard drive parameters, read and write
+ sectors
+ - Advanced logging has been added with verbosity configuration that will help
+ to resolve issues
+ - There is an ability to restore only master boot loader if partition table
+ was modified since backup of MBR was made (not overwriting partition table
+ from backup)
+ - getopt() facility is used to parse command line parameters
+ - The distribution package is created with free info-zip program instead of
+ commercial pkzip
+ - The release executable of mbldr.exe is compressed with UPX
+ - Huge amount of other minor changes
+
+Changes for version 1.36
+Date: March 10, 2006
+
+Boot loader:
+ - Boot support for primary partitions above 1024 cylinder boundary
+ - Primary partitions hiding (FAT/FAT32/NTFS) like it is done in PQ
+ PartitionMagic/OS-2 Boot Manager
+ - Location and value of a boot loader signature has been changes (was
+ "wolfRAM", now "mbldr"). This makes new version incompatible with the
+ original 1.35. Location of version number has also been changed
+ - AA55h signature check (at the end of loaded boot record) was eliminated in
+ order to save space in MBR
+ - Cyclic JMP onto itself was replaced with HLT command in case of boot error
+ - Welcome and copyright strings were significantly reduced in order to save
+ MBR space
+ - Detailed error textual descriptions were replaced with short numbers in
+ order to save space in MBR
+ - Build-time checking for the size of boot loader has been added
+ - i386 instructions have been used
+
+Installation/configuration program (MS-DOS):
+ - NTFS partition type is detected properly
+ - Extended LBA partition type is detected properly (disallowing to add it to
+ the boot menu)
+ - Hidden FAT/FAT32/NTFS are now shown properly
+ - Description of BSD partition type has been corrected
+ - Description of Linux native partition type has been corrected
+ - Caption of program's interface has been changed in order to properly
+ reflect new name of a project (retaining Thomas's copyright)
+
+Other:
+ - Project has been renamed to "mbldr" due to legal issues discussed with
+ Thomas Wolfram (mbldr is Master Boot LoaDeR)
+ - Project site has been created on sourceforge.net
+ - Project has been added to freshmeat.net catalog
+ - Distribution type (LHA self-extractable .exe file for MS-DOS) was replaced
+ with .zip package in order to avoid virus infection
+
+==============================================================================
+The text below is a copy of HISTORY file which was a part of OS-BS 1.35 by
+Thomas Wolfram. It is kept here just for the sake of commonality.
+==============================================================================
+
+       OS Boot Select Version 1.35,                   December 1992
+       Copyright (c) 1991, 1992 Thomas wolfRAM
+       History
+       ------------------------------------------------------------
+
+
+       Version 1.35, December 1992
+	 fixes a minor bug
+
+       Version 1.34, August 1992
+	 fixes a bug, first working 1.3x version
+
+       Version 1.33, August 1992
+	 fixes a bug
+
+       Version 1.32, June 1992
+	 fixes some bugs
+
+       Version 1.31, May 1992
+	 changed booting behavior
+
+       Version 1.30, April 1992
+	 completly rewritten, new installation routine
+	 programable timeout
+
+       Version 1.21, November 1991
+	 fixes some minor bugs
+	 new list of operating system ids
+
+       Version 1.20, October 1991
+	 rewritten master boot program
+	 introduces "set partition active on boot time feature"
+
+       Version 1.14, July 1991
+	 first working version
+
+       Version 1.13, July 1991
+	 fixes bugs of 1.12
+
+       Version 1.12, July 1991
+	 some changes introduces new bugs
+
+       Version 1.11, July 1991
+	 fixes some major bugs in the installation routine
+
+       Version 1.10, June 1991
+	 better installation routine, timeout (not programable)
+
+       Version 1.00, June 1991
+	 very simple installation routine, no timeout
