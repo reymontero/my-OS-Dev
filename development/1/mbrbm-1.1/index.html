@@ -1,0 +1,460 @@
+<HTML>
+ <HEAD>
+  <META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <META http-equiv="robots" content="index, follow, archive">
+  <META http-equiv="home_URL" content="http://mbrbm.sourceforge.net/">
+  <META http-equiv="description" content="mbrbm - Master Boot Record Boot Manager. Displays list of primary partitions and allows to choose which partition to boot.">
+  <META http-equiv="keywords" content="mbrbm, boot, select, manager, master, loader, mbr, primary, partition, logical, disk, record, choose, operating, system">
+  <META http-equiv="author" content="Axel Reinhold">
+  <META http-equiv="owner" content="$Id: index.html,v 1.4 2007/05/20 09:45:09 freakout42 Exp $">
+  <META http-equiv="publisher_name" content="Axel Reinhold">
+  <TITLE>
+   mbrbm (Master Boot Record Boot Manager)
+  </TITLE>
+ </HEAD>
+ <BODY>
+  <TABLE width="100%">
+   <TR>
+    <TD align="left">
+     <H1>
+      mbrbm (Master Boot Record Boot Manager)
+     </H1>
+    </TD>
+    <TD align="right">
+     <A href="http://mbrbm.sourceforge.net/mbrbm.png"><IMG src="mbrbml.png" title="mbrbm project page" alt="Logo of mbrbm" border="0"></A>
+    </TD>
+   </TR>
+  </TABLE>
+  <HR>
+  <H2>
+   Table of contents:
+  </H2>
+  <BR>
+  <OL>
+   <LI><A href="#News">News</A>
+   <LI><A href="#Summary">Summary</A>
+   <UL>
+    <LI><A href="#About">About</A>
+    <LI><A href="#Project goals">Project goals</A>
+   </UL>
+   <LI><A href="#License">License</A>
+   <LI><A href="#Documentation">Documentation</A>
+   <UL>
+    <LI><A href="#Requirements">Requirements</A>
+    <LI><A href="#Installation, uninstallation and configuration">Installation, uninstallation and configuration</A>
+    <LI><A href="#Frequently asked questions (FAQ)">Frequently asked questions (FAQ)</A>
+    <LI><A href="#Useful hints and advices">Useful hints and advices</A>
+    <LI><A href="#Important notices and limitations">Important notices and limitations</A>
+    <LI><A href="#Troubleshooting">Troubleshooting</A>
+   </UL>
+   <LI><A href="#Screenshots">Screenshots</A>
+   <LI><A href="#Features">Features</A>
+   <LI><A href="#Download">Download</A>
+   <LI><A href="#ToDo">ToDo</A>
+   <LI><A href="#Contacts">Contacts</A>
+   <LI><A href="#Links">Links</A>
+  </OL>
+  <HR>
+  <P>
+  <A name="News"></A>
+  <H2>
+   News
+  </H2>
+  <I>October 23, 2006</I>
+  <P>
+  mbrbm version 1.0 has been released
+  <A name="Summary"></A>
+  <H2>
+   Summary
+  </H2>
+  <A name="About"></A>
+  <H3>
+   About
+  </H3>
+  mbrbm is yet another boot loader which fits into first sector of an HDD (MBR). It allows to choose which partition
+  to boot and is intended to replace an MBR coming with DOS/Windows. It may boot any primary partition boot
+  record below cylinder 1024.
+  <P>
+  mbrbm is not an operating system loader. I can not boot Linux or Windows directly (thus it is not a replacement of
+  LILO/GRUB/ntldr for example), but it can boot an appropriate loader from a boot record of a particular partition
+  (again LILO/GRUB/ntldr for instance).
+  <P>
+  mbrbm's functionality is completely implemented _WITHIN_ the Master Boot Record. It is written in nasm (x86 assembler).
+  On boot it displays a primary partition list with type/size and let the user choose the booting partition by
+  selecting it by number-keystroke. At timeout the active partition is bootet.
+  With no interaction it does exactly what a standard DOS/Windows9x/ME (fdisk /mbr) MBR does.
+  <P>
+  Restrictions are that it cannot boot via LBA (partitions above cylinder 1024) and extended partitions.
+  It's compatible with DOS, Windows(9x,ME,NT,2K,XP,2003,Vista), Lilo, Grub, xBSD, ... partition boot records.
+  <P>
+  My usage of mbrbm is primary for servers on which i always put a FreeDOS partition for basic diagnostic and recovery tasks,
+  regardless whether the server is running Linux, xBSD or Windows.
+  There are no driver troubles with DOS accessing the disks, raid, ... the BIOS takes care of it.
+  There are lots of good tools for hardware diagnostic, partition recovery and the like running on FreeDOS.
+  <P>
+  With mbrbm i have always a spare boot option without complicated boot manager setups - the standard boot
+  method setup of the target OS living in the second or third partition works out of the box with the standard
+  installation procedure of the server OS - no hassle with lilo, grub or BOOT.INI configuration after the installation.
+  And the best part is that i need no documentation of a complicated setup for the other system administrators.
+  This scenario did save my life a few times. Therefore i share it here.
+  <A name="Project goals"></A>
+  <H3>
+   Project goals
+  </H3>
+  <UL>
+   <LI>To maintain a boot loader which fits into master boot record
+   (first sector of HDD 512 bytes from which only 438 bytes can be used for code, some place is occupied by VolumeID,
+   partition table and a magic number) of a hard disk. There are lot of boot managers occupying almost whole track #0
+   of cylinder #0. I don't want to compete with them. The unused sectors on track #0 are also often used by recovery
+   software, so the chance to break something is relatively high
+   <LI>To allow a user to choose which operating system to boot with a simple textual interface (no graphics, icons, mouse,
+   etc.) with timeout to active partition
+   <LI>To support as many operating systems as possible
+   <LI>No configuration software need
+   <LI>No installation software need - just copy the 438 byte of code to disk - that's all
+   <LI>THE WHOLE PROJECT DELIVERS 438 (four-hundred-and-thirty-seven) BYTES OF CODE
+  </UL>
+  <A name="License"></A>
+  <H2>
+   License
+  </H2>
+  GPL V2.
+  <A name="Documentation"></A>
+  <H2>
+   Documentation
+  </H2>
+  <A name="Requirements"></A>
+  <H3>
+   Requirements
+  </H3>
+  <OL>
+   <LI>Run requirement:<br>IBM PC-compatible computer with INT13 BIOS (99.99999% of all computers - even very old ones are Ok)
+   <LI>Compile requirement:<br>The mbrbm MBR could be compiled on Linux and BSD with nasm
+   <LI>Installation requirement:<br>Standard Linux, xBSD (dd) or FreeDOS (FDISK) tools (can boot these from CD at installtime)
+  </OL>
+  <A name="Installation, uninstallation and configuration"></A>
+  <H3>
+   Installation and uninstallation
+  </H3>
+  The mbrbm project is intended to be used by advanced users on their desktop computers. If you have several operating
+  systems and want to be able to boot either of them, you may use mbrbm. It is a replacement of the default boot loader
+  in MBR which for instance could be written there by Microsoft Windows installation. The whole installation is just
+  the writing the very first 438 bytes of the first harddisk with the assembled code of mbrbm.S - the MBR.
+  THERE IS NO CONFIGURATION - INSTALLATION -> DONE.
+  <BR>
+  <P>
+<pre>
+FULL BACKUP IS HIGHLY RECOMMENDED
+PROCEED ONLY IF YOU REALLY KNOW WHAT YOU'RE DOING HERE
+YOU NEED A WORKING PARTITION BOOT SECTOR FOR EVERY
+OPERATING SYSTEM YOU WANT TO BOOT
+
+Compilation of the mbr (or take the compiled version for the distribution archive):
+[root@mbrbm /etc]# cd /etc
+[root@mbrbm /etc]# nasm mbrbm.S -o mbrbm.bin
+
+Installation with Linux on first IDE Harddisk (use /dev/sda for SCSI):
+[root@mbrbm /etc]# cd /etc
+[root@mbrbm /etc]# dd if=/dev/hda of=hda.mbr bs=1b count=1
+[root@mbrbm /etc]# dd if=mbrbm.bin of=hdambrbm.mbr bs=1 count=438
+[root@mbrbm /etc]# dd if=hda.mbr bs=1 skip=438 count=74 >>hdambrbm.mbr
+[root@mbrbm /etc]# dd if=hdambrbm.mbr of=/dev/hda bs=1b count=1
+[root@mbrbm /etc]# # KEEP THE FILE /etc/hda.mbr AS BACKUP OF ORIGINAL MBR
+
+Deinstallation with Linux on first IDE Harddisk:
+[root@mbrbm /etc]# dd if=/etc/hda.mbr of=/dev/hda bs=1b count=1
+
+Installation with FreeDOS on first Harddisk:
+C:\> C:
+C:\> CD \
+C:\> FDISK /SMBR 1
+C:\> COPY BOOT.MBR hda.mbr
+C:\> COPY mbrbm.bin BOOT.MBR
+C:\> FDISK /AMBR 1
+C:\> : KEEP THE FILE C:\hda.mbr AS BACKUP OF ORIGINAL MBR
+
+Deinstallation with FreeDOS on first Harddisk:
+C:\> COPY hda.mbr BOOT.MBR
+C:\> FDISK /AMBR 1
+</pre>
+  <A name="Frequently asked questions (FAQ)"></A>
+  <H3>
+   Frequently asked questions (FAQ)
+  </H3>
+  <I>Q1</I>: Yet another boot manager? What are the advantages of mbrbm over others?
+  <BR>
+  <I>A1</I>: mbrbm is first choice if you want an operating system independent boot manager without configuraton.
+  Unlike grub, lilo or ntldr(BOOT.INI) mbrbm does not need a working (booting) operating system partition.
+  It's whole functionality is within the MBR.
+  It will not fail to boot your secondary operating system if you completely destroy the primary.
+  In fact there is no more a primary or secondary OS.
+  In effect complexity is dramatically reduced from the bootstrapping system.
+  The OS's on the system are just installed with their default booting schema.
+  No configuration afterwards is needed. No hassle with lilo.conf, grub.conf or confusing BOOT.INI magic.
+  <P>
+  Consider a situation when you have 2 primary partitions: one with Windows XP and another one with Linux.
+  What are your options to boot either of them?
+  Using LILO which is able to boot both OSes you will loose an ability to normally boot a system to Windows XP
+  if you completely fill Linux partition by zeroes.
+  The same with standard DOS + loadlin or Windows ntldr + BOOT.INI executables.
+  In this case you should not break Windows partition otherwise you will loose an ability to load Linux.
+  <P>
+  Of course there are many other third-party managers which are not parts of the operating systems above.
+  Several alternatives to mbrbm are listed in <A href="#Links">Links section</A>.
+  However almost all of them require either separate partition (like OS/2 boot manager)
+  or a directory in FAT partition (like PQBoot) or occupy almost the whole track #0 on cylinder #0
+  (it is unused on most systems).
+  mbldr (Master Boot LoaDeR) needs to be configured, what has to be redone when booting partitions are added or moved.
+  bm uses also parts of track #0 - nuni can only boot IDE drives and needs source code configuration.
+  All these solutions add complexity to the bootstrap setup - complexity is the biggest enemy of availabilty and security!
+  mbrbm requires only the space which is reserved for the master boot loader by definition, only 438 bytes of 1st sector are used.
+  <P>
+  Nevertheless there are some drawbacks: the extreme simplicity leads to low quality of user interface
+  (only text with minimum usability), less features could be included: no lba and extended partitions can be bootet.
+  <P>
+  <I>Q2</I>: Compilation breaks with "error: argument to ORG should be numeric" message in mbrbm.err. What am I doing
+  wrong?
+  <BR>
+  <I>A2</I>: The version of nasm required to build mbrbm is greater or equal to 0.98.36. Release .35 which is often
+  shipped in many popular (but rather old) distributions could not be used.
+  <P>
+  <I>Q3</I>: When trying to update the MBR contents on /dev/ad0 under BSD I get "Operation not permitted" error. How to
+  overcome this?
+  <BR>
+  <I>A3</I>: This protection of BSD is active because hard disk is available for writing at the moment. Try to issue a
+  command "sysctl kern.geom.debugflags=16" to temporarily disable it. Update your MBR and then return this value back to 0.
+  <A name="Useful hints and advices"></A>
+  <H3>
+   Useful hints and advices
+  </H3>
+  <UL>
+   <LI>Disable all MS-DOS disk caching programs before installing/configuring master boot sector with mbrbm.
+   <LI>Disable BIOS write-protection on boot sector and master boot sector at installation time.
+   After installation the boot sector is never modified again - the BIOS protection could be enabled again.
+   There is NO need for configuration - even after moving or deleting/creating primary partitions.
+   <LI>Always keep bootable floppy or CD with a backup of MBR. If for some reasons the MBR loader or (what is even worse)
+   partition table is broken, you may restore it with the backup.
+   <LI>When using Linux with LILO/GRUB it is reasonable to install LILO into boot record of a chosen partition, not MBR.
+   Of course if you want to use mbrbm in the MBR instead.
+   <LI>Installation of all known Windows operating systems overwrites MBR. You have to reinstall mbrbm after you install
+   any Windows on any partition. Since boot record of a target partition is also updated by Windows installation routine
+   it is safe to overwrite MBR contents with mbrbm - since mbrbm is only 438 bytes Windows's VolumeID is also preserved!
+   Same with modern lilo's DiskID.
+   <LI>Due to mbrbm restriction to 1024 cylinders be aware to keep your booting OS partitions ("/", "/boot", "C:\")
+   within the first 8 Gigabyte - anyway a good idea to separate the root-filesystem (again "/", "/boot", "C:\") from
+   all other data (applications and user data).
+  </UL>
+  <A name="Important notices and limitations"></A>
+  <H3>
+   Important notices and limitations
+  </H3>
+  There are following limitations and configurations that have never been tested yet. All information related to the topics
+  below is welcome (<A href="http://sourceforge.net/forum/?group_id=180517">test cases, links to appropriate documentation,
+  patches, etc.</A>)
+  <UL>
+   <LI>mbrbm supports so-called primary partitions (4 primary partitions). non-DOS partition tables are not supported.
+   <LI>SCSI hard disks with BIOS support are tested.
+   <LI>mbrbm works in configuration with RAID.
+   <LI>mbrbm works in configuration with LVM.
+   <LI>Microsoft Windows "dynamic disks" is not tested.
+   <LI>mbrbm can boot records from primary partitions on second drive.
+   <LI>mbrbm does check partition table for minor errors like standard DOS/Windows MBR does.
+  </UL>
+  <A name="Troubleshooting"></A>
+  <H3>
+   Troubleshooting
+  </H3>
+  If mbrbm does not work for some reason you may ask for support. What do you need to provide in order to get help:
+  <OL>
+   <LI>Is mbrbm installed properly? "dd if=/dev/hda bs=1 count=438 | md5sum" should match the mbrbm.md5 in the distribution tar
+   <LI>Deinstall mbrbm - does the problem stay? Remember installation of mbrbm does only alter 438 bytes on the HD!
+   <LI>Describe hardware configuration (disks subsystem: number of drives, their types (ATA, SATA, etc.), primary
+   or secondary, sizes, etc.)
+   <LI>Report the version of mbrbm you are using
+   <LI>Explain the problem (crash, hanging, incorrect behavior, etc.)
+   <LI>Describe partitioning scheme of your hard drives (sizes and filesystems on primary partitions and logical disks).
+   Appropriate screenshots of fdisk may help as well.
+   <LI>Provide a description of OSes you want to boot: where are they, how many oses you want to boot, what are they
+   (brands+versions)
+   <LI>What other boot-related software do you use (other boot managers for example on other hard disk, OS loaders like
+   LILO, etc.)
+  </OL>
+  Not all items above are mandatory, but however if you provide quality feedback with much info describing your problem,
+  I may help you with greater probability.
+  <BR>
+  But please don't forget - mbrbm is my hobby, there is no guarantee this software will work properly. I'm not responsible for
+  any damage it may cause. Immediate support is also not guaranteed.
+  <A name="Screenshots"></A>
+  <H2>
+   Screenshots
+  </H2>
+  Boot menu (mbrbm version 1.0):
+  <BR>
+  <IMG src="mbrbm.png" alt="Boot menu">
+  <A name="Features"></A>
+  <H2>
+   Features
+  </H2>
+  <UL>
+   <LI>May boot up to 8 operating systems from primary partitions of two disks
+   <LI>MBR boot loader is written in Assembly language and compiled with NASM
+   <LI>Supports user-defined boot by pressing an appropriate key ("0", "1", "2", "3", etc.)
+   <LI>Supports boot timeout with loading of the active partition
+   <LI>It fits into first 438 bytes of a 1st sector on a hard disk, not requiring separate partition to be allocated
+   <LI>Supports all kind of hard disks supported by BIOS: ATA, SATA and SCSI
+   <LI>Development of mbrbm requires only free software: Linux/xBSD and nasm
+  </UL>
+  <A name="Download"></A>
+  <H2>
+   Download
+  </H2>
+  <P>
+  <TABLE border="1">
+   <TR>
+    <TD align="center">
+     <B>
+      Distribution file
+     </B>
+    </TD>
+    <TD align="center">
+     <B>
+      Version number
+     </B>
+    </TD>
+    <TD align="center">
+     <B>
+      Date
+     </B>
+    </TD>
+    <TD align="center">
+     <B>
+      Status
+     </B>
+    </TD>
+    <TD align="center">
+     <B>
+      Release short description
+     </B>
+    </TD>
+   </TR>
+   <TR>
+    <TD>
+     <A href="http://prdownloads.sourceforge.net/mbrbm/mbrbm-1.0.tar.gz?download">mbrbm-1.0.tar.gz</A>
+    </TD>
+    <TD>
+     1.0
+    </TD>
+    <TD>
+     October, 2006
+    </TD>
+    <TD bgcolor="lightgrey">
+     Stable, production for compilation/install with Unix
+    </TD>
+    <TD>
+     Current
+    </TD>
+   </TR>
+   <TR>
+    <TD>
+     <A href="http://prdownloads.sourceforge.net/mbrbm/mbrbm-1.0.zip?download">mbrbm-1.0.zip</A>
+    </TD>
+    <TD>
+     1.0
+    </TD>
+    <TD>
+     October, 2006
+    </TD>
+    <TD bgcolor="lightgrey">
+     Stable, production for install with FreeDOS
+    </TD>
+    <TD>
+     Current
+    </TD>
+   </TR>
+  </TABLE>
+  <P>
+  <A name="ToDo"></A>
+  <H2>
+   ToDo
+  </H2>
+  There are some plans for future. Feel free to <A href="http://sourceforge.net/forum/?group_id=180517">suggest
+  new features, send patches and improvements</A>:
+  <OL>
+   <LI>Strong optimization of assembly code in MBR
+   <LI>LBA support. There are still 6 bytes free for code!
+  </OL>
+  <P>
+  <A name="Contacts"></A>
+  <H2>
+   Contacts
+  </H2>
+  The recommended way to contact current maintainer is to use an appropriate mechanism on
+  <A href="http://sourceforge.net/projects/mbrbm/">sourceforge project site</A> (forum, tracker, bugs, feature requests, etc.).
+  In the e-mail addresses below there is no hypertext references due to spam bots protection:
+  <P>
+  Current maintainer of mbrbm is <A href="http://sourceforge.net/users/freakout42/">Axel Reinhold</A>
+  <UL>
+   <LI>freakout42 __at__ users __dot__ sourceforge __dot__ net
+  </UL>
+  <P>
+  Note: you need to replace " __dot__ " with "." and " __at__ " with "@" before using the addresses above.
+  <BR>
+  <P>
+  <A name="Links"></A>
+  <H2>
+   Links
+  </H2>
+  Project related resources:
+  <UL>
+   <LI><A href="http://sourceforge.net/projects/mbrbm/">Site at sourceforge</A>
+  </UL>
+  <P>
+  Similar projects (other boot managers):
+  <UL>
+   <LI><A href="http://sourceforge.net/projects/mbldr/">Master Boot LoaDeR</A>
+   <LI><A href="http://penguin.cz/~mhi/mbtmgr/">MATTsoft Boot Manager</A>
+   <LI><A href="http://xboot.sourceforge.net/">XBOOT Multi Boot</A>
+   <LI><A href="http://btmgr.webframe.org/">Smart Boot Manager</A>
+   <LI><A href="http://gag.sourceforge.net/">GAG, the Graphical Boot Manager</A>
+   <LI><A href="http://www.ranish.com/part/">Ranish Partition Manager and XOSL Boot Manager</A>
+  </UL>
+  Assembly language descriptions and CPU instructions set
+  <UL>
+   <LI><A href="http://www.logix.cz/michal/doc/i386/">Intel 80386 Programmer's Reference Manual</A>
+   <LI><A href="http://www.online.ee/~andre/i80386/">Intel 80386 Programmer's Reference 1986</A>
+   <LI><A href="http://nasm.sourceforge.net/">NASM (Netwide Assembler)</A> and
+   <A href="http://nasm.sourceforge.net/doc/html/nasmdoc0.html">NASM Manual</A>
+   <LI><A href="http://rs1.szif.hu/~tomcat/win32/intro.txt">A general NASM guide for TASM coders and other ASM people</A>
+  </UL>
+  Partition tables and boot loaders
+  <UL>
+   <LI><A href="http://www.ata-atapi.com/hiwtab.htm">How It Works: Partition Tables</A>
+   <LI><A href="http://www.geocities.com/thestarman3/asm/mbr/MBR_in_detail.htm">Boot Records Revealed!</A>
+   <LI><A href="http://www.win.tue.nl/%7Eaeb/partitions/partition_types.html#toc2">Partition types</A>
+  </UL>
+  Development and packaging stuff
+  <UL>
+   <LI><A href="http://www.freedos.org/">FreeDOS - nice complete alternative to commercial MS-DOS operating system</A>
+  </UL>
+  BIOS and ATA specifications
+  <UL>
+   <LI><A href="http://www.t13.org/">Technical Committee T13 (AT Attachment)</A>
+   <UL>
+    <LI><A href="http://t13.org/docs2004/d1572r3-EDD3.pdf">
+         BIOS Enhanced Disk Drive Services - 3 (EDD-3)</A>
+    <LI><A href="http://t13.org/docs2002/d1410r3b-ATA-ATAPI-6.pdf">
+         AT Attachment with Packet Interface - 6 (ATA/ATAPI-6)</A>
+   </UL>
+   <LI><A href="http://www.phoenix.com/">Phoenix Technologies</A>
+   <UL>
+    <LI><A href="http://www.phoenix.com/NR/rdonlyres/56E38DE2-3E6F-4743-835F-B4A53726ABED/0/specsbbs101.pdf">
+         BIOS Boot Specification Version 1.01</A>
+    <LI><A href="http://www.phoenix.com/NR/rdonlyres/19FEBD17-DB40-413C-A0B1-1F3F560E222F/0/specsedd30.pdf">
+         Enhanced Disk Drive Specification Ver 3.0</A>
+   </UL>
+  </UL>
+  <HR>
+  Last updated: October 23, 2006
+  <P>
+ </BODY>
+</HTML>

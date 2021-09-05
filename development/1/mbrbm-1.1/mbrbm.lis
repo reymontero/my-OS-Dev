@@ -1,0 +1,689 @@
+     1                                  ; $Id: mbrbm.S,v 1.2 2007/05/20 09:44:00 freakout42 Exp $
+     2                                  
+     3                                  ; mbrbm - Master Boot Record Boot Manager
+     4                                  ;
+     5                                  ;    Copyright (C) 2007 Axel Reinhold
+     6                                  ;    http://mbrbm.sourceforge.net/
+     7                                  ;
+     8                                  ;    This program is free software; you can redistribute it and/or modify
+     9                                  ;    it under the terms of the GNU General Public License as published by
+    10                                  ;    the Free Software Foundation; either version 2 of the License, or
+    11                                  ;    (at your option) any later version.
+    12                                  ;
+    13                                  ;    This program is distributed in the hope that it will be useful,
+    14                                  ;    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    15                                  ;    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    16                                  ;    GNU General Public License for more details.
+    17                                  ;
+    18                                  ;    You should have received a copy of the GNU General Public License
+    19                                  ;    along with this program; if not, write to the Free Software
+    20                                  ;    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+    21                                  ;
+    22                                  ; PC BIOS Boot Manager _within_ the Master Boot Record.
+    23                                  ; MBR Bootcode written in nasm (x86 assembler).
+    24                                  ; Displays partition list with type/size and let user choose booting partition.
+    25                                  ; Boots active partition at timeout.
+    26                                  ; Restrictions: no LBA support, no extended partitions support.
+    27                                  ; Compatible with DOS, Windows, Lilo, Grub, BSD, ... partition boot records.
+    28                                  ;
+    29                                  ; FULL BACKUP IS HIGHLY RECOMMENDED
+    30                                  ; USE ONLY IF YOU REALLY KNOW WHAT YOU'RE DOING HERE
+    31                                  ; YOU NEED A WORKING PARTITION BOOT SECTOR
+    32                                  ;
+    33                                  ; Compilation of the mbr:
+    34                                  ; nasm mbrbm.S -o mbrbm.bin
+    35                                  ;
+    36                                  ; Installation with Linux on first IDE Harddisk (cut/paste script into a sh-script):
+    37                                  %IFDEF INSTALLSH
+    38                                  #!/bin/sh
+    39                                  if [ -f /etc/hda.mbr ]; then
+    40                                   echo mbrbm installation failed
+    41                                   exit 1
+    42                                  fi
+    43                                  if [ ! -f mbrbm.bin ]; then
+    44                                   echo mbrbm installation failed
+    45                                   exit 1
+    46                                  fi
+    47                                  cp mbrbm.bin /etc
+    48                                  set -ex
+    49                                  cd /etc
+    50                                  rm -f hda.mbr
+    51                                  dd if=/dev/hda of=hda.mbr bs=1b count=1
+    52                                  if [ ! -f /etc/hda.mbr ]; then
+    53                                   echo mbrbm installation failed
+    54                                   exit 1
+    55                                  fi
+    56                                  dd if=mbrbm.bin of=hdambrbm.mbr bs=1 count=438
+    57                                  dd if=hda.mbr bs=1 skip=438 count=74 >>hdambrbm.mbr
+    58                                  MBRSIZE=`ls -l hdambrbm.mbr | awk '{print $5}'`
+    59                                  if [ ! "$MBRSIZE" -eq 512 ]; then
+    60                                   echo mbrbm installation failed
+    61                                   exit 1
+    62                                  fi
+    63                                  dd if=hdambrbm.mbr of=/dev/hda bs=1b count=1
+    64                                  # KEEP THE FILE /etc/hda.mbr AS BACKUP OF ORIGINAL MBR
+    65                                  exit
+    66                                  %ENDIF
+    67                                  ;
+    68                                  ; Deinstallation with Linux on first IDE Harddisk:
+    69                                  ; dd if=/etc/hda.mbr of=/dev/hda bs=1b count=1
+    70                                  ;
+    71                                  ; Installation with FreeDOS on first Harddisk (cut/paste script into a bat-script):
+    72                                  %IFDEF INSTALLBAT
+    73                                  @ECHO ON
+    74                                  IF EXIST C:\hda.mbr GOTO FAIL
+    75                                  IF NOT EXIST mbrbm.bin GOTO FAIL
+    76                                  COPY mbrbm.bin C:C:
+    77                                  CD DEL BOOT.MBR
+    78                                  FDISK /SMBR 1
+    79                                  IF NOT EXIST BOOT.MBR GOTO FAIL
+    80                                  COPY BOOT.MBR hda.mbr
+    81                                  IF NOT EXIST C:\hda.mbr GOTO FAIL
+    82                                  COPY mbrbm.bin BOOT.MBR
+    83                                  FDISK /AMBR 1
+    84                                  ECHO KEEP THE FILE C:\hda.mbr AS BACKUP OF ORIGINAL MBR
+    85                                  GOTO EXIT
+    86                                  :FAIL
+    87                                  ECHO mbrbm installation failed
+    88                                  :EXIT
+    89                                  %ENDIF
+    90                                  ;
+    91                                  ; Deinstallation with FreeDOS on first Harddisk:
+    92                                  ; C:
+    93                                  ; CD ; COPY hda.mbr BOOT.MBR
+    94                                  ; FDISK /AMBR 1
+    95                                  
+    96                                  %IFDEF GPLICENSE
+    97                                  		    GNU GENERAL PUBLIC LICENSE
+    98                                  		       Version 2, June 1991
+    99                                  
+   100                                   Copyright (C) 1989, 1991 Free Software Foundation, Inc.
+   101                                                            675 Mass Ave, Cambridge, MA 02139, USA
+   102                                   Everyone is permitted to copy and distribute verbatim copies
+   103                                   of this license document, but changing it is not allowed.
+   104                                  
+   105                                  			    Preamble
+   106                                  
+   107                                    The licenses for most software are designed to take away your
+   108                                  freedom to share and change it.  By contrast, the GNU General Public
+   109                                  License is intended to guarantee your freedom to share and change free
+   110                                  software--to make sure the software is free for all its users.  This
+   111                                  General Public License applies to most of the Free Software
+   112                                  Foundation's software and to any other program whose authors commit to
+   113                                  using it.  (Some other Free Software Foundation software is covered by
+   114                                  the GNU Library General Public License instead.)  You can apply it to
+   115                                  your programs, too.
+   116                                  
+   117                                    When we speak of free software, we are referring to freedom, not
+   118                                  price.  Our General Public Licenses are designed to make sure that you
+   119                                  have the freedom to distribute copies of free software (and charge for
+   120                                  this service if you wish), that you receive source code or can get it
+   121                                  if you want it, that you can change the software or use pieces of it
+   122                                  in new free programs; and that you know you can do these things.
+   123                                  
+   124                                    To protect your rights, we need to make restrictions that forbid
+   125                                  anyone to deny you these rights or to ask you to surrender the rights.
+   126                                  These restrictions translate to certain responsibilities for you if you
+   127                                  distribute copies of the software, or if you modify it.
+   128                                  
+   129                                    For example, if you distribute copies of such a program, whether
+   130                                  gratis or for a fee, you must give the recipients all the rights that
+   131                                  you have.  You must make sure that they, too, receive or can get the
+   132                                  source code.  And you must show them these terms so they know their
+   133                                  rights.
+   134                                  
+   135                                    We protect your rights with two steps: (1) copyright the software, and
+   136                                  (2) offer you this license which gives you legal permission to copy,
+   137                                  distribute and/or modify the software.
+   138                                  
+   139                                    Also, for each author's protection and ours, we want to make certain
+   140                                  that everyone understands that there is no warranty for this free
+   141                                  software.  If the software is modified by someone else and passed on, we
+   142                                  want its recipients to know that what they have is not the original, so
+   143                                  that any problems introduced by others will not reflect on the original
+   144                                  authors' reputations.
+   145                                  
+   146                                    Finally, any free program is threatened constantly by software
+   147                                  patents.  We wish to avoid the danger that redistributors of a free
+   148                                  program will individually obtain patent licenses, in effect making the
+   149                                  program proprietary.  To prevent this, we have made it clear that any
+   150                                  patent must be licensed for everyone's free use or not licensed at all.
+   151                                  
+   152                                    The precise terms and conditions for copying, distribution and
+   153                                  modification follow.
+   154                                  
+   155                                  		    GNU GENERAL PUBLIC LICENSE
+   156                                     TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+   157                                  
+   158                                    0. This License applies to any program or other work which contains
+   159                                  a notice placed by the copyright holder saying it may be distributed
+   160                                  under the terms of this General Public License.  The "Program", below,
+   161                                  refers to any such program or work, and a "work based on the Program"
+   162                                  means either the Program or any derivative work under copyright law:
+   163                                  that is to say, a work containing the Program or a portion of it,
+   164                                  either verbatim or with modifications and/or translated into another
+   165                                  language.  (Hereinafter, translation is included without limitation in
+   166                                  the term "modification".)  Each licensee is addressed as "you".
+   167                                  
+   168                                  Activities other than copying, distribution and modification are not
+   169                                  covered by this License; they are outside its scope.  The act of
+   170                                  running the Program is not restricted, and the output from the Program
+   171                                  is covered only if its contents constitute a work based on the
+   172                                  Program (independent of having been made by running the Program).
+   173                                  Whether that is true depends on what the Program does.
+   174                                  
+   175                                    1. You may copy and distribute verbatim copies of the Program's
+   176                                  source code as you receive it, in any medium, provided that you
+   177                                  conspicuously and appropriately publish on each copy an appropriate
+   178                                  copyright notice and disclaimer of warranty; keep intact all the
+   179                                  notices that refer to this License and to the absence of any warranty;
+   180                                  and give any other recipients of the Program a copy of this License
+   181                                  along with the Program.
+   182                                  
+   183                                  You may charge a fee for the physical act of transferring a copy, and
+   184                                  you may at your option offer warranty protection in exchange for a fee.
+   185                                  
+   186                                    2. You may modify your copy or copies of the Program or any portion
+   187                                  of it, thus forming a work based on the Program, and copy and
+   188                                  distribute such modifications or work under the terms of Section 1
+   189                                  above, provided that you also meet all of these conditions:
+   190                                  
+   191                                      a) You must cause the modified files to carry prominent notices
+   192                                      stating that you changed the files and the date of any change.
+   193                                  
+   194                                      b) You must cause any work that you distribute or publish, that in
+   195                                      whole or in part contains or is derived from the Program or any
+   196                                      part thereof, to be licensed as a whole at no charge to all third
+   197                                      parties under the terms of this License.
+   198                                  
+   199                                      c) If the modified program normally reads commands interactively
+   200                                      when run, you must cause it, when started running for such
+   201                                      interactive use in the most ordinary way, to print or display an
+   202                                      announcement including an appropriate copyright notice and a
+   203                                      notice that there is no warranty (or else, saying that you provide
+   204                                      a warranty) and that users may redistribute the program under
+   205                                      these conditions, and telling the user how to view a copy of this
+   206                                      License.  (Exception: if the Program itself is interactive but
+   207                                      does not normally print such an announcement, your work based on
+   208                                      the Program is not required to print an announcement.)
+   209                                  
+   210                                  These requirements apply to the modified work as a whole.  If
+   211                                  identifiable sections of that work are not derived from the Program,
+   212                                  and can be reasonably considered independent and separate works in
+   213                                  themselves, then this License, and its terms, do not apply to those
+   214                                  sections when you distribute them as separate works.  But when you
+   215                                  distribute the same sections as part of a whole which is a work based
+   216                                  on the Program, the distribution of the whole must be on the terms of
+   217                                  this License, whose permissions for other licensees extend to the
+   218                                  entire whole, and thus to each and every part regardless of who wrote it.
+   219                                  
+   220                                  Thus, it is not the intent of this section to claim rights or contest
+   221                                  your rights to work written entirely by you; rather, the intent is to
+   222                                  exercise the right to control the distribution of derivative or
+   223                                  collective works based on the Program.
+   224                                  
+   225                                  In addition, mere aggregation of another work not based on the Program
+   226                                  with the Program (or with a work based on the Program) on a volume of
+   227                                  a storage or distribution medium does not bring the other work under
+   228                                  the scope of this License.
+   229                                  
+   230                                    3. You may copy and distribute the Program (or a work based on it,
+   231                                  under Section 2) in object code or executable form under the terms of
+   232                                  Sections 1 and 2 above provided that you also do one of the following:
+   233                                  
+   234                                      a) Accompany it with the complete corresponding machine-readable
+   235                                      source code, which must be distributed under the terms of Sections
+   236                                      1 and 2 above on a medium customarily used for software interchange; or,
+   237                                  
+   238                                      b) Accompany it with a written offer, valid for at least three
+   239                                      years, to give any third party, for a charge no more than your
+   240                                      cost of physically performing source distribution, a complete
+   241                                      machine-readable copy of the corresponding source code, to be
+   242                                      distributed under the terms of Sections 1 and 2 above on a medium
+   243                                      customarily used for software interchange; or,
+   244                                  
+   245                                      c) Accompany it with the information you received as to the offer
+   246                                      to distribute corresponding source code.  (This alternative is
+   247                                      allowed only for noncommercial distribution and only if you
+   248                                      received the program in object code or executable form with such
+   249                                      an offer, in accord with Subsection b above.)
+   250                                  
+   251                                  The source code for a work means the preferred form of the work for
+   252                                  making modifications to it.  For an executable work, complete source
+   253                                  code means all the source code for all modules it contains, plus any
+   254                                  associated interface definition files, plus the scripts used to
+   255                                  control compilation and installation of the executable.  However, as a
+   256                                  special exception, the source code distributed need not include
+   257                                  anything that is normally distributed (in either source or binary
+   258                                  form) with the major components (compiler, kernel, and so on) of the
+   259                                  operating system on which the executable runs, unless that component
+   260                                  itself accompanies the executable.
+   261                                  
+   262                                  If distribution of executable or object code is made by offering
+   263                                  access to copy from a designated place, then offering equivalent
+   264                                  access to copy the source code from the same place counts as
+   265                                  distribution of the source code, even though third parties are not
+   266                                  compelled to copy the source along with the object code.
+   267                                  
+   268                                    4. You may not copy, modify, sublicense, or distribute the Program
+   269                                  except as expressly provided under this License.  Any attempt
+   270                                  otherwise to copy, modify, sublicense or distribute the Program is
+   271                                  void, and will automatically terminate your rights under this License.
+   272                                  However, parties who have received copies, or rights, from you under
+   273                                  this License will not have their licenses terminated so long as such
+   274                                  parties remain in full compliance.
+   275                                  
+   276                                    5. You are not required to accept this License, since you have not
+   277                                  signed it.  However, nothing else grants you permission to modify or
+   278                                  distribute the Program or its derivative works.  These actions are
+   279                                  prohibited by law if you do not accept this License.  Therefore, by
+   280                                  modifying or distributing the Program (or any work based on the
+   281                                  Program), you indicate your acceptance of this License to do so, and
+   282                                  all its terms and conditions for copying, distributing or modifying
+   283                                  the Program or works based on it.
+   284                                  
+   285                                    6. Each time you redistribute the Program (or any work based on the
+   286                                  Program), the recipient automatically receives a license from the
+   287                                  original licensor to copy, distribute or modify the Program subject to
+   288                                  these terms and conditions.  You may not impose any further
+   289                                  restrictions on the recipients' exercise of the rights granted herein.
+   290                                  You are not responsible for enforcing compliance by third parties to
+   291                                  this License.
+   292                                  
+   293                                    7. If, as a consequence of a court judgment or allegation of patent
+   294                                  infringement or for any other reason (not limited to patent issues),
+   295                                  conditions are imposed on you (whether by court order, agreement or
+   296                                  otherwise) that contradict the conditions of this License, they do not
+   297                                  excuse you from the conditions of this License.  If you cannot
+   298                                  distribute so as to satisfy simultaneously your obligations under this
+   299                                  License and any other pertinent obligations, then as a consequence you
+   300                                  may not distribute the Program at all.  For example, if a patent
+   301                                  license would not permit royalty-free redistribution of the Program by
+   302                                  all those who receive copies directly or indirectly through you, then
+   303                                  the only way you could satisfy both it and this License would be to
+   304                                  refrain entirely from distribution of the Program.
+   305                                  
+   306                                  If any portion of this section is held invalid or unenforceable under
+   307                                  any particular circumstance, the balance of the section is intended to
+   308                                  apply and the section as a whole is intended to apply in other
+   309                                  circumstances.
+   310                                  
+   311                                  It is not the purpose of this section to induce you to infringe any
+   312                                  patents or other property right claims or to contest validity of any
+   313                                  such claims; this section has the sole purpose of protecting the
+   314                                  integrity of the free software distribution system, which is
+   315                                  implemented by public license practices.  Many people have made
+   316                                  generous contributions to the wide range of software distributed
+   317                                  through that system in reliance on consistent application of that
+   318                                  system; it is up to the author/donor to decide if he or she is willing
+   319                                  to distribute software through any other system and a licensee cannot
+   320                                  impose that choice.
+   321                                  
+   322                                  This section is intended to make thoroughly clear what is believed to
+   323                                  be a consequence of the rest of this License.
+   324                                  
+   325                                    8. If the distribution and/or use of the Program is restricted in
+   326                                  certain countries either by patents or by copyrighted interfaces, the
+   327                                  original copyright holder who places the Program under this License
+   328                                  may add an explicit geographical distribution limitation excluding
+   329                                  those countries, so that distribution is permitted only in or among
+   330                                  countries not thus excluded.  In such case, this License incorporates
+   331                                  the limitation as if written in the body of this License.
+   332                                  
+   333                                    9. The Free Software Foundation may publish revised and/or new versions
+   334                                  of the General Public License from time to time.  Such new versions will
+   335                                  be similar in spirit to the present version, but may differ in detail to
+   336                                  address new problems or concerns.
+   337                                  
+   338                                  Each version is given a distinguishing version number.  If the Program
+   339                                  specifies a version number of this License which applies to it and "any
+   340                                  later version", you have the option of following the terms and conditions
+   341                                  either of that version or of any later version published by the Free
+   342                                  Software Foundation.  If the Program does not specify a version number of
+   343                                  this License, you may choose any version ever published by the Free Software
+   344                                  Foundation.
+   345                                  
+   346                                    10. If you wish to incorporate parts of the Program into other free
+   347                                  programs whose distribution conditions are different, write to the author
+   348                                  to ask for permission.  For software which is copyrighted by the Free
+   349                                  Software Foundation, write to the Free Software Foundation; we sometimes
+   350                                  make exceptions for this.  Our decision will be guided by the two goals
+   351                                  of preserving the free status of all derivatives of our free software and
+   352                                  of promoting the sharing and reuse of software generally.
+   353                                  
+   354                                  			    NO WARRANTY
+   355                                  
+   356                                    11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY
+   357                                  FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW.  EXCEPT WHEN
+   358                                  OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES
+   359                                  PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED
+   360                                  OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+   361                                  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.  THE ENTIRE RISK AS
+   362                                  TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU.  SHOULD THE
+   363                                  PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING,
+   364                                  REPAIR OR CORRECTION.
+   365                                  
+   366                                    12. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+   367                                  WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR
+   368                                  REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES,
+   369                                  INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING
+   370                                  OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED
+   371                                  TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY
+   372                                  YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER
+   373                                  PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE
+   374                                  POSSIBILITY OF SUCH DAMAGES.
+   375                                  
+   376                                  		     END OF TERMS AND CONDITIONS
+   377                                  %ENDIF
+   378                                  
+   379                                  CR		EQU	0x0D
+   380                                  LF		EQU	0x0A
+   381                                  
+   382                                  ; PC AT bios
+   383                                  
+   384                                  ; video
+   385                                  VIDEO		EQU	0x10		; bios video interrupt
+   386                                  PUTC		EQU	0x0E		; put character
+   387                                  CNTRL		EQU	0x0007		; control word
+   388                                  
+   389                                  ; disc
+   390                                  DISC		EQU	0x13		; bios disc interrupt
+   391                                  READ1		EQU	0x0201		; bios read, 1 sector
+   392                                  WRITE1		EQU	0x0301		; bios write, 1 sector
+   393                                  DRIVE0		EQU	0x80		; bios hard disc drive 0 number
+   394                                  
+   395                                  ; keyboard
+   396                                  KEYB		EQU	0x16		; bios keyboard interrupt
+   397                                  KEYBST		EQU	0x01		; bios keyboard status
+   398                                  KEYBK		EQU	0x00		; bios keyboard key
+   399                                  
+   400                                  ; time
+   401                                  RTIME		EQU	0x1A		; bios time interrupt
+   402                                  GETTIME 	EQU	0x00		; get time
+   403                                  READDT		EQU	0x04		; bios read date
+   404                                  
+   405                                  ; RealTimeClock
+   406                                  RTCPORT		EQU	70		; rtc port
+   407                                  RTCPIO		EQU	0x71		; rtc ioadr
+   408                                  RTCREAD		EQU	0x80		; read request
+   409                                  RTCDAY		EQU	7		; day offset
+   410                                  RTCMONTH	EQU	8		; month offset
+   411                                  RTCYEAR		EQU	9		; year offset
+   412                                  RTCCENTURY	EQU	50		; century offset
+   413                                  
+   414                                  ; MasterBootBlock
+   415                                  MAGIC		EQU	0xAA55		; hard disc boot block magic word
+   416                                  SDEV		EQU	0x80		; boot partition flag
+   417                                  MBOOTL		EQU	512		; boot block length
+   418                                  NPARTN		EQU	4		; max. number of partitions
+   419                                  PARTL		EQU	16		; partition table entry length
+   420                                  NPARTL		EQU	PARTL*NPARTN	; partition table length
+   421                                  BCODEL		EQU	MBOOTL-NPARTL-2	; max. length of boot code
+   422                                  PARTAB		EQU	BCODEL		; position of partition table
+   423                                  SIGNUM		EQU	MBOOTL-2	; position of signum magic word
+   424                                  P_BOOT		EQU	0		; boot flag
+   425                                  P_HEAD		EQU	1		; partition start head
+   426                                  P_SEC		EQU	2		; partition start sector
+   427                                  P_CYL		EQU	3		; partition start cylinder
+   428                                  P_SYS		EQU	4		; partition start cylinder
+   429                                  P_BASE		EQU	8		; partition start block
+   430                                  P_SIZE		EQU	12		; partition block length
+   431                                  INVPART 	EQU	'?'		; invalid partition
+   432                                  LOWPART 	EQU	0		; low partition
+   433                                  HIGPART 	EQU	7		; high partition
+   434                                  
+   435                                  ; locations of mboot in memory
+   436                                  LOADLOC 	EQU	0x7C00		; boot block load location in memory
+   437                                  COPYLOC 	EQU	0x0600		; copy location of boot block
+   438                                  COPYLOCSHR4 	EQU	0x0060		; copy location of boot block shifted 4r
+   439                                  
+   440                                  LOADADR 	EQU	LOADLOC-COPYLOC	; load location in segment
+   441                                  
+   442                                  MBRBR0:
+   443                                  ; master boot block code
+   444                                  	ORG	0			; for .BIN file
+   445                                  
+   446 00000000 FA                      	CLI				; clear interrupts
+   447                                  
+   448                                  ; set data segment pointers to COPYLOC for org 0
+   449 00000001 B86000                  	MOV	AX, COPYLOCSHR4		; shift segment adress
+   450 00000004 8ED0                    	MOV	SS, AX			; set all segments
+   451 00000006 8ED8                    	MOV	DS, AX			; COPYLOC -> offset 0
+   452 00000008 8EC0                    	MOV	ES, AX			; LOADLOC -> offset LOADADR
+   453                                  
+   454                                  ; set SP to use below load address
+   455 0000000A BC0076                  	MOV	SP, LOADADR		; enough stack below load area
+   456 0000000D FB                      	STI
+   457 0000000E FC                      	CLD
+   458                                   
+   459                                  ; copy boot block to COPYLOC
+   460 0000000F BE0076                  	MOV	SI, LOADADR		; copy block to get load area free
+   461 00000012 31FF                    	XOR	DI, DI			; for operation system bootstrap
+   462 00000014 B90002                  	MOV	CX, MBOOTL
+   463 00000017 F3A4                    	REP	MOVSB
+   464                                  
+   465                                  ; jump far to copied code
+   466 00000019 EA[1E06]0000            	JMP	0:COPYLOC+JMP_TO_COPY	; jump far over jmp
+   467                                  JMP_TO_COPY:
+   468                                  
+   469                                  ; display logo and headline
+   470 0000001E BE[3B00]                	MOV	SI, LOGO		; logo
+   471 00000021 E88800                  	CALL	PUTS
+   472                                  ; analyse drives
+   473 00000024 E8B400                  	CALL	ANALYSE_TABLE		; analyse first hard disc
+   474 00000027 FE06[5900]              	INC	BYTE [DRIVE]		; next hard disc
+   475 0000002B E85000                  	CALL	READ_TABLE		; read partition table
+   476 0000002E 08E4                    	OR	AH, AH			; read ok?
+   477 00000030 7503                    	JNZ	ASK			; 2. disk installed
+   478 00000032 E8A600                  	CALL	ANALYSE_TABLE		; analyse second hard disc
+   479                                  ASK:
+   480 00000035 BE[7800]                	MOV	SI, PROMPT		; issue prompt
+   481 00000038 E9ED00                  	JMP	GET_PART		; jump over error message
+   482                                  
+   483                                  ; data
+   484                                  WAITC	EQU	300			; wait counter for mboot
+   485                                  LOGO:
+   486 0000003B 6D6272626D320D0A        	DB	'mbrbm2',CR,LF		; logo string
+   487                                  HEAD:
+   488 00000043 447276205061727420-     	DB	'Drv Part SysId  1GB'	; partition table headline
+   489 0000004C 537973496420203147-
+   490 00000055 42                 
+   491                                  CRLF:
+   492 00000056 0D0A00                  	DB	CR,LF,0			; carriage return, line feed
+   493                                  PARTITION:				; partition string
+   494                                  DRIVE:					; drive number ascii 0..1
+   495 00000059 30202020                	DB	'0   '
+   496                                  PART:
+   497 0000005D 30                      	DB	'0'			; partition number ascii 0..7
+   498                                  ACTIND:
+   499 0000005E 422020202020            	DB	'B     '		; active partition indicator
+   500                                  SYSID:
+   501 00000064 30202020202020          	DB	'0      '		; system identification number ascii
+   502                                  MEGBYTE:
+   503 0000006B 300D0A00                	DB	'0',CR,LF,0		; partition size in megbytes ascii
+   504                                  ACTIVE:
+   505 0000006F 3F                      	DB	INVPART			; init active partition to unvalid
+   506 00000070 0D0A00                  	DB	CR,LF,0
+   507                                  INVTABLE:
+   508 00000073 496E760D0A              	DB	'Inv',CR,LF		; error message invalid partition
+   509                                  PROMPT:
+   510 00000078 426F6F743F00            	DB	'Boot?',0		; load partition prompt string
+   511                                  
+   512                                  ; read boot block
+   513                                  READ_TABLE:
+   514 0000007E B90100                  	MOV	CX, 00001		; cyl 0, sect 1
+   515 00000081 BA5000                  	MOV	DX, DRIVE0-'0'		; head 0
+   516 00000084 0216[5900]              	ADD	DL, [DRIVE]		; drive 0 or 1
+   517 00000088 E80C00                  	CALL	READ_DISC
+   518 0000008B BEBE77                  	MOV	SI, LOADADR+PARTAB	; copy partition table
+   519 0000008E BF[BE01]                	MOV	DI, PART_TAB		; to copy area for save
+   520 00000091 B94000                  	MOV	CX, NPARTL
+   521 00000094 F3A4                    	REP	MOVSB
+   522 00000096 C3                      	RET
+   523                                  
+   524                                  ; read from disc via bios, return code AH
+   525                                  READ_DISC:
+   526 00000097 B80102                  	MOV	AX, READ1		; read one sector
+   527 0000009A BB0076                  	MOV	BX, LOADADR		; into load area
+   528 0000009D CD13                    	INT	DISC
+   529 0000009F 720A                    	JB	READ_DISK_RET		; disc error
+   530 000000A1 813EFE7755AA            	CMP	WORD [LOADADR+SIGNUM], MAGIC
+   531 000000A7 7402                    	JZ	READ_DISK_RET		; no valid partition table
+   532 000000A9 B4FF                    	MOV	AH, 0xFF
+   533                                  READ_DISK_RET:
+   534 000000AB C3                      	RET
+   535                                  
+   536                                  ; display *SI -> display
+   537                                  PUTS:
+   538                                  NEXT_CHAR:
+   539 000000AC AC                      	LODSB
+   540 000000AD 08C0                    	OR	AL, AL			; last char ='\0'?
+   541 000000AF 7429                    	JZ	NEXT_CHAR_RET
+   542 000000B1 B40E                    	MOV	AH, PUTC		; next char
+   543 000000B3 BB0700                  	MOV	BX, CNTRL		; control word tty emulation
+   544 000000B6 56                      	PUSH	SI
+   545 000000B7 CD10                    	INT	VIDEO
+   546 000000B9 5E                      	POP	SI
+   547 000000BA EBF0                    	JMP	NEXT_CHAR
+   548                                  
+   549                                  ; convert dec -> ascii, AX -> [--DI], max 2550!
+   550                                  CONVERT:
+   551 000000BC B720                    	MOV	BH, ' '			; overwrite five chars
+   552 000000BE 887DFC                  	MOV	[DI-4], BH		; with blanc
+   553 000000C1 887DFD                  	MOV	[DI-3], BH		; with blanc
+   554 000000C4 887DFE                  	MOV	[DI-2], BH		; with blanc
+   555 000000C7 887DFF                  	MOV	[DI-1], BH		; with blanc
+   556 000000CA B50A                    	MOV	CH, 10			; decimal base
+   557                                  NEXT_DIGIT:
+   558 000000CC F6F5                    	DIV	CH			; next modulu
+   559 000000CE 80C430                  	ADD	AH, '0'			; ascii conversion
+   560 000000D1 8825                    	MOV	[DI], AH		; put in string
+   561 000000D3 4F                      	DEC	DI			; next position
+   562 000000D4 30E4                    	XOR	AH, AH			; clear high byte
+   563 000000D6 08C0                    	OR	AL, AL			; was last digit?
+   564 000000D8 75F2                    	JNZ	NEXT_DIGIT
+   565                                  NEXT_CHAR_RET:
+   566 000000DA C3                      	RET
+   567                                  
+   568                                  ; analyse partition table
+   569                                  ANALYSE_TABLE:	
+   570 000000DB BD[BE01]                	MOV	BP, PART_TAB		; si = *partititon table
+   571 000000DE B90400                  	MOV	CX, NPARTN		; search active partition 0..3
+   572                                  NEXT_PART:
+   573 000000E1 51                      	PUSH	CX
+   574 000000E2 B020                    	MOV	AL, ' '			; default not active
+   575 000000E4 F6460080                	TEST	BYTE [BP], SDEV		; partition active?
+   576 000000E8 740F                    	JZ	NOT_ACTIVE
+   577 000000EA A0[6F00]                	MOV	AL, [ACTIVE]		; active partition already found?
+   578 000000ED 343F                    	XOR	AL, INVPART		; no more marked invalid
+   579 000000EF 7506                    	JNZ	SCND_ACTIVE		; second active found
+   580 000000F1 A0[5D00]                	MOV	AL, [PART]		; remember active partition
+   581 000000F4 A2[6F00]                	MOV	[ACTIVE], AL
+   582                                  SCND_ACTIVE:
+   583 000000F7 B042                    	MOV	AL, 'B'			; mark with 'B'
+   584                                  NOT_ACTIVE:
+   585 000000F9 A2[5E00]                	MOV	[ACTIND], AL		; set active indicator
+   586 000000FC 8A4604                  	MOV	AL, [BP+P_SYS]		; display system identification
+   587 000000FF 30E4                    	XOR	AH, AH
+   588 00000101 BF[6400]                	MOV	DI, SYSID
+   589 00000104 E8B5FF                  	CALL	CONVERT
+   590 00000107 8B460E                  	MOV	AX, [BP+P_SIZE+2]	; display partition size in GB
+   591 0000010A C1F805                  	SAR	AX, 5
+   592 0000010D 40                      	INC	AX			; round up gb
+   593 0000010E BF[6B00]                	MOV	DI, MEGBYTE
+   594 00000111 E8A8FF                  	CALL	CONVERT
+   595 00000114 BE[5900]                	MOV	SI, PARTITION		; display partition information
+   596 00000117 E892FF                  	CALL	PUTS
+   597 0000011A 83C510                  	ADD	BP, BYTE PARTL		; next partition
+   598 0000011D FE06[5D00]              	INC	BYTE [PART]
+   599 00000121 59                      	POP	CX
+   600 00000122 E2BD                    	LOOP	NEXT_PART
+   601 00000124 C3                      	RET
+   602                                  
+   603                                  ; invalid message
+   604                                  INVALID:
+   605 00000125 BE[7300]                	MOV	SI, INVTABLE		; issue error message
+   606                                  ; get partition
+   607                                  GET_PART:
+   608 00000128 E881FF                  	CALL	PUTS
+   609                                  ; wait for key or timeout
+   610                                  WAIT_KEY:
+   611 0000012B 30E4                    	XOR	AH, AH
+   612 0000012D CD1A                    	INT	RTIME
+   613 0000012F 89D3                    	MOV	BX, DX			; init wait counter
+   614 00000131 83C32C                  	ADD	BX, BYTE WAITC
+   615                                  KEY_PRESSED:
+   616 00000134 B401                    	MOV	AH, KEYBST		; wait for key pressed or timeout
+   617 00000136 CD16                    	INT	KEYB
+   618 00000138 750B                    	JNZ	GET_CHAR		; key pressed?
+   619 0000013A 30E4                    	XOR	AH, AH
+   620 0000013C CD1A                    	INT	RTIME
+   621 0000013E 39D3                    	CMP	BX, DX			; timeout?
+   622 00000140 7FF2                    	JG	KEY_PRESSED
+   623 00000142 E90700                  	JMP	CHECK			; timeout, load active partition
+   624                                  ; get pressed key from buffer
+   625                                  GET_CHAR:
+   626 00000145 B400                    	MOV	AH, KEYBK		; get pressed key
+   627 00000147 CD16                    	INT	KEYB
+   628 00000149 A2[6F00]                	MOV	[ACTIVE], AL		; remember active
+   629                                  ; check partition validity
+   630                                  CHECK:
+   631 0000014C BE[6F00]                	MOV	SI, ACTIVE		; type boot partition
+   632 0000014F E85AFF                  	CALL	PUTS
+   633 00000152 A0[6F00]                	MOV	AL, [ACTIVE]		; get active or pressed
+   634 00000155 2C30                    	SUB	AL, '0'			; check partition number 0..7
+   635 00000157 7CCC                    	JL	INVALID
+   636 00000159 3C07                    	CMP	AL, HIGPART
+   637 0000015B 7FC8                    	JG	INVALID
+   638 0000015D C606[5900]31            	MOV	BYTE [DRIVE], '1'	; build drive number
+   639 00000162 3C04                    	CMP	AL, 4			; 0..3 drive 0, 4..7 drive 1
+   640 00000164 801E[5900]00            	SBB	BYTE [DRIVE], 0		; drive number ascii
+   641 00000169 250300                  	AND	AX, 00003		; partition number MOD 4
+   642 0000016C B104                    	MOV	CL, 4			; partition number * PARTL
+   643 0000016E D3E0                    	SHL	AX, CL
+   644 00000170 05[BE01]                	ADD	AX, PART_TAB		; build partition table entry adress
+   645 00000173 89C5                    	MOV	BP, AX			; partition table entry adress
+   646 00000175 E806FF                  	CALL	READ_TABLE		; read partition table from drive
+   647 00000178 08E4                    	OR	AH, AH			; read ok?
+   648 0000017A 75A9                    	JNZ	INVALID
+   649                                  
+   650                                  ; boot partition
+   651                                  BOOT_PART:
+   652 0000017C 386604                  	CMP	[BP+P_SYS], AH		; partition empty?
+   653 0000017F 74A4                    	JZ	INVALID
+   654 00000181 A0[5900]                	MOV	AL, [DRIVE]		; get first partition block for os boot
+   655 00000184 0450                    	ADD	AL, DRIVE0-'0'		; ascii -> 080
+   656 00000186 884600                  	MOV	[BP], AL		; build head, sector adress
+   657 00000189 8B4E02                  	MOV	CX, [BP+P_SEC]
+   658 0000018C 8B5600                  	MOV	DX, [BP]
+   659 0000018F E805FF                  	CALL	READ_DISC		; read operating system bootstrap
+   660 00000192 08E4                    	OR	AH, AH			; read ok?
+   661 00000194 758F                    	JNZ	INVALID
+   662                                  
+   663                                  ; set proper environment for os boot
+   664 00000196 81C50006                	ADD	BP, COPYLOC		; di, si, bp = partition table entry
+   665 0000019A 89EE                    	MOV	SI, BP			; nessessary? perhaps XENIX?
+   666 0000019C 89EF                    	MOV	DI, BP
+   667                                  
+   668                                  ; set segment pointers to 0
+   669 0000019E 31C0                    	XOR	AX, AX
+   670 000001A0 8ED0                    	MOV	SS, AX
+   671 000001A2 8ED8                    	MOV	DS, AX
+   672 000001A4 8EC0                    	MOV	ES, AX
+   673 000001A6 BC007C                  	MOV	SP, LOADLOC
+   674 000001A9 89E3                    	MOV	BX, SP
+   675                                  
+   676 000001AB EA007C0000              	JMP	0:LOADLOC		; boot operation system via far jump
+   677                                  					; into bootstrap
+   678                                  
+   679                                  ; data until end of block
+   680                                  VOLUMEID:
+   681 000001B0 FF<rept>                	TIMES	BCODEL-$+MBRBR0	DB 0xFF	; filler for VolumeID
+   682                                  
+   683                                  PART_TAB:
+   684 000001BE 00<rept>                	TIMES	NPARTL		DB 0	; partition table
+   685                                  
+   686                                  SIG_NUM:
+   687 000001FE 55AA                    	DW	MAGIC			; magic word
+   688                                  
+   689                                  ; END-OF-MBRBM
